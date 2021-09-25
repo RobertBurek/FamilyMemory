@@ -23,3 +23,28 @@ div {
         height: 16.16vh;
     }
 }
+
+.foto1 {
+    background-image: url(/img/dogs/puppy-1.jpg);
+}
+.foto2 {
+    background-image: url(/img/dogs/puppy-2.jpg);
+}
+.foto3 {
+    background-image: url(/img/dogs/puppy-3.jpg);
+}
+.foto4 {
+    background-image: url(/img/dogs/puppy-4.jpg);
+}
+.foto5 {
+    background-image: url(/img/dogs/puppy-5.jpg);
+}
+.foto6 {
+    background-image: url(/img/dogs/puppy-6.jpg);
+}
+.foto7 {
+    background-image: url(/img/dogs/puppy-7.jpg);
+}
+.foto8 {
+    background-image: url(/img/dogs/puppy-8.jpg);
+}
