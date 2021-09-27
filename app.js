@@ -16,9 +16,9 @@ function randomCards(elments){
     // console.log(elments);
 }
 
-randomCards(cardsDogAll);
-console.log(cardsGame);
-cardsGame =[];
+// randomCards(cardsDogAll);
+// console.log(cardsGame);
+// cardsGame =[];
 randomCards(cardsCatAll);
 console.log(cardsGame);
 
@@ -28,7 +28,9 @@ cards = [...cards];
 // const init = function() {
     cards.forEach(function(card){
         const position = Math.floor(Math.random() * cardsGame.length);
-        card.style.backgroundImage = "url(img/"+cardsGame[position];
+        card.style.backgroundImage = "url(img/success-1.png), url(img/" + cardsGame[position] +")";
+        // card.style.backgroundImage = "url(img/" + cardsGame[position];
+        // card.style.backgroundImage = "url(img/success-2.png)";
         card.style.backgroundSize = "100% 100%";
         cardsGame.splice(position,1);
     }
