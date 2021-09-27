@@ -2,6 +2,9 @@ const cardsDogAll = ["dogs/puppy-1.jpg", "dogs/puppy-2.jpg", "dogs/puppy-3.jpg",
                     "dogs/puppy-9.jpg", "dogs/puppy-10.jpg", "dogs/puppy-11.jpg", "dogs/puppy-12.jpg"];
 const cardsCatAll = ["cats/kitty-1.jpg", "cats/kitty-2.jpg", "cats/kitty-3.jpg", "cats/kitty-4.jpg", "cats/kitty-5.jpg", "cats/kitty-6.jpg", "cats/kitty-7.jpg", "cats/kitty-8.jpg",
                     "cats/kitty-9.jpg", "cats/kitty-10.jpg", "cats/kitty-11.jpg", "cats/kitty-12.jpg", "cats/kitty-13.jpg", "cats/kitty-14.jpg"];
+const cardsButterfliesAll = ["butterflies/butterfly-1.jpg", "butterflies/butterfly-2.jpg", "butterflies/butterfly-3.jpg", "butterflies/butterfly-4.jpg", "butterflies/butterfly-5.jpg",
+                    "butterflies/butterfly-6.jpg", "butterflies/butterfly-7.jpg", "butterflies/butterfly-8.jpg", "butterflies/butterfly-9.jpg", "butterflies/butterfly-10.jpg", 
+                    "butterflies/butterfly-11.jpg", "butterflies/butterfly-12.jpg", "butterflies/butterfly-13.jpg", "butterflies/butterfly-14.jpg"];                    
 let cardsGame =[];
 
 function randomCards(elments){
@@ -19,7 +22,9 @@ function randomCards(elments){
 // randomCards(cardsDogAll);
 // console.log(cardsGame);
 // cardsGame =[];
-randomCards(cardsCatAll);
+// randomCards(cardsCatAll);
+// console.log(cardsGame);
+randomCards(cardsButterfliesAll);
 console.log(cardsGame);
 
 let cards = document.querySelectorAll("div");
