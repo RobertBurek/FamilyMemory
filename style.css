@@ -25,38 +25,49 @@ div {
 }
 
 .foto1 {
-    background-image: url(/img/dogs/puppy-1.jpg);
+    background-image: url(img/cats/kitty-1.jpg);
+    background-size: 100% 100%;
 }
 .foto2 {
-    background-image: url(/img/dogs/puppy-2.jpg);
+    background-image: url(img/cats/kitty-2.jpg);
+    background-size: 100% 100%;
 }
 .foto3 {
-    background-image: url(/img/dogs/puppy-3.jpg);
+    background-image: url(img/cats/kitty-3.jpg);
+    background-size: 100% 100%;
 }
 .foto4 {
-    background-image: url(/img/dogs/puppy-4.jpg);
+    background-image: url(img/cats/kitty-4.jpg);
+    background-size: 100% 100%;
 }
 .foto5 {
-    background-image: url(/img/dogs/puppy-5.jpg);
+    background-image: url(img/cats/kitty-5.jpg);
+    background-size: 100% 100%;
 }
 .foto6 {
-    background-image: url(/img/dogs/puppy-6.jpg);
+    background-image: url(img/cats/kitty-6.jpg);
+    background-size: 100% 100%;
 }
 .foto7 {
-    background-image: url(/img/dogs/puppy-7.jpg);
+    background-image: url(img/cats/kitty-7.jpg);
+    background-size: 100% 100%;
 }
 .foto8 {
-    background-image: url(/img/dogs/puppy-8.jpg);
+    background-image: url(img/cats/kitty-8.jpg);
+    background-size: 100% 100%;
 }
 .foto9 {
-    background-image: url(/img/dogs/puppy-9.jpg);
+    background-image: url(img/cats/kitty-9.jpg);
+    background-size: 100% 100%;
 }
 
 .hidden {
-    background-image: url(/img/cardBack.jpg);
+    background-image: url(img/cardBack-1.jpg);
+    background-size: 100% 100%;
     /* background-color: #333; */
 }
 .notHidden {
-    background-image: url(/img/success.jpg);
+    background-image: url(img/success-3.jpg);
+    background-size: 100% 100%;
     /* background-color: #aaa; */
 }
