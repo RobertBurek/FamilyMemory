@@ -8,6 +8,14 @@ const cardsButterfliesAll = ["butterflies/butterfly-1.jpg", "butterflies/butterf
 const cardsStyle = ["foto1", "foto2", "foto3", "foto4", "foto5", "foto6", "foto7", "foto8", "foto9"];
 let cardsGame =[];
 
+const startTimeGame = new Date().getTime();
+
+let activeCard = "";
+const activePairCards = [];
+
+const pairsGame = cardsGame.length / 2;
+let resultGame = 0;
+
 function randomCards(elments){
     // console.log(elments.length);
     for (var step = 0; step < 9; step++) {
@@ -54,5 +62,7 @@ const init = function() {
         })
     }, 2000);
 };
+
+console.log(cards);
 
 init();
