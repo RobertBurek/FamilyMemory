@@ -24,43 +24,6 @@ div {
     }
 }
 
-.foto1 {
-    background-image: url(img/cats/kitty-1.jpg);
-    background-size: 100% 100%;
-}
-.foto2 {
-    background-image: url(img/cats/kitty-2.jpg);
-    background-size: 100% 100%;
-}
-.foto3 {
-    background-image: url(img/cats/kitty-3.jpg);
-    background-size: 100% 100%;
-}
-.foto4 {
-    background-image: url(img/cats/kitty-4.jpg);
-    background-size: 100% 100%;
-}
-.foto5 {
-    background-image: url(img/cats/kitty-5.jpg);
-    background-size: 100% 100%;
-}
-.foto6 {
-    background-image: url(img/cats/kitty-6.jpg);
-    background-size: 100% 100%;
-}
-.foto7 {
-    background-image: url(img/cats/kitty-7.jpg);
-    background-size: 100% 100%;
-}
-.foto8 {
-    background-image: url(img/cats/kitty-8.jpg);
-    background-size: 100% 100%;
-}
-.foto9 {
-    background-image: url(img/cats/kitty-9.jpg);
-    background-size: 100% 100%;
-}
-
 .hidden {
     background-image: url(img/cardBack-1.jpg);
     background-size: 100% 100%;

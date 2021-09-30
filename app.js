@@ -1,11 +1,8 @@
-const cardsDogAll = ["dogs/puppy-1.jpg", "dogs/puppy-2.jpg", "dogs/puppy-3.jpg", "dogs/puppy-4.jpg", "dogs/puppy-5.jpg", "dogs/puppy-6.jpg", "dogs/puppy-7.jpg", "dogs/puppy-8.jpg", 
-                    "dogs/puppy-9.jpg", "dogs/puppy-10.jpg", "dogs/puppy-11.jpg", "dogs/puppy-12.jpg"];
-const cardsCatAll = ["cats/kitty-1.jpg", "cats/kitty-2.jpg", "cats/kitty-3.jpg", "cats/kitty-4.jpg", "cats/kitty-5.jpg", "cats/kitty-6.jpg", "cats/kitty-7.jpg", "cats/kitty-8.jpg",
-                    "cats/kitty-9.jpg", "cats/kitty-10.jpg", "cats/kitty-11.jpg", "cats/kitty-12.jpg", "cats/kitty-13.jpg", "cats/kitty-14.jpg"];
-const cardsButterfliesAll = ["butterflies/butterfly-1.jpg", "butterflies/butterfly-2.jpg", "butterflies/butterfly-3.jpg", "butterflies/butterfly-4.jpg", "butterflies/butterfly-5.jpg",
-                    "butterflies/butterfly-6.jpg", "butterflies/butterfly-7.jpg", "butterflies/butterfly-8.jpg", "butterflies/butterfly-9.jpg", "butterflies/butterfly-10.jpg", 
-                    "butterflies/butterfly-11.jpg", "butterflies/butterfly-12.jpg", "butterflies/butterfly-13.jpg", "butterflies/butterfly-14.jpg"];
-const cardsStyle = ["foto1", "foto2", "foto3", "foto4", "foto5", "foto6", "foto7", "foto8", "foto9"];
+const cardsDogAll = ["puppy1", "puppy2", "puppy3", "puppy4", "puppy5", "puppy6", "puppy7", "puppy8", "puppy9", "puppy10", "puppy11", "puppy12"];
+const cardsCatAll = ["kitty1", "kitty2", "kitty3", "kitty4", "kitty5", "kitty6", "kitty7", "kitty8","kitty9", "kitty10", "kitty11", "kitty12", "kitty13", "kitty14"];
+const cardsButterfliesAll = ["butterfly1", "butterfly2", "butterfly3", "butterfly4", "butterfly5","butterfly6", "butterfly7", "butterfly8", "butterfly9", "butterfly10", 
+                    "butterfly11", "butterfly12", "butterfly13", "butterfly14"];
+
 let cardsGame =[];
 
 const startTimeGame = new Date().getTime();
@@ -33,9 +30,7 @@ function randomCards(elments){
 // cardsGame =[];
 // randomCards(cardsCatAll);
 // console.log(cardsGame);
-// randomCards(cardsButterfliesAll);
-// console.log(cardsGame);
-randomCards(cardsStyle);
+randomCards(cardsButterfliesAll);
 console.log(cardsGame);
 
 let cards = document.querySelectorAll("div");
