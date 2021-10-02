@@ -61,7 +61,12 @@ const clickCard = function(){
                     activeCard.classList.add("hidden");
                 })
             }
-        }, 700);
+            activeCard = "";
+            activePairCards.length = 0; // = [];
+            cards.forEach(card => {
+                card.addEventListener("click", clickCard);
+            })
+        }, 600);
     }
 
 };
