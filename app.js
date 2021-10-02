@@ -38,7 +38,19 @@ let cards = document.querySelectorAll("div");
 cards = [...cards];
 
 const clickCard = function(){
-    console.log("kliknąłeś");
+    activeCard = this;
+    activeCard.classList.remove("hidden");
+    if (activePairCards.length === 0) {
+        activePairCards[0] = activeCard;
+        return;
+    } else {
+        cards.forEach(card => {
+            card.removeEventListener("click", clickCard);
+        })
+        activePairCards[1] = activeCard;
+        // console.log(activePairCards);
+    }
+
 };
 
 const init = function() {
