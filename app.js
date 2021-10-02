@@ -10,7 +10,6 @@ const startTimeGame = new Date().getTime();
 let activeCard = "";
 const activePairCards = [];
 
-const pairsGame = cardsGame.length / 2;
 let resultGame = 0;
 
 function randomCards(elments){
@@ -33,6 +32,7 @@ function randomCards(elments){
 const some = Math.floor(Math.random() * pictures.length);
 randomCards(pictures[some]);
 console.log(cardsGame);
+const pairsGame = cardsGame.length / 2;
 
 let cards = document.querySelectorAll("div");
 cards = [...cards];
@@ -55,6 +55,10 @@ const clickCard = function(){
                 activePairCards.forEach(activeCard => {
                     activeCard.classList.add("success");
                 })
+                resultGame++;
+                if (resultGame == pairsGame) {
+                    console.log("wygrane");
+                }
             } else {
                 // console.log("przegrana");
                 activePairCards.forEach(activeCard => {
