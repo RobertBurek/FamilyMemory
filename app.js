@@ -49,6 +49,19 @@ const clickCard = function(){
         })
         activePairCards[1] = activeCard;
         // console.log(activePairCards);
+        setTimeout(function(){
+            if (activePairCards[0].className === activePairCards[1].className) {
+                // console.log("wygrana");
+                activePairCards.forEach(activeCard => {
+                    activeCard.classList.add("success");
+                })
+            } else {
+                // console.log("przegrana");
+                activePairCards.forEach(activeCard => {
+                    activeCard.classList.add("hidden");
+                })
+            }
+        }, 700);
     }
 
 };
