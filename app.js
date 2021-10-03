@@ -2,7 +2,8 @@ const cardsDogAll = ["puppy1", "puppy2", "puppy3", "puppy4", "puppy5", "puppy6",
 const cardsCatAll = ["kitty1", "kitty2", "kitty3", "kitty4", "kitty5", "kitty6", "kitty7", "kitty8","kitty9", "kitty10", "kitty11", "kitty12", "kitty13", "kitty14"];
 const cardsButterfliesAll = ["butterfly1", "butterfly2", "butterfly3", "butterfly4", "butterfly5","butterfly6", "butterfly7", "butterfly8", "butterfly9", "butterfly10", 
                     "butterfly11", "butterfly12", "butterfly13", "butterfly14"];
-let pictures = [cardsDogAll, cardsCatAll, cardsButterfliesAll, cardsDogAll, cardsCatAll, cardsButterfliesAll, cardsDogAll, cardsCatAll];
+let pictures = [cardsDogAll, cardsCatAll, cardsButterfliesAll, cardsCatAll, cardsDogAll, cardsCatAll, cardsButterfliesAll, cardsDogAll, cardsCatAll];
+const cardBackAll = ["cardBack1", "cardBack2", "cardBack3", "cardBack4", "cardBack5", "cardBack6", "cardBack7", "cardBack8", "cardBack9", "cardBack10"];
 let cardsGame =[];
 
 const startTimeGame = new Date().getTime();
