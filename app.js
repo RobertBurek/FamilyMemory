@@ -39,6 +39,7 @@ cards = [...cards];
 
 const clickCard = function(){
     activeCard = this;
+    if (this == activePairCards[0]) return;
     activeCard.classList.remove("hidden");
     if (activePairCards.length === 0) {
         activePairCards[0] = activeCard;
