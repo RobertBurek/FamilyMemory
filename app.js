@@ -57,6 +57,7 @@ const clickCard = function(){
                     activeCard.classList.add("success");
                 })
                 resultGame++;
+                cards = cards.filter(card => !card.classList.contains("success"));
                 if (resultGame == pairsGame) {
                     const endTimeGame = new Date().getTime();
                     const timeGame = (endTimeGame - startTimeGame) / 1000;
