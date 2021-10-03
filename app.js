@@ -8,7 +8,7 @@ let cardsGame =[];
 const startTimeGame = new Date().getTime();
 
 let activeCard = "";
-const activePairCards = [];
+let activePairCards = [];
 
 let resultGame = 0;
 
@@ -57,7 +57,9 @@ const clickCard = function(){
                 })
                 resultGame++;
                 if (resultGame == pairsGame) {
-                    console.log("wygrane");
+                    const endTimeGame = new Date().getTime();
+                    const timeGame = (endTimeGame - startTimeGame) / 1000;
+                    console.log(`Wygrane w ${timeGame}s`);
                 }
             } else {
                 // console.log("przegrana");
@@ -66,7 +68,7 @@ const clickCard = function(){
                 })
             }
             activeCard = "";
-            activePairCards.length = 0; // = [];
+            activePairCards = [];
             cards.forEach(card => {
                 card.addEventListener("click", clickCard);
             })
