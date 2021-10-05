@@ -3,7 +3,9 @@ const cardsCatAll = ["kitty1", "kitty2", "kitty3", "kitty4", "kitty5", "kitty6",
 const cardsButterfliesAll = ["butterfly1", "butterfly2", "butterfly3", "butterfly4", "butterfly5","butterfly6", "butterfly7", "butterfly8", "butterfly9", "butterfly10", 
                     "butterfly11", "butterfly12", "butterfly13", "butterfly14"];
 let pictures = [cardsDogAll, cardsCatAll, cardsButterfliesAll, cardsCatAll, cardsDogAll, cardsCatAll, cardsButterfliesAll, cardsDogAll, cardsCatAll];
-const cardBackAll = ["cardBack1", "cardBack2", "cardBack3", "cardBack4", "cardBack5", "cardBack6", "cardBack7", "cardBack8", "cardBack9", "cardBack10"];
+const cardBackAll = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8", "hidden9", "hidden10"];
+const hiddenCardBack = cardBackAll[Math.floor(Math.random() * cardBackAll.length)];
+
 let cardsGame =[];
 
 const startTimeGame = new Date().getTime();
@@ -41,7 +43,7 @@ cards = [...cards];
 const clickCard = function(){
     activeCard = this;
     if (this == activePairCards[0]) return;
-    activeCard.classList.remove("hidden");
+    activeCard.classList.remove(hiddenCardBack);
     if (activePairCards.length === 0) {
         activePairCards[0] = activeCard;
         return;
@@ -70,7 +72,7 @@ const clickCard = function(){
             } else {
                 // console.log("przegrana");
                 activePairCards.forEach(activeCard => {
-                    activeCard.classList.add("hidden");
+                    activeCard.classList.add(hiddenCardBack);
                 })
             }
             activeCard = "";
@@ -95,7 +97,7 @@ const init = function() {
     });
     setTimeout(function(){
         cards.forEach(card => {
-            card.classList.add("hidden");
+            card.classList.add(hiddenCardBack);
             card.addEventListener("click", clickCard);
         })
     }, 2000);
