@@ -37,7 +37,7 @@ randomCards(pictures[some]);
 console.log(cardsGame);
 const pairsGame = cardsGame.length / 2;
 
-let cards = document.querySelectorAll("div");
+let cards = document.querySelectorAll("#container>div");
 cards = [...cards];
 
 const clickCard = function(){
