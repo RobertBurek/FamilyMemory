@@ -65,9 +65,10 @@ const clickCard = function(){
                     const endTimeGame = new Date().getTime();
                     const timeGame = (endTimeGame - startTimeGame) / 1000;
                     console.log(`Wygrane w ${timeGame}s`);
-                    setTimeout(function(){
-                        location.reload()
-                    },3000);
+                    location.href = "#infoWynik";
+                    // setTimeout(function(){
+                    //     location.reload()
+                    // },3000);
                 }
             } else {
                 // console.log("przegrana");
