@@ -65,6 +65,9 @@ const clickCard = function(){
                     const endTimeGame = new Date().getTime();
                     const timeGame = (endTimeGame - startTimeGame) / 1000;
                     console.log(`Wygrane w ${timeGame}s`);
+                    document.getElementById("contentInfo").innerHTML = 
+                    `<h3>Brawo !!! Twój wynik to ${timeGame}s.</h3>
+                    <h3> Jesteś w TOP10.</h3>`;
                     location.href = "#infoWynik";
                     // setTimeout(function(){
                     //     location.reload()
