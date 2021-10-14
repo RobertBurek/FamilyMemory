@@ -89,6 +89,11 @@ const clickCard = function(){
 
 };
 
+function reset(){
+    location.href = "#";
+    location.reload();
+}
+
 const init = function() {
     cards.forEach(function(card){
         const position = Math.floor(Math.random() * cardsGame.length);
