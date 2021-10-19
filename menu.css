@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu>div {
+    flex-basis: 40%;
+    flex-grow: 1;
+    height: 33.33vh;
+    background-color: black;
+    border: 14px solid white;
+
+
+
+}
