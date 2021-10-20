@@ -4,19 +4,36 @@
     box-sizing: border-box;
 }
 
+div.center {
+    width: 40%;
+    background: black;
+    color: white;
+    border-radius: 2em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+
 #menu {
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
+    border: 5px solid white;
+    border-radius: 1em;
 }
 
 #menu>div {
-    flex-basis: 40%;
+    flex-basis: 50%;
     flex-grow: 1;
-    height: 33.33vh;
+    height: 23.33vh;
     background-color: black;
     border: 14px solid white;
+}
 
-
-
+@media (orientation: portrait) {
+    div.center {
+        width: 50%;
+    }
 }
