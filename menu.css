@@ -32,8 +32,30 @@ div.center {
     border: 14px solid white;
 }
 
+.elements12 {
+    background-image: url(img/level/4na3.JPG);
+    background-size: 100% 100%;
+}
+.elements18 {
+    background-image: url(img/level/6na3.JPG);
+    background-size: 100% 100%;
+}
+.elements24 {
+    background-image: url(img/level/6na4.JPG);
+    background-size: 100% 100%;
+}
+
 @media (orientation: portrait) {
     div.center {
         width: 50%;
+    }
+    .elements12 {
+        background-image: url(img/level/3na4.JPG);
+    }
+    .elements18 {
+        background-image: url(img/level/3na6.JPG);
+    }
+    .elements24 {
+        background-image: url(img/level/4na6.JPG);
     }
 }
