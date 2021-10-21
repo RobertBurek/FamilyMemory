@@ -6,9 +6,7 @@
 
 div.center {
     width: 40%;
-    /* background: black; */
     background-color: white;
-    /* color: white; */
     border-radius: 2em;
     border: 15px solid black;
     padding: 1em;
@@ -22,7 +20,6 @@ div.center {
 #menu {
     display: flex;
     flex-wrap: wrap;
-    /* border: 5px solid white; */
     border-radius: 1em;
 }
 
@@ -30,12 +27,10 @@ div.center {
     flex-basis: 50%;
     flex-grow: 1;
     height: 23.33vh;
-    /* background-color: white; */
     border: 14px solid white;
 }
 
 #menu>div:hover {
-    /* background-color: white; */
     cursor: pointer;
     border: 10px solid red;
     border-radius: 1em;
