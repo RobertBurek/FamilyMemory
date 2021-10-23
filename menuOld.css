@@ -5,7 +5,7 @@
 }
 
 .center {
-    width: 30%;
+    width: 50%;
     background-color: white;
     border-radius: 2em;
     border: 15px solid black;
@@ -17,65 +17,57 @@
     transform: translate(-50%, -50%);
 }
 
-.centerLevel {
+#topLeft {
+    /* position: absolute; */
+    /* top: 0%; */
+    /* left: 110%; */
     width: 50%;
-}
-.centerLevelTop {
-    width: 80%;
-}
-.width50 {
-    width: 50%;
-}
-.width100 {
-    width: 100%;
-}
-
-#pictures {
-    /* width: 100%; */
-    float: left;
+    /* width: 0; */
+    float: right;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 1em;
-    /* border: 15px solid black; */
 }
-
-#pictures>div {
+#topLeft>div {
     flex-basis: 100%;
     flex-grow: 1;
     height: 23.33vh;
     border: 14px solid white;
-}
 
-#pictures>div:hover {
-    cursor: pointer;
-    border: 10px solid red;
-    border-radius: 1em;
-}
-
-#levels {
-    /* width: 50%; */
-    /* float: right; */
     display: flex;
     flex-wrap: wrap;
-    border-radius: 1em;
-    /* border: 15px solid black; */
+    padding-top: 1vh;
+    font-size: 3vh;
+    display:block;
 }
-
-#levels>div {
+#topLeft>div>p {
     flex-basis: 100%;
     flex-grow: 1;
-    height: 23.33vh;
-    border: 14px solid white;
-}
-
-#levels>div:hover {
-    cursor: pointer;
-    border: 10px solid red;
-    border-radius: 1em;
+    height: 5.33vh;
+    /* border: 14px solid white; */
 }
 
 .display {
     display: none;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    /* border: 15px solid black; */
+}
+
+#menu>div {
+    flex-basis: 50%;
+    flex-grow: 1;
+    height: 23.33vh;
+    border: 14px solid white;
+}
+
+#menu>div:hover {
+    cursor: pointer;
+    border: 10px solid red;
+    border-radius: 1em;
 }
 
 .elements12 {
@@ -89,4 +81,20 @@
 .elements24 {
     background-image: url(img/level/6na4.JPG);
     background-size: 100% 100%;
+}
+
+
+@media (orientation: portrait) {
+    div.center {
+        width: 50%;
+    }
+    .elements12 {
+        background-image: url(img/level/3na4.JPG);
+    }
+    .elements18 {
+        background-image: url(img/level/3na6.JPG);
+    }
+    .elements24 {
+        background-image: url(img/level/4na6.JPG);
+    }
 }

@@ -6,6 +6,7 @@ let el18 = document.getElementById("el18");
 let el24 = document.getElementById("el24");
 let divCenter = document.getElementById('center');
 let pictures = document.getElementById('pictures');
+let playerChoice = [];
 
 
 cat.addEventListener('click', function(event){
@@ -19,4 +20,6 @@ cat.addEventListener('click', function(event){
     divCenter.classList.toggle('centerLevel');
     pictures.classList.toggle('width100');
     pictures.classList.toggle('width50');
+    playerChoice[0] = "cardsCatAll";
+    location.href = "memoryPlay.html";
 });
