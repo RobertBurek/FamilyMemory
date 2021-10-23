@@ -5,8 +5,8 @@ let el12 = document.getElementById("el12");
 let el18 = document.getElementById("el18");
 let el24 = document.getElementById("el24");
 let divCenter = document.getElementById('center');
-let divMenu = document.getElementById('menu').children;
-console.log(divMenu);
+let pictures = document.getElementById('pictures');
+
 
 cat.addEventListener('click', function(event){
     console.log(event.target);
@@ -16,5 +16,7 @@ cat.addEventListener('click', function(event){
     el12.classList.toggle('display');
     el18.classList.toggle('display');
     el24.classList.toggle('display');
-    // divCenter.style.width= "30%";
+    divCenter.classList.toggle('centerLevel');
+    pictures.classList.toggle('width100');
+    pictures.classList.toggle('width50');
 });
