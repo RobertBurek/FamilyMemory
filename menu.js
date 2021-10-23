@@ -10,6 +10,8 @@ let level3 = document.getElementById("level3");
 let divCenter = document.getElementById("center");
 let pictures = document.getElementById("pictures");
 
+
+
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
 
@@ -38,6 +40,7 @@ for (let i = 0; i < listLevels.length; i++) {
 // console.log(listPictureClass);
 
 localStorage.clear();
+console.log(animal1);
 
 function chosenPlayer(chosen){
     listLevels.forEach(level => {
@@ -51,8 +54,10 @@ function chosenPlayer(chosen){
     animal2.classList.add(classChosen);
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.toggle(animalClasses[i]);
+        // listPictures[i].removeAttribute(":hover");
     }
     animal2.classList.add(classChosen);
+    divCenter.classList.toggle("center2");
 }
 
 

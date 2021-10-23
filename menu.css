@@ -17,6 +17,14 @@
     transform: translate(-50%, -50%);
 }
 
+.center2 {
+    padding: 1em;
+}
+
+.center2:hover {
+    border: 15px solid red;
+}
+
 .centerLevel {
     width: 50%;
 }
@@ -73,6 +81,12 @@
     border: 10px solid red;
     border-radius: 1em;
 }
+
+/* .viewHover:hover {
+    cursor: pointer;
+    border: 10px solid red;
+    border-radius: 1em;
+} */
 
 .display {
     display: none;
