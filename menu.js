@@ -30,7 +30,6 @@ console.log(localStorage);
 
 function chosenPlayer(chosen){
     console.log(localStorage.animal + " - localStorage.animal - początek chosenPlayer");
-    // var classChosen;// = chosen.target.className;
     listLevels.forEach(level => {
         level.classList.toggle('display');
     })
@@ -41,8 +40,6 @@ function chosenPlayer(chosen){
     pictures.classList.toggle('width100');
     pictures.classList.toggle('width50');
     const classChosen = chosen.target.className;
-    // let classChosen = chosen.target.className;
-    // animal2.classList.add(classChosen);
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     }
@@ -52,9 +49,7 @@ function chosenPlayer(chosen){
 
 function clearChosenPlayer(chosen){
     console.log(localStorage.animal + " - localStorage.animal - początek clearChosenPlayer");
-    // var classChosen;// = chosen.target.className;
     localStorage.clear();
-    // animal2.classList.remove(classChosen);
     animal2.classList.remove("blackFrame");
     const classChosen = chosen.target.className;
     animal2.classList.remove(classChosen);
@@ -74,7 +69,6 @@ function clearChosenPlayer(chosen){
 
 
 animal1.addEventListener('click', function(event){
-    // console.log(event.target);
     if (!localStorage.animal) {
         chosenPlayer(event);
         localStorage.setItem('animal', "cardsCatAll");
@@ -83,10 +77,6 @@ animal1.addEventListener('click', function(event){
         localStorage.clear();
     }
     console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
-    // chosenPlayer(event);
-    // localStorage.setItem('animal', "cardsCatAll");
-    // console.log(localStorage.animal);
-    // console.log(localStorage);
     // location.href = "memoryPlay.html";
 });
 
@@ -99,8 +89,6 @@ animal2.addEventListener('click', function(event){
         localStorage.clear();
     }
     console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
-    // console.log(localStorage.animal);
-    // console.log(localStorage);
     // location.href = "memoryPlay.html";
 });
 
@@ -113,10 +101,6 @@ animal3.addEventListener('click', function(event){
         localStorage.clear();
     }
     console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
-    // chosenPlayer(event);
-    // localStorage.setItem('animal', "cardsButterflyAll");
-    // console.log(localStorage.animal);
-    // console.log(localStorage);
     // location.href = "memoryPlay.html";
 });
 
