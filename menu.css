@@ -52,7 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
-    border: 10px solid white;
+    /* border: 10px solid white; */
 }
 
 #pictures>div {
@@ -75,7 +75,7 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
-    border: 10px solid white;
+    border-left: 15px solid white;
     /* border: 15px solid black; */
 }
 

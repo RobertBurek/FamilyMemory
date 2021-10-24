@@ -29,68 +29,92 @@ localStorage.clear();
 console.log(localStorage);
 
 function chosenPlayer(chosen){
-    console.log(localStorage);
-    var classChosen;// = chosen.target.className;
-    if (!localStorage.animal) {
-        listLevels.forEach(level => {
-            level.classList.toggle('display');
-        })
-        listPictures.forEach(picture => {
-            picture.classList.toggle('viewHover');
-        })
-        divCenter.classList.toggle('centerLevel');
-        pictures.classList.toggle('width100');
-        pictures.classList.toggle('width50');
-        classChosen = chosen.target.className;
-        // let classChosen = chosen.target.className;
-        // animal2.classList.add(classChosen);
-        for (let i = 0; i < listPictures.length; i++) {
-            listPictures[i].classList.remove(animalClasses[i]);
-        }
-        animal2.classList.add(classChosen);
-        animal2.classList.add("blackFrame");
-    } else {
-        localStorage.clear();
-        // animal2.classList.remove(classChosen);
-        animal2.classList.remove("blackFrame");
-        classChosen = chosen.target.className;
-        animal2.classList.remove(classChosen);
-        divCenter.classList.remove('centerLevel');
-        pictures.classList.toggle('width50');
-        pictures.classList.toggle('width100');
-        for (let i = 0; i < listPictures.length; i++) {
-            listPictures[i].classList.add(animalClasses[i]);
-        }
-        listLevels.forEach(level => {
-            level.classList.toggle('display');
-        })
-        listPictures.forEach(picture => {
-            picture.classList.toggle('viewHover');
-        })
+    console.log(localStorage.animal + " - localStorage.animal - początek chosenPlayer");
+    // var classChosen;// = chosen.target.className;
+    listLevels.forEach(level => {
+        level.classList.toggle('display');
+    })
+    listPictures.forEach(picture => {
+        picture.classList.toggle('viewHover');
+    })
+    divCenter.classList.toggle('centerLevel');
+    pictures.classList.toggle('width100');
+    pictures.classList.toggle('width50');
+    const classChosen = chosen.target.className;
+    // let classChosen = chosen.target.className;
+    // animal2.classList.add(classChosen);
+    for (let i = 0; i < listPictures.length; i++) {
+        listPictures[i].classList.remove(animalClasses[i]);
     }
+    animal2.classList.add(classChosen);
+    animal2.classList.add("blackFrame");
+}
+
+function clearChosenPlayer(chosen){
+    console.log(localStorage.animal + " - localStorage.animal - początek clearChosenPlayer");
+    // var classChosen;// = chosen.target.className;
+    localStorage.clear();
+    // animal2.classList.remove(classChosen);
+    animal2.classList.remove("blackFrame");
+    const classChosen = chosen.target.className;
+    animal2.classList.remove(classChosen);
+    divCenter.classList.remove('centerLevel');
+    pictures.classList.toggle('width50');
+    pictures.classList.toggle('width100');
+    for (let i = 0; i < listPictures.length; i++) {
+        listPictures[i].classList.add(animalClasses[i]);
+    }
+    listLevels.forEach(level => {
+        level.classList.toggle('display');
+    })
+    listPictures.forEach(picture => {
+        picture.classList.toggle('viewHover');
+    })
 }
 
 
 animal1.addEventListener('click', function(event){
     // console.log(event.target);
-    chosenPlayer(event);
-    localStorage.setItem('animal', "cardsCatAll");
+    if (!localStorage.animal) {
+        chosenPlayer(event);
+        localStorage.setItem('animal', "cardsCatAll");
+    } else {
+        clearChosenPlayer(event);
+        localStorage.clear();
+    }
+    console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
+    // chosenPlayer(event);
+    // localStorage.setItem('animal', "cardsCatAll");
     // console.log(localStorage.animal);
     // console.log(localStorage);
     // location.href = "memoryPlay.html";
 });
 
 animal2.addEventListener('click', function(event){
-    chosenPlayer(event);
-    localStorage.setItem('animal', "cardsDogAll");
+    if (!localStorage.animal) {
+        chosenPlayer(event);
+        localStorage.setItem('animal', "cardsDogAll");
+    } else {
+        clearChosenPlayer(event);
+        localStorage.clear();
+    }
+    console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
     // console.log(localStorage.animal);
     // console.log(localStorage);
     // location.href = "memoryPlay.html";
 });
 
 animal3.addEventListener('click', function(event){
-    chosenPlayer(event);
-    localStorage.setItem('animal', "cardsButterflyAll");
+    if (!localStorage.animal) {
+        chosenPlayer(event);
+        localStorage.setItem('animal', "cardsButterflyAll");
+    } else {
+        clearChosenPlayer(event);
+        localStorage.clear();
+    }
+    console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
+    // chosenPlayer(event);
+    // localStorage.setItem('animal', "cardsButterflyAll");
     // console.log(localStorage.animal);
     // console.log(localStorage);
     // location.href = "memoryPlay.html";
