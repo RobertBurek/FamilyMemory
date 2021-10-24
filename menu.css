@@ -17,12 +17,14 @@
     transform: translate(-50%, -50%);
 }
 
-.center2 {
+.viewHover {
     padding: 1em;
 }
 
-.center2:hover {
-    border: 15px solid red;
+.viewHover:hover {
+    cursor: pointer;
+    border: 10px solid red !important;
+    border-radius: 1em;
 }
 
 .centerLevel {
@@ -52,13 +54,14 @@
     flex-grow: 1;
     height: 23.33vh;
     border: 14px solid white;
+    /* border: 14px; */
 }
 
-#pictures>div:hover {
+/* #pictures>div:hover {
     cursor: pointer;
     border: 10px solid red;
     border-radius: 1em;
-}
+} */
 
 #levels {
     /* width: 50%; */
@@ -76,11 +79,11 @@
     border: 14px solid white;
 }
 
-#levels>div:hover {
+/* #levels>div:hover {
     cursor: pointer;
     border: 10px solid red;
     border-radius: 1em;
-}
+} */
 
 /* .viewHover:hover {
     cursor: pointer;

@@ -17,34 +17,23 @@ let listLevels = [level1, level2, level3];
 
 for (let i = 0; i < listPictures.length; i++) {
     listPictures[i].classList.add(animalClasses[i]);
+    listPictures[i].classList.add("viewHover");
 }
 
 for (let i = 0; i < listLevels.length; i++) {
     listLevels[i].classList.add(levelClasses[i]);
     listLevels[i].classList.add("display");
+    listLevels[i].classList.add("viewHover");
 }
 
-// listPictures.forEach(picture =>{
-    // listPictureClass.push(picture.className);
-// });
-// console.log(listPictureClass);
-
-// listLevels.forEach(levelClass =>{
-    // listLevelClass.push(levelClass.className);
-// });
-// console.log(listLevelClass);
-
-// listPictures.forEach(levelClass =>{
-    // listPictureClass.push(levelClass.className);
-// });
-// console.log(listPictureClass);
-
 localStorage.clear();
-console.log(animal1);
 
 function chosenPlayer(chosen){
     listLevels.forEach(level => {
         level.classList.toggle('display');
+    })
+    listPictures.forEach(picture => {
+        picture.classList.toggle('viewHover');
     })
     divCenter.classList.toggle('centerLevel');
     pictures.classList.toggle('width100');
@@ -54,7 +43,6 @@ function chosenPlayer(chosen){
     animal2.classList.add(classChosen);
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.toggle(animalClasses[i]);
-        // listPictures[i].removeAttribute(":hover");
     }
     animal2.classList.add(classChosen);
     divCenter.classList.toggle("center2");
