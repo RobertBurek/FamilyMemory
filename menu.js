@@ -1,4 +1,4 @@
-const animalClasses = ["kitty2", "puppy8", "butterfly10"];
+const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];
 
 let animal1 = document.getElementById("animal1");
@@ -9,7 +9,6 @@ let level2 = document.getElementById("level2");
 let level3 = document.getElementById("level3");
 let divCenter = document.getElementById("center");
 let pictures = document.getElementById("pictures");
-
 
 
 let listPictures = [animal1, animal2, animal3];
@@ -27,25 +26,48 @@ for (let i = 0; i < listLevels.length; i++) {
 }
 
 localStorage.clear();
+console.log(localStorage);
 
 function chosenPlayer(chosen){
-    listLevels.forEach(level => {
-        level.classList.toggle('display');
-    })
-    listPictures.forEach(picture => {
-        picture.classList.toggle('viewHover');
-    })
-    divCenter.classList.toggle('centerLevel');
-    pictures.classList.toggle('width100');
-    pictures.classList.toggle('width50');
-    let classChosen = chosen.target.className;
-    console.log(classChosen);
-    animal2.classList.add(classChosen);
-    for (let i = 0; i < listPictures.length; i++) {
-        listPictures[i].classList.toggle(animalClasses[i]);
+    console.log(localStorage);
+    var classChosen;// = chosen.target.className;
+    if (!localStorage.animal) {
+        listLevels.forEach(level => {
+            level.classList.toggle('display');
+        })
+        listPictures.forEach(picture => {
+            picture.classList.toggle('viewHover');
+        })
+        divCenter.classList.toggle('centerLevel');
+        pictures.classList.toggle('width100');
+        pictures.classList.toggle('width50');
+        classChosen = chosen.target.className;
+        // let classChosen = chosen.target.className;
+        // animal2.classList.add(classChosen);
+        for (let i = 0; i < listPictures.length; i++) {
+            listPictures[i].classList.remove(animalClasses[i]);
+        }
+        animal2.classList.add(classChosen);
+        animal2.classList.add("blackFrame");
+    } else {
+        localStorage.clear();
+        // animal2.classList.remove(classChosen);
+        animal2.classList.remove("blackFrame");
+        classChosen = chosen.target.className;
+        animal2.classList.remove(classChosen);
+        divCenter.classList.remove('centerLevel');
+        pictures.classList.toggle('width50');
+        pictures.classList.toggle('width100');
+        for (let i = 0; i < listPictures.length; i++) {
+            listPictures[i].classList.add(animalClasses[i]);
+        }
+        listLevels.forEach(level => {
+            level.classList.toggle('display');
+        })
+        listPictures.forEach(picture => {
+            picture.classList.toggle('viewHover');
+        })
     }
-    animal2.classList.add(classChosen);
-    divCenter.classList.toggle("center2");
 }
 
 
