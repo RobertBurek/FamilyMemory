@@ -59,28 +59,18 @@ animal1.addEventListener('click', function(event){
 });
 
 animal2.addEventListener('click', function(event){
-    level1.classList.toggle('display');
-    level2.classList.toggle('display');
-    level3.classList.toggle('display');
-    divCenter.classList.toggle('centerLevel');
-    pictures.classList.toggle('width100');
-    pictures.classList.toggle('width50');
+    chosenPlayer(event);
     localStorage.setItem('animal', "cardsDogAll");
-    console.log(localStorage.animal);
-    console.log(localStorage);
+    // console.log(localStorage.animal);
+    // console.log(localStorage);
     // location.href = "memoryPlay.html";
 });
 
 animal3.addEventListener('click', function(event){
-    level1.classList.toggle('display');
-    level2.classList.toggle('display');
-    level3.classList.toggle('display');
-    divCenter.classList.toggle('centerLevel');
-    pictures.classList.toggle('width100');
-    pictures.classList.toggle('width50');
+    chosenPlayer(event);
     localStorage.setItem('animal', "cardsButterflyAll");
-    console.log(localStorage.animal);
-    console.log(localStorage);
+    // console.log(localStorage.animal);
+    // console.log(localStorage);
     // location.href = "memoryPlay.html";
 });
 
