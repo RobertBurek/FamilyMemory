@@ -26,10 +26,10 @@ for (let i = 0; i < listLevels.length; i++) {
 }
 
 localStorage.clear();
-console.log(localStorage);
+// console.log(localStorage);
 
 function chosenPlayer(chosen){
-    console.log(localStorage.animal + " - localStorage.animal - początek chosenPlayer");
+    // console.log(localStorage.animal + " - localStorage.animal - początek chosenPlayer");
     listLevels.forEach(level => {
         level.classList.toggle('display');
     })
@@ -39,19 +39,21 @@ function chosenPlayer(chosen){
     divCenter.classList.toggle('centerLevel');
     pictures.classList.toggle('width100');
     pictures.classList.toggle('width50');
-    const classChosen = chosen.target.className;
+    const classChosen = chosen.className;
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     }
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
+    animal1.removeEventListener("click", clickAnimal1);
+    animal3.removeEventListener("click",clickAnimal3);
 }
 
 function clearChosenPlayer(chosen){
-    console.log(localStorage.animal + " - localStorage.animal - początek clearChosenPlayer");
+    // console.log(localStorage.animal + " - localStorage.animal - początek clearChosenPlayer");
     localStorage.clear();
     animal2.classList.remove("blackFrame");
-    const classChosen = chosen.target.className;
+    const classChosen = chosen.className;
     animal2.classList.remove(classChosen);
     divCenter.classList.remove('centerLevel');
     pictures.classList.toggle('width50');
@@ -65,44 +67,54 @@ function clearChosenPlayer(chosen){
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');
     })
+    animal1.addEventListener('click', clickAnimal1);
+    animal3.addEventListener('click', clickAnimal3);
 }
 
-
-animal1.addEventListener('click', function(event){
+let clickAnimal1 = function(){
     if (!localStorage.animal) {
-        chosenPlayer(event);
+        chosenPlayer(this);
         localStorage.setItem('animal', "cardsCatAll");
     } else {
-        clearChosenPlayer(event);
+        clearChosenPlayer(this);
         localStorage.clear();
     }
-    console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
+    // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
     // location.href = "memoryPlay.html";
-});
+}
 
-animal2.addEventListener('click', function(event){
+let clickAnimal2 = function(){
     if (!localStorage.animal) {
-        chosenPlayer(event);
+        chosenPlayer(this);
         localStorage.setItem('animal', "cardsDogAll");
     } else {
-        clearChosenPlayer(event);
+        clearChosenPlayer(this);
         localStorage.clear();
     }
-    console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
+    // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
     // location.href = "memoryPlay.html";
-});
+}
 
-animal3.addEventListener('click', function(event){
+let clickAnimal3 = function(){
     if (!localStorage.animal) {
-        chosenPlayer(event);
+        chosenPlayer(this);
         localStorage.setItem('animal', "cardsButterflyAll");
     } else {
-        clearChosenPlayer(event);
+        clearChosenPlayer(this);
         localStorage.clear();
     }
-    console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
+    // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
     // location.href = "memoryPlay.html";
-});
+}
+
+animal1.addEventListener('click', clickAnimal1);
+animal2.addEventListener('click', clickAnimal2);
+animal3.addEventListener('click', clickAnimal3);
+
+
+level1.addEventListener('click', function(){
+    console.log(localStorage.animal);
+})
 
 function playWithStorage(val1, val2) {
     localStorage.clear();
