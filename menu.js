@@ -1,5 +1,6 @@
 const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];
+const top3Classes = ["top3_1", "top3_2", "top3_3"];
 
 let animal1 = document.getElementById("animal1");
 let animal2 = document.getElementById("animal2");
@@ -7,22 +8,30 @@ let animal3 = document.getElementById("animal3");
 let level1 = document.getElementById("level1");
 let level2 = document.getElementById("level2");
 let level3 = document.getElementById("level3");
+let top3_1 = document.getElementById("top3_1");
+let top3_2 = document.getElementById("top3_2");
+let top3_3 = document.getElementById("top3_3");
 let divCenter = document.getElementById("center");
 let pictures = document.getElementById("pictures");
+let top3 = document.getElementById("top3");
 
 
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
-
+let listTop3 = [top3_1, top3_2, top3_3]
+ 
 for (let i = 0; i < listPictures.length; i++) {
     listPictures[i].classList.add(animalClasses[i]);
     listPictures[i].classList.add("viewHover");
 }
-
 for (let i = 0; i < listLevels.length; i++) {
     listLevels[i].classList.add(levelClasses[i]);
     listLevels[i].classList.add("display");
     listLevels[i].classList.add("viewHover");
+}
+for (let i = 0; i < listTop3.length; i++) {
+    listTop3[i].classList.add(top3Classes[i]);
+    listTop3[i].classList.add("display");
 }
 
 localStorage.clear();
@@ -43,6 +52,9 @@ function chosenPlayer(chosen){
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     }
+    listTop3.forEach((top3)=>{
+        top3.classList.remove("display");
+    })
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
@@ -63,6 +75,9 @@ function clearChosenPlayer(chosen){
     }
     listLevels.forEach(level => {
         level.classList.toggle('display');
+    })
+    listTop3.forEach((top3)=>{
+        top3.classList.add("display");
     })
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');

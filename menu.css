@@ -15,6 +15,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    display: flex;
 }
 
 .viewHover {
@@ -23,13 +24,13 @@
 
 .viewHover:hover {
     cursor: pointer;
-    border: 10px solid red !important;
+    border: 14px solid red !important;
     border-radius: 1em;
 }
 
 .blackFrame {
     cursor: pointer;
-    border: 10px solid black !important;
+    border: 14px solid black !important;
     border-radius: 1em;
 }
 
@@ -40,7 +41,10 @@
     width: 80%;
 }
 .width50 {
-    width: 50%;
+    width: 30%;
+}
+.width30 {
+    width: 33%;
 }
 .width100 {
     width: 100%;
@@ -72,10 +76,11 @@
 #levels {
     /* width: 50%; */
     /* float: right; */
+    float: left;
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
-    border-left: 15px solid white;
+    border-left: 14px solid white;
     /* border: 15px solid black; */
 }
 
@@ -84,6 +89,29 @@
     flex-grow: 1;
     height: 23.33vh;
     border: 14px solid white;
+}
+
+#top3 {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    border-left: 15px solid white;
+    /* font-size:  4vw; */
+    font-size: 2vmin;
+    width: 45%;
+}
+
+#top3>div {
+    flex-basis: 100%;
+    flex-grow: 1;
+    height: 23.33vh;
+    border: 14px solid white;
+    /* font-size: 10px; */
+    /* font-size: 4vmin; */
+}
+
+label {
+    font-size: 1.0em;
 }
 
 /* #levels>div:hover {
