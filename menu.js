@@ -42,21 +42,21 @@ function chosenPlayer(chosen){
     // console.log(localStorage.animal + " - localStorage.animal - początek chosenPlayer");
     listLevels.forEach(level => {
         level.classList.toggle('display');
-    })
+    });
     divLevels.classList.add('levels');
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');
-    })
+    });
     divCenter.classList.toggle('centerLevel');
     pictures.classList.toggle('width100');
     pictures.classList.toggle('width50');
     const classChosen = chosen.className;
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
-    }
+    };
     listTopResult.forEach((topResult)=>{
         topResult.classList.remove("display");
-    })
+    });
     divTopResult.classList.add('topResult');
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
@@ -75,16 +75,18 @@ function clearChosenPlayer(chosen){
     divPictures.classList.toggle('width100');
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.add(animalClasses[i]);
-    }
+    };
     listLevels.forEach(level => {
         level.classList.toggle('display');
-    })
+    });
+    divLevels.classList.remove('levels');
     listTopResult.forEach((topResult)=>{
         topResult.classList.add("display");
-    })
+    });
+    divTopResult.classList.remove('topResult');
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');
-    })
+    });
     animal1.addEventListener('click', clickAnimal1);
     animal3.addEventListener('click', clickAnimal3);
 }
