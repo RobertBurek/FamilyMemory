@@ -38,8 +38,8 @@ for (let i = 0; i < listTopResult.length; i++) {
 localStorage.clear();
 // console.log(localStorage);
 
-function chosenPlayer(chosen){
-    // console.log(localStorage.animal + " - localStorage.animal - początek chosenPlayer");
+function animalChosenPlayer(chosen){
+    // console.log(localStorage.animal + " - localStorage.animal - początek animalChosenPlayer");
     listLevels.forEach(level => {
         level.classList.toggle('display');
     });
@@ -64,8 +64,8 @@ function chosenPlayer(chosen){
     animal3.removeEventListener("click",clickAnimal3);
 }
 
-function clearChosenPlayer(chosen){
-    // console.log(localStorage.animal + " - localStorage.animal - początek clearChosenPlayer");
+function clearAnimalChosenPlayer(chosen){
+    // console.log(localStorage.animal + " - localStorage.animal - początek clearAnimalChosenPlayer");
     localStorage.clear();
     animal2.classList.remove("blackFrame");
     const classChosen = chosen.className;
@@ -93,10 +93,10 @@ function clearChosenPlayer(chosen){
 
 let clickAnimal1 = function(){
     if (!localStorage.animal) {
-        chosenPlayer(this);
+        animalChosenPlayer(this);
         localStorage.setItem('animal', "cardsCatAll");
     } else {
-        clearChosenPlayer(this);
+        clearAnimalChosenPlayer(this);
         localStorage.clear();
     }
     // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
@@ -105,10 +105,10 @@ let clickAnimal1 = function(){
 
 let clickAnimal2 = function(){
     if (!localStorage.animal) {
-        chosenPlayer(this);
+        animalChosenPlayer(this);
         localStorage.setItem('animal', "cardsDogAll");
     } else {
-        clearChosenPlayer(this);
+        clearAnimalChosenPlayer(this);
         localStorage.clear();
     }
     // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
@@ -117,10 +117,10 @@ let clickAnimal2 = function(){
 
 let clickAnimal3 = function(){
     if (!localStorage.animal) {
-        chosenPlayer(this);
+        animalChosenPlayer(this);
         localStorage.setItem('animal', "cardsButterflyAll");
     } else {
-        clearChosenPlayer(this);
+        clearAnimalAnimalChosenPlayer(this);
         localStorage.clear();
     }
     // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
@@ -131,10 +131,77 @@ animal1.addEventListener('click', clickAnimal1);
 animal2.addEventListener('click', clickAnimal2);
 animal3.addEventListener('click', clickAnimal3);
 
+function levelChosenPlayer(chosen){
+    console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
 
-level1.addEventListener('click', function(){
-    console.log(localStorage.animal);
-})
+    listLevels.forEach(level => {
+        level.classList.toggle('viewHover');
+    });
+    // divCenter.classList.toggle('centerLevel');
+    // pictures.classList.toggle('width100');
+    // pictures.classList.toggle('width50');
+    const classChosen = chosen.className;
+    for (let i = 0; i < listLevels.length; i++) {
+        listLevels[i].classList.remove(levelClasses[i]);
+    };
+    listTopResult.forEach((topResult)=>{
+        topResult.classList.add("display");
+    });
+    // divTopResult.classList.add('topResult');
+    level2.classList.add(classChosen);
+    level2.classList.add("blackFrame");
+    level1.removeEventListener("click", clickLevel1);
+    level3.removeEventListener("click",clickLevel3);
+}
+
+
+let clickLevel1 = function(){
+    if (!localStorage.level) {
+        levelChosenPlayer(this);
+        localStorage.setItem('level', "12");
+    } else {
+        clearLevelChosenPlayer(this);
+        var animalLocalStorage = localStorage.animal;
+        localStorage.clear();
+        localStorage.setItem('animal', animalLocalStorage);
+    }
+    console.log(localStorage.level + " - localStorage.level - po kliknięciu w level1");
+    // location.href = "memoryPlay.html";
+}
+
+let clickLevel2 = function(){
+    if (!localStorage.level) {
+        levelChosenPlayer(this);
+        localStorage.setItem('level', "18");
+    } else {
+        clearLevelChosenPlayer(this);
+        var animalLocalStorage = localStorage.animal;
+        localStorage.clear();
+        localStorage.setItem('animal', animalLocalStorage);
+    }
+    console.log(localStorage.level + " - localStorage.level - po kliknięciu w level2");
+    // location.href = "memoryPlay.html";
+}
+
+let clickLevel3 = function(){
+    if (!localStorage.level) {
+        levelChosenPlayer(this);
+        localStorage.setItem('level', "24");
+    } else {
+        clearLevelChosenPlayer(this);
+        var animalLocalStorage = localStorage.animal;
+        localStorage.clear();
+        localStorage.setItem('animal', animalLocalStorage);
+    }
+    console.log(localStorage.level + " - localStorage.level - po kliknięciu w level3");
+    // location.href = "memoryPlay.html";
+}
+
+
+level1.addEventListener('click', clickLevel1);
+level2.addEventListener('click', clickLevel2);
+level3.addEventListener('click', clickLevel3);
+
 
 function playWithStorage(val1, val2) {
     localStorage.clear();
