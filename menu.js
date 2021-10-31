@@ -41,15 +41,15 @@ localStorage.clear();
 function animalChosenPlayer(chosen){
     // console.log(localStorage.animal + " - localStorage.animal - początek animalChosenPlayer");
     listLevels.forEach(level => {
-        level.classList.toggle('display');
+        level.classList.remove('display');
     });
     divLevels.classList.add('levels');
     listPictures.forEach(picture => {
-        picture.classList.toggle('viewHover');
+        picture.classList.remove('viewHover');
     });
-    divCenter.classList.toggle('centerLevel');
-    pictures.classList.toggle('width100');
-    pictures.classList.toggle('width50');
+    divCenter.classList.add('centerLevel');
+    pictures.classList.remove('width100');
+    pictures.classList.add('width50');
     const classChosen = chosen.className;
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
@@ -62,24 +62,31 @@ function animalChosenPlayer(chosen){
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
     animal3.removeEventListener("click",clickAnimal3);
+    setTimeout(function(){
+        if (localStorage.animal && localStorage.level) {
+        localStorage.setItem('run',"animalChosenPlayer()");
+        console.log("jestem w animalChosenPlayer()");
+        // location.href = "memoryPlay.html";
+        }
+    },3000);
 }
 
 function clearAnimalChosenPlayer(chosen){
     // console.log(localStorage.animal + " - localStorage.animal - początek clearAnimalChosenPlayer");
-    localStorage.clear();
+    // localStorage.clear();
     animal2.classList.remove("blackFrame");
     const classChosen = chosen.className;
     animal2.classList.remove(classChosen); // nie ma żadnych klasCSS na wszystkich animals
-    divCenter.classList.remove('centerLevel');
-    divPictures.classList.toggle('width50');
-    divPictures.classList.toggle('width100');
+    // divCenter.classList.remove('centerLevel');
+    // divPictures.classList.toggle('width50');
+    // divPictures.classList.toggle('width100');
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.add(animalClasses[i]);
     };
-    listLevels.forEach(level => {
-        level.classList.toggle('display');
-    });
-    divLevels.classList.remove('levels');
+    // listLevels.forEach(level => {
+    //     level.classList.toggle('display');
+    // });
+    // divLevels.classList.remove('levels');
     listTopResult.forEach((topResult)=>{
         topResult.classList.add("display");
     });
@@ -110,7 +117,7 @@ let clickAnimal2 = function(){
         animalChosenPlayer(this);
         localStorage.setItem('animal', "cardsDogAll");
     } else {
-        localStorage.clear('animal');
+        localStorage.setItem('animal', "");
         clearAnimalChosenPlayer(this);
         // localStorage.clear();
     }
@@ -167,9 +174,12 @@ function levelChosenPlayer(chosen){
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
     setTimeout(function(){
-        if (localStorage.animal&&localStorage.level)
-        location.href = "memoryPlay.html";
-    },15000);
+        if (localStorage.animal && localStorage.level) {
+        localStorage.setItem('run',"levelChosenPlayer()");
+        console.log("jestem w levelChosenPlayer()");
+        // location.href = "memoryPlay.html";
+        }
+    },3000);
 }
 
 
@@ -177,12 +187,13 @@ let clickLevel1 = function(){
     if (!localStorage.level) {
         levelChosenPlayer(this);
         localStorage.setItem('level', "12");
-    } else {
-        clearLevelChosenPlayer(this);
-        var animalLocalStorage = localStorage.animal;
-        localStorage.clear();
-        localStorage.setItem('animal', animalLocalStorage);
-    }
+    } 
+    // else {
+        // clearLevelChosenPlayer(this);
+        // var animalLocalStorage = localStorage.animal;
+        // localStorage.clear();
+        // localStorage.setItem('animal', animalLocalStorage);
+    // }
     // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level1");
     // location.href = "memoryPlay.html";
 }
@@ -192,10 +203,10 @@ let clickLevel2 = function(){
         levelChosenPlayer(this);
         localStorage.setItem('level', "18");
     } else {
+        localStorage.setItem('level', "");
         clearLevelChosenPlayer(this);
-        var animalLocalStorage = localStorage.animal;
-        localStorage.clear();
-        localStorage.setItem('animal', animalLocalStorage);
+        // var animalLocalStorage = localStorage.animal;
+        // localStorage.setItem('animal', animalLocalStorage);
     }
     // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level2");
     // location.href = "memoryPlay.html";
@@ -205,12 +216,13 @@ let clickLevel3 = function(){
     if (!localStorage.level) {
         levelChosenPlayer(this);
         localStorage.setItem('level', "24");
-    } else {
-        clearLevelChosenPlayer(this);
-        var animalLocalStorage = localStorage.animal;
-        localStorage.clear();
-        localStorage.setItem('animal', animalLocalStorage);
-    }
+    } 
+    // else {
+        // clearLevelChosenPlayer(this);
+        // var animalLocalStorage = localStorage.animal;
+        // localStorage.clear();
+        // localStorage.setItem('animal', animalLocalStorage);
+    // }
     // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level3");
     // location.href = "memoryPlay.html";
 }
