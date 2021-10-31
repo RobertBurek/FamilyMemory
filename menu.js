@@ -14,7 +14,7 @@ let topResult_3 = document.getElementById("topResult_3");
 let divCenter = document.getElementById("center");
 let divPictures = document.getElementById("pictures");
 let divLevels = document.getElementById("levels");
-let divTopResult = document.getElementById("topResult");
+let divTopResults = document.getElementById("topResults");
 
 
 let listPictures = [animal1, animal2, animal3];
@@ -57,7 +57,7 @@ function animalChosenPlayer(chosen){
     listTopResult.forEach((topResult)=>{
         topResult.classList.remove("display");
     });
-    divTopResult.classList.add('topResult');
+    divTopResults.classList.add('topResult');
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
@@ -83,7 +83,7 @@ function clearAnimalChosenPlayer(chosen){
     listTopResult.forEach((topResult)=>{
         topResult.classList.add("display");
     });
-    divTopResult.classList.remove('topResult');
+    divTopResults.classList.remove('topResult');
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');
     });
@@ -132,22 +132,31 @@ animal2.addEventListener('click', clickAnimal2);
 animal3.addEventListener('click', clickAnimal3);
 
 function levelChosenPlayer(chosen){
-    console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
+    // console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
 
     listLevels.forEach(level => {
-        level.classList.toggle('viewHover');
+        level.classList.toggle("viewHover");
     });
     // divCenter.classList.toggle('centerLevel');
     // pictures.classList.toggle('width100');
     // pictures.classList.toggle('width50');
     const classChosen = chosen.className;
+    // for (let i = 0; i < listLevels.length; i++) {
+    //     listLevels[i].classList.remove(levelClasses[i]);
+    // };
+    listTopResult.forEach((topResult)=>{
+        if (topResult.className!=chosen) {
+            topResult.classList.add("display");
+        }
+    });
     for (let i = 0; i < listLevels.length; i++) {
         listLevels[i].classList.remove(levelClasses[i]);
+        if (listLevels[i]==chosen) { 
+            listTopResult[i].classList.remove("display");
+            listTopResult[i].classList.add("marginTopResult");
+        }
     };
-    listTopResult.forEach((topResult)=>{
-        topResult.classList.add("display");
-    });
-    // divTopResult.classList.add('topResult');
+    divTopResults.classList.add('marginTopResult');
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
     level1.removeEventListener("click", clickLevel1);
@@ -165,7 +174,7 @@ let clickLevel1 = function(){
         localStorage.clear();
         localStorage.setItem('animal', animalLocalStorage);
     }
-    console.log(localStorage.level + " - localStorage.level - po kliknięciu w level1");
+    // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level1");
     // location.href = "memoryPlay.html";
 }
 
@@ -179,7 +188,7 @@ let clickLevel2 = function(){
         localStorage.clear();
         localStorage.setItem('animal', animalLocalStorage);
     }
-    console.log(localStorage.level + " - localStorage.level - po kliknięciu w level2");
+    // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level2");
     // location.href = "memoryPlay.html";
 }
 
@@ -193,7 +202,7 @@ let clickLevel3 = function(){
         localStorage.clear();
         localStorage.setItem('animal', animalLocalStorage);
     }
-    console.log(localStorage.level + " - localStorage.level - po kliknięciu w level3");
+    // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level3");
     // location.href = "memoryPlay.html";
 }
 

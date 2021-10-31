@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/* .zero {
+    height: 0;
+    width: 0;
+    border: 0;
+    padding: 0;
+} */
+
 .center {
     width: 30%;
     background-color: white;
@@ -95,7 +102,7 @@
     border: 2vh solid white;
 }
 
-#topResult {
+#topResults {
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
@@ -111,7 +118,7 @@
     border-left: 5px solid white;
 }
 
-#topResult>div {
+#topResults>div {
     flex-basis: 100%;
     flex-grow: 1;
     height: 20vh;
@@ -127,12 +134,28 @@
     margin-right: 1%;
     /* padding: 2px;            */
     /* width: 300px;            */
-    vertical-align: top;
+    /* vertical-align: top; */
     overflow: hidden;
 }
 
-label {
+.marginTopResult {
+    margin-top: 21vh;
+    min-height: 50vh;
+}
+
+/* label {
     font-size: 1.8em;
+} */
+
+.game {
+    /* position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; */
+    position: absolute;
+    top: 35%;
+    width: 48vh;
 }
 
 div.cos {
@@ -162,14 +185,15 @@ div.name {
     text-overflow: ellipsis; 
     /* border: 1px solid #000000; */
     font-size: 1.2em;
-}     
-div.result {           
-    display: inline-block;        
+}
+
+div.result {
+    display: inline-block;
     width: 33%;
     text-align: end;
     overflow: hidden;
     font-size: 1.2em;
-}     
+}
 
 /* #levels>div:hover {
     cursor: pointer;
