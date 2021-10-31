@@ -162,6 +162,9 @@ function levelChosenPlayer(chosen){
     // level2.classList.add("game");
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
+    setTimeout(function(){
+        location.href = "memoryPlay.html";
+    },415000);
 }
 
 
