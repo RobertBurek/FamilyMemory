@@ -142,6 +142,9 @@ animal1.addEventListener('click', clickAnimal1);
 animal2.addEventListener('click', clickAnimal2);
 animal3.addEventListener('click', clickAnimal3);
 
+
+
+
 function levelChosenPlayer(chosen){
     // console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
 
