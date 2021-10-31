@@ -135,7 +135,7 @@ function levelChosenPlayer(chosen){
     // console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
 
     listLevels.forEach(level => {
-        level.classList.toggle("viewHover");
+        level.classList.remove("viewHover");
     });
     // divCenter.classList.toggle('centerLevel');
     // pictures.classList.toggle('width100');
@@ -159,6 +159,7 @@ function levelChosenPlayer(chosen){
     divTopResults.classList.add('marginTopResult');
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
+    // level2.classList.add("game");
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
 }
