@@ -102,7 +102,7 @@
     border: 2vh solid white;
 }
 
-#topResults {
+#results {
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
@@ -113,12 +113,12 @@
     /* width: 55%; */
 }
 
-.topResult {
+.results {
     width: 40%;
     border-left: 5px solid white;
 }
 
-#topResults>div {
+#results>div {
     flex-basis: 100%;
     flex-grow: 1;
     height: 20vh;
@@ -138,7 +138,7 @@
     overflow: hidden;
 }
 
-.marginTopResult {
+.marginResult {
     margin-top: 21vh;
     min-height: 25vh;
 }

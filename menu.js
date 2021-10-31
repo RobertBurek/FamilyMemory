@@ -1,6 +1,6 @@
 const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];
-const topResultClasses = ["topResult_1", "topResult_2", "topResult_3"];
+const resultClasses = ["result_1", "result_2", "result_3"];
 
 let animal1 = document.getElementById("animal1");
 let animal2 = document.getElementById("animal2");
@@ -8,18 +8,18 @@ let animal3 = document.getElementById("animal3");
 let level1 = document.getElementById("level1");
 let level2 = document.getElementById("level2");
 let level3 = document.getElementById("level3");
-let topResult_1 = document.getElementById("topResult_1");
-let topResult_2 = document.getElementById("topResult_2");
-let topResult_3 = document.getElementById("topResult_3");
+let result_1 = document.getElementById("result_1");
+let result_2 = document.getElementById("result_2");
+let result_3 = document.getElementById("result_3");
 let divCenter = document.getElementById("center");
 let divPictures = document.getElementById("pictures");
 let divLevels = document.getElementById("levels");
-let divTopResults = document.getElementById("topResults");
+let divResults = document.getElementById("results");
 
 
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
-let listTopResult = [topResult_1, topResult_2, topResult_3];
+let listResults = [result_1, result_2, result_3];
  
 for (let i = 0; i < listPictures.length; i++) {
     listPictures[i].classList.add(animalClasses[i]);
@@ -30,9 +30,9 @@ for (let i = 0; i < listLevels.length; i++) {
     listLevels[i].classList.add("display");
     listLevels[i].classList.add("viewHover");
 }
-for (let i = 0; i < listTopResult.length; i++) {
-    listTopResult[i].classList.add(topResultClasses[i]);
-    listTopResult[i].classList.add("display");
+for (let i = 0; i < listResults.length; i++) {
+    listResults[i].classList.add(resultClasses[i]);
+    listResults[i].classList.add("display");
 }
 
 localStorage.clear();
@@ -54,10 +54,10 @@ function animalChosenPlayer(chosen){
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     };
-    listTopResult.forEach((topResult)=>{
-        topResult.classList.remove("display");
+    listResults.forEach((result)=>{
+        result.classList.remove("display");
     });
-    divTopResults.classList.add('topResult');
+    divResults.classList.add('results');
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
@@ -87,10 +87,10 @@ function clearAnimalChosenPlayer(chosen){
     //     level.classList.toggle('display');
     // });
     // divLevels.classList.remove('levels');
-    listTopResult.forEach((topResult)=>{
-        topResult.classList.add("display");
+    listResults.forEach((result)=>{
+        result.classList.add("display");
     });
-    divTopResults.classList.remove('topResult');
+    divResults.classList.remove('result');
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');
     });
@@ -158,19 +158,19 @@ function levelChosenPlayer(chosen){
     // for (let i = 0; i < listLevels.length; i++) {
     //     listLevels[i].classList.remove(levelClasses[i]);
     // };
-    listTopResult.forEach((topResult)=>{
-        if (topResult.className!=chosen) {
-            topResult.classList.add("display");
+    listResults.forEach((result)=>{
+        if (result.className!=chosen) {
+            result.classList.add("display");
         }
     });
     for (let i = 0; i < listLevels.length; i++) {
         listLevels[i].classList.remove(levelClasses[i]);
         if (listLevels[i]==chosen) { 
-            listTopResult[i].classList.remove("display");
-            listTopResult[i].classList.add("marginTopResult");
+            listResults[i].classList.remove("display");
+            listResults[i].classList.add("marginResult");
         }
     };
-    divTopResults.classList.add('marginTopResult');
+    divResults.classList.add('marginResult');
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
     // level2.classList.add("game");
