@@ -43,13 +43,13 @@ function animalChosenPlayer(chosen){
     listLevels.forEach(level => {
         level.classList.remove('display');
     });
-    divLevels.classList.add('levels');
+    divLevels.classList.add('levelsPicturesResults');
     listPictures.forEach(picture => {
         picture.classList.remove('viewHover');
     });
-    divCenter.classList.add('centerLevel');
-    pictures.classList.remove('width100');
-    pictures.classList.add('width50');
+    divCenter.classList.add('centerLevelsResults');
+    pictures.classList.remove('pictures');
+    pictures.classList.add('picturesLevelsResults');
     const classChosen = chosen.className;
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);

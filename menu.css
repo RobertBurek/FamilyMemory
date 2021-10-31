@@ -44,16 +44,16 @@
 .centerLevel {
     width: 50%;
 }
-.centerLevelTop {
-    width: 80%;
+.centerLevelsResults {
+    width: 50%;
 }
-.width50 {
+.picturesLevelsResults {
     width: 38%;
 }
 .width30 {
     width: 33%;
 }
-.width100 {
+.pictures {
     width: 100%;
 }
 
@@ -90,7 +90,7 @@
     /* border: 15px solid black; */
 }
 
-.levels {
+.levelsPicturesResults {
     width: 38%;
     border-left: 2vh solid white;
 }
