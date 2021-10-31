@@ -69,7 +69,7 @@ function clearAnimalChosenPlayer(chosen){
     localStorage.clear();
     animal2.classList.remove("blackFrame");
     const classChosen = chosen.className;
-    animal2.classList.remove(classChosen);
+    animal2.classList.remove(classChosen); // nie ma żadnych klasCSS na wszystkich animals
     divCenter.classList.remove('centerLevel');
     divPictures.classList.toggle('width50');
     divPictures.classList.toggle('width100');
@@ -95,10 +95,12 @@ let clickAnimal1 = function(){
     if (!localStorage.animal) {
         animalChosenPlayer(this);
         localStorage.setItem('animal', "cardsCatAll");
-    } else {
-        clearAnimalChosenPlayer(this);
-        localStorage.clear();
-    }
+    } 
+    // else {
+        // localStorage.clear('animal');
+        // clearAnimalChosenPlayer(this);
+        // localStorage.clear();
+    // }
     // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
     // location.href = "memoryPlay.html";
 }
@@ -108,8 +110,9 @@ let clickAnimal2 = function(){
         animalChosenPlayer(this);
         localStorage.setItem('animal', "cardsDogAll");
     } else {
+        localStorage.clear('animal');
         clearAnimalChosenPlayer(this);
-        localStorage.clear();
+        // localStorage.clear();
     }
     // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
     // location.href = "memoryPlay.html";
@@ -119,10 +122,11 @@ let clickAnimal3 = function(){
     if (!localStorage.animal) {
         animalChosenPlayer(this);
         localStorage.setItem('animal', "cardsButterflyAll");
-    } else {
-        clearAnimalAnimalChosenPlayer(this);
-        localStorage.clear();
-    }
+    } 
+    // else {
+        // clearAnimalAnimalChosenPlayer(this);
+        // localStorage.clear();
+    // }
     // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
     // location.href = "memoryPlay.html";
 }
@@ -163,8 +167,9 @@ function levelChosenPlayer(chosen){
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
     setTimeout(function(){
+        if (localStorage.animal&&localStorage.level)
         location.href = "memoryPlay.html";
-    },415000);
+    },15000);
 }
 
 
