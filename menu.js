@@ -90,7 +90,14 @@ function clearAnimalChosenPlayer(chosen){
     listResults.forEach((result)=>{
         result.classList.add("display");
     });
-    divResults.classList.remove('result');
+    divResults.classList.remove('results');
+    if (!localStorage.level) {
+        // divCenter.classList.add("centerPicturesLevels");
+        divPictures.classList.remove("picturesLevelsResults");
+        divPictures.classList.add("centerLevel");
+        divLevels.classList.remove("levelsPicturesResults");
+        divLevels.classList.add("centerLevel");
+    }
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');
     });
