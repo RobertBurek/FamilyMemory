@@ -52,23 +52,44 @@ localStorage.clear();
 function animalChosenPlayer(chosen){
     // console.log(localStorage.animal + " - localStorage.animal - początek animalChosenPlayer");
     listLevels.forEach(level => {
-        level.classList.remove('display');
+        level.classList.remove("display");
     });
-    divLevels.classList.add('levelsPicturesResults');
+    divLevels.classList.add("width3Elements");
+    divLevels.classList.add("borderLeft");
     listPictures.forEach(picture => {
-        picture.classList.remove('viewHover');
+        picture.classList.remove("viewHover");
     });
-    divCenter.classList.add('centerLevelsResults');
-    pictures.classList.remove('pictures');
-    pictures.classList.add('picturesLevelsResults');
+    divCenter.classList.add("widthCenter3Elements");
+    pictures.classList.remove("widht1Element");
+    pictures.classList.add("width3Elements");
     const classChosen = chosen.className;
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     };
-    listResultsRight.forEach((result)=>{
-        result.classList.remove("display");
-    });
-    divResultsRight.classList.add('resultsRight');
+    if (localStorage.level) {
+        listResultsRight.forEach((result)=>{
+            if (result.className.replace("marginResult")) {
+                result.classList.remove("display");
+                console.log(result.className.replace("marginResult"));
+            }
+        })
+        divCenter.classList.remove("widthCenter3Elements");
+        divCenter.classList.add("width2Elements");
+        divResultsRight.classList.remove("width3Elements");
+        divResultsRight.classList.remove("borderLeft");
+        divResultsRight.classList.remove("marginResult");
+        divPictures.classList.remove("width3Elements");
+        divPictures.classList.add("width2Elements");
+        divLevels.classList.remove("width3Elements");
+        divLevels.classList.add("width2Elements");
+    } else {
+        listResultsRight.forEach((result)=>{
+            result.classList.remove("display");
+        });
+        divResultsRight.classList.add("width3Elements");
+        divResultsRight.classList.add("borderLeft");
+    }
+
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
@@ -76,7 +97,7 @@ function animalChosenPlayer(chosen){
     setTimeout(function(){
         if (localStorage.animal && localStorage.level) {
         localStorage.setItem('run',"animalChosenPlayer()");
-        console.log("jestem w animalChosenPlayer()");
+        // console.log("jestem w animalChosenPlayer()");
         // location.href = "memoryPlay.html";
         }
     },3000);
@@ -101,13 +122,28 @@ function clearAnimalChosenPlayer(chosen){
     listResultsRight.forEach((result)=>{
         result.classList.add("display");
     });
-    divResultsRight.classList.remove('resultsRight');
+    // divResultsRight.classList.remove('resultsRight');
     if (!localStorage.level) {
-        // divCenter.classList.add("centerPicturesLevels");
-        divPictures.classList.remove("picturesLevelsResults");
-        divPictures.classList.add("centerLevel");
-        divLevels.classList.remove("levelsPicturesResults");
-        divLevels.classList.add("centerLevel");
+        divResultsRight.classList.remove("resultsRight");
+        divResultsRight.classList.remove("width3Elements");
+        divResultsRight.classList.remove("borderLeft");
+        divCenter.classList.remove("widthCenter3Elements");
+        divCenter.classList.add("width2Elements");
+        divPictures.classList.remove("width3Elements");
+        divPictures.classList.add("width2Elements");
+        divLevels.classList.remove("borderLeft");
+        divLevels.classList.remove("width3Elements");
+        divLevels.classList.add("width2Elements");
+    } else {
+        divCenter.classList.remove("widthCenter3Elements");
+        divCenter.classList.add("width2Elements");
+        divResultsRight.classList.remove("width3Elements");
+        divResultsRight.classList.remove("borderLeft");
+        divResultsRight.classList.remove("marginResult");
+        divPictures.classList.remove("width3Elements");
+        divPictures.classList.add("width2Elements");
+        divLevels.classList.remove("width3Elements");
+        divLevels.classList.add("width2Elements");
     }
     listPictures.forEach(picture => {
         picture.classList.toggle('viewHover');
@@ -189,6 +225,7 @@ function levelChosenPlayer(chosen){
         }
     };
     divResultsRight.classList.add('marginResult');
+
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
     // level2.classList.add("game");
@@ -197,7 +234,7 @@ function levelChosenPlayer(chosen){
     setTimeout(function(){
         if (localStorage.animal && localStorage.level) {
         localStorage.setItem('run',"levelChosenPlayer()");
-        console.log("jestem w levelChosenPlayer()");
+        // console.log("jestem w levelChosenPlayer()");
         // location.href = "memoryPlay.html";
         }
     },3000);

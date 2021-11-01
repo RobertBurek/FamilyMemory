@@ -57,7 +57,7 @@
 .width30 {
     width: 33%;
 }
-.pictures {
+.widht1Element {
     width: 100%;
 }
 .levelsPicturesResults {
@@ -76,7 +76,7 @@
 .width3Elements {
     width: 38%;
 }
-.BorderLeft{
+.borderLeft,.borderRight{
     border-left: 2vh solid white;
 }
 
