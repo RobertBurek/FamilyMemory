@@ -447,7 +447,7 @@ function animalChosenPlayer(chosen){
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     };
-    console.log(localStorage);
+    // console.log(localStorage);
     for (let i = 0; i < listResultsRight.length; i++) {
         if (localStorage.animal === "cardsCatAll")
         listResultsRight[i].innerHTML = catResults[i];
@@ -458,9 +458,9 @@ function animalChosenPlayer(chosen){
     }
     if (localStorage.level) {
         listResultsRight.forEach((result)=>{
-            if (result.className.replace("marginResult")) {
+            if (result.className.search("marginResult") > 0) {
                 result.classList.remove("display");
-                console.log(result.className.replace("marginResult"));
+                console.log(result.className);
             }
         })
         divCenter.classList.remove("widthCenter3Elements");
