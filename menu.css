@@ -15,7 +15,8 @@
     width: 30%;
     background-color: white;
     border-radius: 2em;
-    border: 15px solid black;
+    /* border: 15px solid black; */
+    border: 2vh solid black;
     padding: 1em;
     position: absolute;
     top: 50%;
@@ -59,6 +60,25 @@
 .pictures {
     width: 100%;
 }
+.levelsPicturesResults {
+    width: 38%;
+    border-left: 2vh solid white;
+}
+.widthCenter2Elements {
+    width: 40%;
+}
+.width2Elements {
+    width: 50%;
+}
+.widthCenter3Elements {
+    width: 50%;
+}
+.width3Elements {
+    width: 38%;
+}
+.BorderLeft{
+    border-left: 2vh solid white;
+}
 
 #pictures {
     /* width: 100%; */
@@ -66,7 +86,7 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
-    /* border: 10px solid white; */
+    /* border: 1.8vh solid white; */
 }
 
 #pictures>div {
@@ -78,7 +98,7 @@
 
 /* #pictures>div:hover {
     cursor: pointer;
-    border: 10px solid red;
+    border: 1.8vh solid red;
     border-radius: 1em;
 } */
 
@@ -90,13 +110,10 @@
     flex-wrap: wrap;
     border-radius: 1em;
     /* border-left: 2vh solid white; */
-    /* border: 15px solid black; */
+    /* border: 2vh solid black; */
 }
 
-.levelsPicturesResults {
-    width: 38%;
-    border-left: 2vh solid white;
-}
+
 
 #levels>div {
     flex-basis: 100%;
@@ -112,20 +129,20 @@
     /* font-size:  4vw; */
     /* font-size: 2vmin; */
 
-    /* border-left: 5px solid white; */
+    /* border-left: 0.5vh solid white; */
     /* width: 55%; */
 }
 
 .results {
     width: 40%;
-    border-left: 5px solid white;
+    border-left: 0.8vh solid white;
 }
 
 #results>div {
     flex-basis: 100%;
     flex-grow: 1;
     height: 20vh;
-    border: 4px solid white;
+    border: 0.8vh solid white;
     /* font-size: 10px; */
     font-size: 0.8vw;
 
