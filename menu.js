@@ -1,6 +1,7 @@
 const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];
-const resultClasses = ["result_1", "result_2", "result_3"];
+const resultLeftClasses = ["result_1_left", "result_2_left", "result_3_left"];
+const resultRightClasses = ["result_1_right", "result_2_right", "result_3_right"];
 
 let animal1 = document.getElementById("animal1");
 let animal2 = document.getElementById("animal2");
@@ -8,18 +9,23 @@ let animal3 = document.getElementById("animal3");
 let level1 = document.getElementById("level1");
 let level2 = document.getElementById("level2");
 let level3 = document.getElementById("level3");
-let result_1 = document.getElementById("result_1");
-let result_2 = document.getElementById("result_2");
-let result_3 = document.getElementById("result_3");
+let result_1_left = document.getElementById("result_1_left");
+let result_2_left = document.getElementById("result_2_left");
+let result_3_left = document.getElementById("result_3_left");
+let result_1_right = document.getElementById("result_1_right");
+let result_2_right = document.getElementById("result_2_right");
+let result_3_right = document.getElementById("result_3_right");
 let divCenter = document.getElementById("center");
 let divPictures = document.getElementById("pictures");
 let divLevels = document.getElementById("levels");
-let divResults = document.getElementById("results");
+let divResultsRight = document.getElementById("resultsRight");
+let divResultsLeft = document.getElementById("resultsLeft");
 
 
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
-let listResults = [result_1, result_2, result_3];
+let listResultsLeft = [result_1_leftt, result_2_left, result_3_left];
+let listResultsRight = [result_1_right, result_2_right, result_3_right];
  
 for (let i = 0; i < listPictures.length; i++) {
     listPictures[i].classList.add(animalClasses[i]);
@@ -30,9 +36,14 @@ for (let i = 0; i < listLevels.length; i++) {
     listLevels[i].classList.add("display");
     listLevels[i].classList.add("viewHover");
 }
-for (let i = 0; i < listResults.length; i++) {
-    listResults[i].classList.add(resultClasses[i]);
-    listResults[i].classList.add("display");
+for (let i = 0; i < listResultsRight.length; i++) {
+    listResultsRight[i].classList.add(resultLeftClasses[i]);
+    listResultsRight[i].classList.add("display");
+}
+
+for (let i = 0; i < listResultsLeft.length; i++) {
+    listResultsLeft[i].classList.add(resultLeftClasses[i]);
+    listResultsLeft[i].classList.add("display");
 }
 
 localStorage.clear();
@@ -54,10 +65,10 @@ function animalChosenPlayer(chosen){
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     };
-    listResults.forEach((result)=>{
+    listResultsRight.forEach((result)=>{
         result.classList.remove("display");
     });
-    divResults.classList.add('results');
+    divResultsRight.classList.add('results');
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
@@ -87,10 +98,10 @@ function clearAnimalChosenPlayer(chosen){
     //     level.classList.toggle('display');
     // });
     // divLevels.classList.remove('levels');
-    listResults.forEach((result)=>{
+    listResultsRight.forEach((result)=>{
         result.classList.add("display");
     });
-    divResults.classList.remove('results');
+    divResultsRight.classList.remove('results');
     if (!localStorage.level) {
         // divCenter.classList.add("centerPicturesLevels");
         divPictures.classList.remove("picturesLevelsResults");
@@ -165,7 +176,7 @@ function levelChosenPlayer(chosen){
     // for (let i = 0; i < listLevels.length; i++) {
     //     listLevels[i].classList.remove(levelClasses[i]);
     // };
-    listResults.forEach((result)=>{
+    listResultsRight.forEach((result)=>{
         if (result.className!=chosen) {
             result.classList.add("display");
         }
@@ -173,11 +184,11 @@ function levelChosenPlayer(chosen){
     for (let i = 0; i < listLevels.length; i++) {
         listLevels[i].classList.remove(levelClasses[i]);
         if (listLevels[i]==chosen) { 
-            listResults[i].classList.remove("display");
-            listResults[i].classList.add("marginResult");
+            listResultsRight[i].classList.remove("display");
+            listResultsRight[i].classList.add("marginResult");
         }
     };
-    divResults.classList.add('marginResult');
+    divResultsRight.classList.add('marginResult');
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
     // level2.classList.add("game");
