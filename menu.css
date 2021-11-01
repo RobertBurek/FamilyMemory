@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-/* .zero {
-    height: 0;
-    width: 0;
-    border: 0;
-    padding: 0;
-} */
 
 .center {
     width: 30%;
@@ -96,11 +90,6 @@
     border: 2vh solid white;
 }
 
-/* #pictures>div:hover {
-    cursor: pointer;
-    border: 1.8vh solid red;
-    border-radius: 1em;
-} */
 
 #levels {
     /* width: 50%; */
@@ -200,10 +189,6 @@
     min-height: 25vh;
 }
 
-/* label {
-    font-size: 1.8em;
-} */
-
 .game {
     /* position: absolute;
     height: 100%;
@@ -266,18 +251,6 @@ div.result {
     overflow: hidden;
     font-size: 1.2em;
 }
-
-/* #levels>div:hover {
-    cursor: pointer;
-    border: 10px solid red;
-    border-radius: 1em;
-} */
-
-/* .viewHover:hover {
-    cursor: pointer;
-    border: 10px solid red;
-    border-radius: 1em;
-} */
 
 .display {
     display: none;
