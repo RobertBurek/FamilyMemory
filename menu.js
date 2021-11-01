@@ -24,7 +24,7 @@ let divResultsLeft = document.getElementById("resultsLeft");
 
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
-let listResultsLeft = [result_1_leftt, result_2_left, result_3_left];
+let listResultsLeft = [result_1_left, result_2_left, result_3_left];
 let listResultsRight = [result_1_right, result_2_right, result_3_right];
  
 for (let i = 0; i < listPictures.length; i++) {
@@ -68,7 +68,7 @@ function animalChosenPlayer(chosen){
     listResultsRight.forEach((result)=>{
         result.classList.remove("display");
     });
-    divResultsRight.classList.add('results');
+    divResultsRight.classList.add('resultsRight');
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
@@ -101,7 +101,7 @@ function clearAnimalChosenPlayer(chosen){
     listResultsRight.forEach((result)=>{
         result.classList.add("display");
     });
-    divResultsRight.classList.remove('results');
+    divResultsRight.classList.remove('resultsRight');
     if (!localStorage.level) {
         // divCenter.classList.add("centerPicturesLevels");
         divPictures.classList.remove("picturesLevelsResults");
