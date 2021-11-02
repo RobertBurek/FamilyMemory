@@ -383,6 +383,9 @@ const resultRightClasses = ["result_1_right", "result_2_right", "result_3_right"
 let catResults = [htmlResultsCat12, htmlResultsCat18, htmlResultsCat24 ];
 let dogResults = [htmlResultsDog12, htmlResultsDog18, htmlResultsDog24 ];
 let butterflyResults = [htmlResultsButterfly12, htmlResultsButterfly18, htmlResultsButterfly24 ];
+let results12 = [htmlResultsCat12, htmlResultsDog12, htmlResultsButterfly12];
+let results18 = [htmlResultsCat18, htmlResultsDog18, htmlResultsButterfly18];
+let results24 = [htmlResultsCat24, htmlResultsDog24, htmlResultsButterfly24];
 
 let animal1 = document.getElementById("animal1");
 let animal2 = document.getElementById("animal2");
@@ -512,6 +515,11 @@ function clearAnimalChosenPlayer(chosen){
     listResultsRight.forEach((result)=>{
         result.classList.add("display");
     });
+    listPictures.forEach(picture => {
+        picture.classList.toggle('viewHover');
+    });
+    animal1.addEventListener('click', clickAnimal1);
+    animal3.addEventListener('click', clickAnimal3);
     // divResultsRight.classList.remove('resultsRight');
     if (!localStorage.level) {
         divResultsRight.classList.remove("resultsRight");
@@ -525,21 +533,33 @@ function clearAnimalChosenPlayer(chosen){
         divLevels.classList.remove("width3Elements");
         divLevels.classList.add("width2Elements");
     } else {
-        divCenter.classList.remove("widthCenter3Elements");
-        divCenter.classList.add("width2Elements");
+        // divCenter.classList.remove("widthCenter3Elements");
+        // divCenter.classList.add("width2Elements");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
         divResultsRight.classList.remove("marginResult");
-        divPictures.classList.remove("width3Elements");
-        divPictures.classList.add("width2Elements");
-        divLevels.classList.remove("width3Elements");
-        divLevels.classList.add("width2Elements");
+        // divPictures.classList.remove("width3Elements");
+        // divPictures.classList.add("width2Elements");
+        // divLevels.classList.remove("width3Elements");
+        // divLevels.classList.add("width2Elements");
+
+        divResultsLeft.classList.remove("width3Elements");
+        divResultsLeft.classList.remove("borderRight");
+        divResultsLeft.classList.remove("marginResult");
+        for (let i = 0; i < listResultsLeft.length; i++) {
+            if (localStorage.level === "12")
+            listResultsLeft[i].innerHTML = results12[i];
+            if (localStorage.level === "18")
+            listResultsLeft[i].innerHTML = results18[i];
+            if (localStorage.level === "24")
+            listResultsLeft[i].innerHTML = results24[i];
+        }
+        listResultsLeft.forEach((result)=>{
+            result.classList.remove("display");
+        });
+        divResultsLeft.classList.add("width3Elements");
+        divResultsLeft.classList.add("borderRight");
     }
-    listPictures.forEach(picture => {
-        picture.classList.toggle('viewHover');
-    });
-    animal1.addEventListener('click', clickAnimal1);
-    animal3.addEventListener('click', clickAnimal3);
 }
 
 let clickAnimal1 = function(){
