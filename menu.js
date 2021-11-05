@@ -376,6 +376,8 @@ let htmlResultsButterfly24 =
 '                        <div class="result">66,756 s</div>' +
 '                    </div>';
 
+let htmlResultsClear = '';
+
 const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];
 const resultLeftClasses = ["result_1_left", "result_2_left", "result_3_left"];
@@ -453,11 +455,11 @@ function animalChosenPlayer(chosen){
     // console.log(localStorage);
     for (let i = 0; i < listResultsRight.length; i++) {
         if (localStorage.animal === "cardsCatAll")
-        listResultsRight[i].innerHTML = catResults[i];
+            listResultsRight[i].innerHTML = catResults[i];
         if (localStorage.animal === "cardsDogAll")
-        listResultsRight[i].innerHTML = dogResults[i];
+            listResultsRight[i].innerHTML = dogResults[i];
         if (localStorage.animal === "cardsButterflyAll")
-        listResultsRight[i].innerHTML = butterflyResults[i];
+            listResultsRight[i].innerHTML = butterflyResults[i];
     }
     if (localStorage.level) {
         listResultsRight.forEach((result)=>{
@@ -614,7 +616,6 @@ animal3.addEventListener('click', clickAnimal3);
 
 function levelChosenPlayer(chosen){
     // console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
-
     listLevels.forEach(level => {
         level.classList.remove("viewHover");
     });
@@ -622,26 +623,44 @@ function levelChosenPlayer(chosen){
     // pictures.classList.toggle('width100');
     // pictures.classList.toggle('width50');
     const classChosen = chosen.className;
+    console.log(classChosen);
+    console.log(chosen);
     // for (let i = 0; i < listLevels.length; i++) {
     //     listLevels[i].classList.remove(levelClasses[i]);
     // };
-    listResultsRight.forEach((result)=>{
-        if (result.className!=chosen) {
-            result.classList.add("display");
-        }
-    });
-    for (let i = 0; i < listLevels.length; i++) {
-        listLevels[i].classList.remove(levelClasses[i]);
-        if (listLevels[i]==chosen) { 
-            listResultsRight[i].classList.remove("display");
-            listResultsRight[i].classList.add("marginResult");
-        }
-    };
-    divResultsRight.classList.add('marginResult');
+
+    if (localStorage.animal) {
+        listResultsRight.forEach((result)=>{
+            result.innerHTML = htmlResultsClear;
+        });
+        for (let i = 0; i < listLevels.length; i++) {
+            console.log(i);
+            listLevels[i].classList.remove(levelClasses[i]);
+            if (listLevels[i] === chosen) {
+                console.log(butterflyResults[i]);
+                if (localStorage.animal === "cardsCatAll")
+                result_2_right.innerHTML = catResults[i];
+                if (localStorage.animal === "cardsDogAll")
+                result_2_right.innerHTML = dogResults[i];
+                if (localStorage.animal === "cardsButterflyAll")
+                result_2_right.innerHTML = butterflyResults[i];
+    
+            }
+        };
+        //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
+        // for (let i = 0; i < listLevels.length; i++) {
+        //     if (i != 1) {
+        //     listLevels[i].classList.add("display");
+        //     listResultsRight[i].classList.add("display");
+        //     listPictures[i].classList.add("display");
+        //     }
+        // }
+    } else {
+
+    }
 
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
-    // level2.classList.add("game");
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
     setTimeout(function(){
@@ -656,8 +675,9 @@ function levelChosenPlayer(chosen){
 
 let clickLevel1 = function(){
     if (!localStorage.level) {
-        levelChosenPlayer(this);
         localStorage.setItem('level', "12");
+        levelChosenPlayer(this);
+        // localStorage.setItem('level', "12");
     } 
     // else {
         // clearLevelChosenPlayer(this);
@@ -671,8 +691,9 @@ let clickLevel1 = function(){
 
 let clickLevel2 = function(){
     if (!localStorage.level) {
-        levelChosenPlayer(this);
         localStorage.setItem('level', "18");
+        levelChosenPlayer(this);
+        // localStorage.setItem('level', "18");
     } else {
         localStorage.setItem('level', "");
         clearLevelChosenPlayer(this);
@@ -685,8 +706,9 @@ let clickLevel2 = function(){
 
 let clickLevel3 = function(){
     if (!localStorage.level) {
-        levelChosenPlayer(this);
         localStorage.setItem('level', "24");
+        levelChosenPlayer(this);
+        // localStorage.setItem('level', "24");
     } 
     // else {
         // clearLevelChosenPlayer(this);
