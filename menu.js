@@ -482,21 +482,13 @@ function animalChosenPlayer(chosen){
             result.innerHTML = htmlResultsClear;
         });
         for (let i = 0; i < listPictures.length; i++) {
-            // console.log(i);
             listPictures[i].classList.remove(animalClasses[i]);
             if (listPictures[i] === chosen) {
-                // console.log(butterflyResults[i]);
-                // if (localStorage.animal === "cardsCatAll")
                 if (localStorage.level === "12")
-                // result_2_left.innerHTML = catResults[i];
                 result_2_left.innerHTML = results12[i];
-                // if (localStorage.animal === "cardsDogAll")
                 if (localStorage.level === "18")
-                // result_2_left.innerHTML = dogResults[i];
                 result_2_left.innerHTML = results18[i];
-                // if (localStorage.animal === "cardsButterflyAll")
                 if (localStorage.level === "24")
-                // result_2_left.innerHTML = butterflyResults[i];
                 result_2_left.innerHTML = results24[i];
     
             }
@@ -717,6 +709,77 @@ function levelChosenPlayer(chosen){
             console.log("brak startu gry - levelChosenPlayer()");
         }
     },3000);
+}
+
+function clearLevelChosenPlayer(chosen){
+    // console.log(localStorage.level + " - localStorage.level - początek clearLevelChosenPlayer");
+    // localStorage.clear();
+    level2.classList.remove("blackFrame");
+    const classChosen = chosen.className;
+    level2.classList.remove(classChosen); // nie ma żadnych klasCSS na wszystkich animals
+    // divCenter.classList.remove('centerLevel');
+    // divPictures.classList.toggle('width50');
+    // divPictures.classList.toggle('width100');
+    for (let i = 0; i < listLevels.length; i++) {
+        listLevels[i].classList.add(levelClasses[i]);
+    };
+    // ----Wąskie okno
+    listLevels.forEach(level => {
+        level.classList.remove('display');
+    });
+    listPictures.forEach(picture => {
+        picture.classList.remove('display');
+    });
+    // end----Wąskie okno
+    // divLevels.classList.remove('levels');
+    listResultsRight.forEach((result)=>{
+        result.classList.add("display");
+    });
+    listLevels.forEach(level => {
+        level.classList.toggle('viewHover');
+    });
+    level1.addEventListener('click', clickLevel1);
+    level3.addEventListener('click', clickLevel3);
+    // divResultsRight.classList.remove('resultsRight');
+    if (!localStorage.level) {
+        divResultsRight.classList.remove("resultsRight");
+        divResultsRight.classList.remove("width3Elements");
+        divResultsRight.classList.remove("borderLeft");
+        divCenter.classList.remove("widthCenter3Elements");
+        divCenter.classList.add("width2Elements");
+        divPictures.classList.remove("width3Elements");
+        divPictures.classList.add("width2Elements");
+        divLevels.classList.remove("borderLeft");
+        divLevels.classList.remove("width3Elements");
+        divLevels.classList.add("width2Elements");
+    } else {
+        // divCenter.classList.remove("widthCenter3Elements");
+        // divCenter.classList.add("width2Elements");
+        divResultsRight.classList.remove("width3Elements");
+        divResultsRight.classList.remove("borderLeft");
+        divResultsRight.classList.remove("marginResult");
+        // divPictures.classList.remove("width3Elements");
+        // divPictures.classList.add("width2Elements");
+        // divLevels.classList.remove("width3Elements");
+        // divLevels.classList.add("width2Elements");
+
+        divResultsLeft.classList.remove("width3Elements");
+        divResultsLeft.classList.remove("borderRight");
+        divResultsLeft.classList.remove("marginResult");
+        for (let i = 0; i < listResultsLeft.length; i++) {
+            if (localStorage.level === "12")
+            listResultsLeft[i].innerHTML = results12[i];
+            if (localStorage.level === "18")
+            listResultsLeft[i].innerHTML = results18[i];
+            if (localStorage.level === "24")
+            listResultsLeft[i].innerHTML = results24[i];
+        }
+        listResultsLeft.forEach((result)=>{
+            result.classList.remove("display");
+        });
+        divResultsLeft.classList.add("width3Elements");
+        divResultsLeft.classList.add("borderRight");
+    }
 }
 
 
