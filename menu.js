@@ -576,7 +576,7 @@ function clearAnimalChosenPlayer(chosen){
         // divCenter.classList.add("width2Elements");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
-        divResultsRight.classList.remove("marginResult");
+        // divResultsRight.classList.remove("marginResult");
         // divPictures.classList.remove("width3Elements");
         // divPictures.classList.add("width2Elements");
         // divLevels.classList.remove("width3Elements");
@@ -762,8 +762,8 @@ function clearLevelChosenPlayer(chosen){
         // divCenter.classList.remove("widthCenter3Elements");
         // divCenter.classList.add("width2Elements");
         divResultsRight.classList.remove("width3Elements");
-        divResultsRight.classList.remove("borderLeft");
-        divResultsRight.classList.remove("marginResult");
+        divResultsRight.classList.remove("borderRight");
+        // divResultsRight.classList.remove("marginResult");
         // divPictures.classList.remove("width3Elements");
         // divPictures.classList.add("width2Elements");
         // divLevels.classList.remove("width3Elements");
