@@ -516,14 +516,15 @@ function animalChosenPlayer(chosen){
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
     animal3.removeEventListener("click",clickAnimal3);
+    if (localStorage.animal && localStorage.level)
     setTimeout(function(){
-        if (localStorage.animal && localStorage.level) {
+        // if (localStorage.animal && localStorage.level) {
         localStorage.setItem('run',"animalChosenPlayer()");
         console.log("start gry - animalChosenPlayer()");
         // location.href = "memoryPlay.html";
-        } else {
-            console.log("brak startu gry - animalChosenPlayer()");
-        }
+        // } else {
+            // console.log("brak startu gry - animalChosenPlayer()");
+        // }
     },3000);
 }
 
@@ -692,14 +693,15 @@ function levelChosenPlayer(chosen){
     level2.classList.add("blackFrame");
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
+    if (localStorage.animal && localStorage.level)
     setTimeout(function(){
-        if (localStorage.animal && localStorage.level) {
+        // if (localStorage.animal && localStorage.level) {
         localStorage.setItem('run',"levelChosenPlayer()");
         console.log("start gry - levelChosenPlayer()");
         // location.href = "memoryPlay.html";
-        } else {
-            console.log("brak startu gry - levelChosenPlayer()");
-        }
+        // } else {
+            // console.log("brak startu gry - levelChosenPlayer()");
+        // }
     },3000);
 }
 
