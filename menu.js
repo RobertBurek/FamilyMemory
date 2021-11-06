@@ -486,23 +486,30 @@ function animalChosenPlayer(chosen){
             listPictures[i].classList.remove(animalClasses[i]);
             if (listPictures[i] === chosen) {
                 // console.log(butterflyResults[i]);
-                if (localStorage.animal === "cardsCatAll")
-                result_2_left.innerHTML = catResults[i];
-                if (localStorage.animal === "cardsDogAll")
-                result_2_left.innerHTML = dogResults[i];
-                if (localStorage.animal === "cardsButterflyAll")
-                result_2_left.innerHTML = butterflyResults[i];
+                // if (localStorage.animal === "cardsCatAll")
+                if (localStorage.level === "12")
+                // result_2_left.innerHTML = catResults[i];
+                result_2_left.innerHTML = results12[i];
+                // if (localStorage.animal === "cardsDogAll")
+                if (localStorage.level === "18")
+                // result_2_left.innerHTML = dogResults[i];
+                result_2_left.innerHTML = results18[i];
+                // if (localStorage.animal === "cardsButterflyAll")
+                if (localStorage.level === "24")
+                // result_2_left.innerHTML = butterflyResults[i];
+                result_2_left.innerHTML = results24[i];
     
             }
         };
         //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
-        // for (let i = 0; i < listLevels.length; i++) {
-        //     if (i != 1) {
-        //     listLevels[i].classList.add("display");
-        //     listResultsRight[i].classList.add("display");
-        //     listPictures[i].classList.add("display");
-        //     }
-        // }
+        for (let i = 0; i < listLevels.length; i++) {
+            if (i != 1) {
+            listLevels[i].classList.add("display");
+            listResultsRight[i].classList.add("display");
+            listPictures[i].classList.add("display");
+            listResultsLeft[i].classList.add("display");
+            }
+        }
 
     } else {
         listResultsRight.forEach((result)=>{
@@ -518,13 +525,13 @@ function animalChosenPlayer(chosen){
     animal3.removeEventListener("click",clickAnimal3);
     if (localStorage.animal && localStorage.level)
     setTimeout(function(){
-        // if (localStorage.animal && localStorage.level) {
+        if (localStorage.animal && localStorage.level) {
         localStorage.setItem('run',"animalChosenPlayer()");
         console.log("start gry - animalChosenPlayer()");
         // location.href = "memoryPlay.html";
-        // } else {
-            // console.log("brak startu gry - animalChosenPlayer()");
-        // }
+        } else {
+            console.log("brak startu gry - animalChosenPlayer()");
+        }
     },3000);
 }
 
@@ -540,9 +547,14 @@ function clearAnimalChosenPlayer(chosen){
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.add(animalClasses[i]);
     };
-    // listLevels.forEach(level => {
-    //     level.classList.toggle('display');
-    // });
+    // ----Wąskie okno
+    listLevels.forEach(level => {
+        level.classList.remove('display');
+    });
+    listPictures.forEach(picture => {
+        picture.classList.remove('display');
+    });
+    // end----Wąskie okno
     // divLevels.classList.remove('levels');
     listResultsRight.forEach((result)=>{
         result.classList.add("display");
@@ -678,13 +690,15 @@ function levelChosenPlayer(chosen){
             }
         };
         //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
-        // for (let i = 0; i < listLevels.length; i++) {
-        //     if (i != 1) {
-        //     listLevels[i].classList.add("display");
-        //     listResultsRight[i].classList.add("display");
-        //     listPictures[i].classList.add("display");
-        //     }
-        // }
+        for (let i = 0; i < listLevels.length; i++) {
+            if (i != 1) {
+            listLevels[i].classList.add("display");
+            listResultsRight[i].classList.add("display");
+            listPictures[i].classList.add("display");
+            listResultsLeft[i].classList.add("display");
+            }
+        }
+
     } else {
 
     }
@@ -695,13 +709,13 @@ function levelChosenPlayer(chosen){
     level3.removeEventListener("click",clickLevel3);
     if (localStorage.animal && localStorage.level)
     setTimeout(function(){
-        // if (localStorage.animal && localStorage.level) {
+        if (localStorage.animal && localStorage.level) {
         localStorage.setItem('run',"levelChosenPlayer()");
         console.log("start gry - levelChosenPlayer()");
         // location.href = "memoryPlay.html";
-        // } else {
-            // console.log("brak startu gry - levelChosenPlayer()");
-        // }
+        } else {
+            console.log("brak startu gry - levelChosenPlayer()");
+        }
     },3000);
 }
 
