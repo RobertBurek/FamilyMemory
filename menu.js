@@ -558,7 +558,7 @@ function clearAnimalChosenPlayer(chosen){
     animal3.addEventListener('click', clickAnimal3);
     // divResultsRight.classList.remove('resultsRight');
     if (!localStorage.level) {
-        divResultsRight.classList.remove("resultsRight");
+        // divResultsRight.classList.remove("resultsRight");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
         divCenter.classList.remove("widthCenter3Elements");
@@ -568,6 +568,9 @@ function clearAnimalChosenPlayer(chosen){
         divLevels.classList.remove("borderLeft");
         divLevels.classList.remove("width3Elements");
         divLevels.classList.add("width2Elements");
+        // divResultsLeft.classList.remove("resultsRight");
+        divResultsLeft.classList.remove("width3Elements");
+        divResultsLeft.classList.remove("borderLeft");
     } else {
         // divCenter.classList.remove("widthCenter3Elements");
         // divCenter.classList.add("width2Elements");
@@ -732,7 +735,7 @@ function clearLevelChosenPlayer(chosen){
     });
     // end----Wąskie okno
     // divLevels.classList.remove('levels');
-    listResultsRight.forEach((result)=>{
+    listResultsLeft.forEach((result)=>{
         result.classList.add("display");
     });
     listLevels.forEach(level => {
@@ -741,8 +744,8 @@ function clearLevelChosenPlayer(chosen){
     level1.addEventListener('click', clickLevel1);
     level3.addEventListener('click', clickLevel3);
     // divResultsRight.classList.remove('resultsRight');
-    if (!localStorage.level) {
-        divResultsRight.classList.remove("resultsRight");
+    if (!localStorage.animal) {
+        // divResultsRight.classList.remove("resultsRight");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
         divCenter.classList.remove("widthCenter3Elements");
@@ -752,6 +755,9 @@ function clearLevelChosenPlayer(chosen){
         divLevels.classList.remove("borderLeft");
         divLevels.classList.remove("width3Elements");
         divLevels.classList.add("width2Elements");
+        // divResultsLeft.classList.remove("resultsRight");
+        divResultsLeft.classList.remove("width3Elements");
+        divResultsLeft.classList.remove("borderRight");
     } else {
         // divCenter.classList.remove("widthCenter3Elements");
         // divCenter.classList.add("width2Elements");
