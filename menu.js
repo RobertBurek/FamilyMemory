@@ -436,7 +436,6 @@ localStorage.clear();
 // console.log(localStorage);
 
 function animalChosenPlayer(chosen){
-    // console.log(localStorage.animal + " - localStorage.animal - początek animalChosenPlayer");
     listLevels.forEach(level => {
         level.classList.remove("display");
     });
@@ -509,7 +508,6 @@ function animalChosenPlayer(chosen){
 };
 
 function clearAnimalChosenPlayer(chosen){
-    // console.log(localStorage.animal + " - localStorage.animal - początek clearAnimalChosenPlayer");
     animal2.classList.remove("blackFrame");
     const classChosen = chosen.className;
     animal2.classList.remove(classChosen);
@@ -569,30 +567,18 @@ let clickAnimal1 = function(){
     if (!localStorage.animal) {
         localStorage.setItem('animal', "cardsCatAll");
         animalChosenPlayer(this);
-        // localStorage.setItem('animal', "cardsCatAll");
-    } 
-    // else {
-        // localStorage.clear('animal');
-        // clearAnimalChosenPlayer(this);
-        // localStorage.clear();
-    // }
-    // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
-    // location.href = "memoryPlay.html";
-}
+    };
+};
 
 let clickAnimal2 = function(){
     if (!localStorage.animal) {
         localStorage.setItem('animal', "cardsDogAll");
         animalChosenPlayer(this);
-        // localStorage.setItem('animal', "cardsDogAll");
     } else {
         localStorage.setItem('animal', "");
         clearAnimalChosenPlayer(this);
-        // localStorage.clear();
-    }
-    // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
-    // location.href = "memoryPlay.html";
-}
+    };
+};
 
 let clickAnimal3 = function(){
     if (!localStorage.animal) {
