@@ -552,7 +552,7 @@ function clearAnimalChosenPlayer(chosen){
         result.classList.add("display");
     });
     listPictures.forEach(picture => {
-        picture.classList.toggle('viewHover');
+        picture.classList.add('viewHover');
     });
     animal1.addEventListener('click', clickAnimal1);
     animal3.addEventListener('click', clickAnimal3);
@@ -584,7 +584,7 @@ function clearAnimalChosenPlayer(chosen){
 
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderRight");
-        divResultsLeft.classList.remove("marginResult");
+        // divResultsLeft.classList.remove("marginResult");
         for (let i = 0; i < listResultsLeft.length; i++) {
             if (localStorage.level === "12")
             listResultsLeft[i].innerHTML = results12[i];
@@ -739,7 +739,7 @@ function clearLevelChosenPlayer(chosen){
         result.classList.add("display");
     });
     listLevels.forEach(level => {
-        level.classList.toggle('viewHover');
+        level.classList.add('viewHover');
     });
     level1.addEventListener('click', clickLevel1);
     level3.addEventListener('click', clickLevel3);
@@ -771,7 +771,7 @@ function clearLevelChosenPlayer(chosen){
 
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderRight");
-        divResultsLeft.classList.remove("marginResult");
+        // divResultsLeft.classList.remove("marginResult");
         for (let i = 0; i < listResultsLeft.length; i++) {
             if (localStorage.level === "12")
             listResultsLeft[i].innerHTML = results12[i];
