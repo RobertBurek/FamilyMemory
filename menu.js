@@ -452,7 +452,6 @@ function animalChosenPlayer(chosen){
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
     };
-    // console.log(localStorage);
     for (let i = 0; i < listResultsRight.length; i++) {
         if (localStorage.animal === "cardsCatAll")
             listResultsRight[i].innerHTML = catResults[i];
@@ -460,28 +459,8 @@ function animalChosenPlayer(chosen){
             listResultsRight[i].innerHTML = dogResults[i];
         if (localStorage.animal === "cardsButterflyAll")
             listResultsRight[i].innerHTML = butterflyResults[i];
-    }
+    };
     if (localStorage.level) {
-
-
-        // listResultsRight.forEach((result)=>{
-        //     if (result.className.search("marginResult") > 0) {
-        //         result.classList.remove("display");
-        //         console.log(result.className);
-        //     }
-        // });
-
-
-        // divCenter.classList.remove("widthCenter3Elements");
-        // divCenter.classList.add("width2Elements");
-        // divResultsRight.classList.remove("width3Elements");
-        // divResultsRight.classList.remove("borderLeft");
-        // divResultsRight.classList.remove("marginResult");
-        // divPictures.classList.remove("width3Elements");
-        // divPictures.classList.add("width2Elements");
-        // divLevels.classList.remove("width3Elements");
-        // divLevels.classList.add("width2Elements");
-
         listResultsLeft.forEach((result)=>{
             result.innerHTML = htmlResultsClear;
         });
@@ -504,17 +483,15 @@ function animalChosenPlayer(chosen){
             listResultsRight[i].classList.add("display");
             listPictures[i].classList.add("display");
             listResultsLeft[i].classList.add("display");
-            }
-        }
-
+            };
+        };
     } else {
         listResultsRight.forEach((result)=>{
             result.classList.remove("display");
         });
         divResultsRight.classList.add("width3Elements");
         divResultsRight.classList.add("borderLeft");
-    }
-
+    };
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
@@ -529,7 +506,7 @@ function animalChosenPlayer(chosen){
             console.log("brak startu gry - animalChosenPlayer()");
         }
     },3000);
-}
+};
 
 function clearAnimalChosenPlayer(chosen){
     // console.log(localStorage.animal + " - localStorage.animal - początek clearAnimalChosenPlayer");
