@@ -510,13 +510,9 @@ function animalChosenPlayer(chosen){
 
 function clearAnimalChosenPlayer(chosen){
     // console.log(localStorage.animal + " - localStorage.animal - początek clearAnimalChosenPlayer");
-    // localStorage.clear();
     animal2.classList.remove("blackFrame");
     const classChosen = chosen.className;
-    animal2.classList.remove(classChosen); // nie ma żadnych klasCSS na wszystkich animals
-    // divCenter.classList.remove('centerLevel');
-    // divPictures.classList.toggle('width50');
-    // divPictures.classList.toggle('width100');
+    animal2.classList.remove(classChosen);
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.add(animalClasses[i]);
     };
@@ -528,7 +524,6 @@ function clearAnimalChosenPlayer(chosen){
         picture.classList.remove('display');
     });
     // end----Wąskie okno
-    // divLevels.classList.remove('levels');
     listResultsRight.forEach((result)=>{
         result.classList.add("display");
     });
@@ -537,9 +532,7 @@ function clearAnimalChosenPlayer(chosen){
     });
     animal1.addEventListener('click', clickAnimal1);
     animal3.addEventListener('click', clickAnimal3);
-    // divResultsRight.classList.remove('resultsRight');
     if (!localStorage.level) {
-        // divResultsRight.classList.remove("resultsRight");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
         divCenter.classList.remove("widthCenter3Elements");
@@ -549,23 +542,13 @@ function clearAnimalChosenPlayer(chosen){
         divLevels.classList.remove("borderLeft");
         divLevels.classList.remove("width3Elements");
         divLevels.classList.add("width2Elements");
-        // divResultsLeft.classList.remove("resultsRight");
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderLeft");
     } else {
-        // divCenter.classList.remove("widthCenter3Elements");
-        // divCenter.classList.add("width2Elements");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
-        // divResultsRight.classList.remove("marginResult");
-        // divPictures.classList.remove("width3Elements");
-        // divPictures.classList.add("width2Elements");
-        // divLevels.classList.remove("width3Elements");
-        // divLevels.classList.add("width2Elements");
-
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderRight");
-        // divResultsLeft.classList.remove("marginResult");
         for (let i = 0; i < listResultsLeft.length; i++) {
             if (localStorage.level === "12")
             listResultsLeft[i].innerHTML = results12[i];
@@ -573,14 +556,14 @@ function clearAnimalChosenPlayer(chosen){
             listResultsLeft[i].innerHTML = results18[i];
             if (localStorage.level === "24")
             listResultsLeft[i].innerHTML = results24[i];
-        }
+        };
         listResultsLeft.forEach((result)=>{
             result.classList.remove("display");
         });
         divResultsLeft.classList.add("width3Elements");
         divResultsLeft.classList.add("borderRight");
-    }
-}
+    };
+};
 
 let clickAnimal1 = function(){
     if (!localStorage.animal) {
