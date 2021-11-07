@@ -462,12 +462,16 @@ function animalChosenPlayer(chosen){
             listResultsRight[i].innerHTML = butterflyResults[i];
     }
     if (localStorage.level) {
-        listResultsRight.forEach((result)=>{
-            if (result.className.search("marginResult") > 0) {
-                result.classList.remove("display");
-                console.log(result.className);
-            }
-        });
+
+
+        // listResultsRight.forEach((result)=>{
+        //     if (result.className.search("marginResult") > 0) {
+        //         result.classList.remove("display");
+        //         console.log(result.className);
+        //     }
+        // });
+
+
         // divCenter.classList.remove("widthCenter3Elements");
         // divCenter.classList.add("width2Elements");
         // divResultsRight.classList.remove("width3Elements");
@@ -562,7 +566,7 @@ function clearAnimalChosenPlayer(chosen){
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
         divCenter.classList.remove("widthCenter3Elements");
-        divCenter.classList.add("width2Elements");
+        divCenter.classList.add("widthCenter2Elements");
         divPictures.classList.remove("width3Elements");
         divPictures.classList.add("width2Elements");
         divLevels.classList.remove("borderLeft");
@@ -653,6 +657,8 @@ animal3.addEventListener('click', clickAnimal3);
 
 function levelChosenPlayer(chosen){
     // console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
+    divLevels.classList.add("width3Elements");
+    divLevels.classList.add("borderLeft");
     listLevels.forEach(level => {
         level.classList.remove("viewHover");
     });
@@ -662,9 +668,9 @@ function levelChosenPlayer(chosen){
     const classChosen = chosen.className;
     // console.log(classChosen);
     // console.log(chosen);
-    // for (let i = 0; i < listLevels.length; i++) {
-    //     listLevels[i].classList.remove(levelClasses[i]);
-    // };
+    for (let i = 0; i < listLevels.length; i++) {
+        listLevels[i].classList.remove(levelClasses[i]);
+    };
 
     if (localStorage.animal) {
         listResultsRight.forEach((result)=>{
@@ -695,7 +701,23 @@ function levelChosenPlayer(chosen){
         }
 
     } else {
-
+        divResultsLeft.classList.remove("width3Elements");
+        divResultsLeft.classList.remove("borderRight");
+        divCenter.classList.add("widthCenter3Elements");
+        divCenter.classList.remove("width2Elements");
+        divPictures.classList.add("width3Elements");
+        divPictures.classList.remove("width2Elements");
+        divLevels.classList.remove("borderRight");
+        divLevels.classList.add("width3Elements");
+        divLevels.classList.remove("width2Elements");
+        for (let i = 0; i < listResultsLeft.length; i++) {
+            if (localStorage.level === "12")
+            listResultsLeft[i].innerHTML = results12[i];
+            if (localStorage.level === "18")
+            listResultsLeft[i].innerHTML = results18[i];
+            if (localStorage.level === "24")
+            listResultsLeft[i].innerHTML = results24[i];
+        }
     }
 
     level2.classList.add(classChosen);
