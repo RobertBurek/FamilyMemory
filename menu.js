@@ -540,7 +540,7 @@ function clearAnimalChosenPlayer(chosen){
         divLevels.classList.remove("width3Elements");
         divLevels.classList.add("width2Elements");
         divResultsLeft.classList.remove("width3Elements");
-        divResultsLeft.classList.remove("borderLeft");
+        divResultsLeft.classList.remove("borderRight");
     } else {
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
@@ -666,14 +666,9 @@ function levelChosenPlayer(chosen){
 
 
 function clearLevelChosenPlayer(chosen){
-    // console.log(localStorage.level + " - localStorage.level - początek clearLevelChosenPlayer");
-    // localStorage.clear();
     level2.classList.remove("blackFrame");
     const classChosen = chosen.className;
-    level2.classList.remove(classChosen); // nie ma żadnych klasCSS na wszystkich animals
-    // divCenter.classList.remove('centerLevel');
-    // divPictures.classList.toggle('width50');
-    // divPictures.classList.toggle('width100');
+    level2.classList.remove(classChosen);
     for (let i = 0; i < listLevels.length; i++) {
         listLevels[i].classList.add(levelClasses[i]);
     };
@@ -685,7 +680,6 @@ function clearLevelChosenPlayer(chosen){
         picture.classList.remove('display');
     });
     // end----Wąskie okno
-    // divLevels.classList.remove('levels');
     listResultsLeft.forEach((result)=>{
         result.classList.add("display");
     });
@@ -694,9 +688,7 @@ function clearLevelChosenPlayer(chosen){
     });
     level1.addEventListener('click', clickLevel1);
     level3.addEventListener('click', clickLevel3);
-    // divResultsRight.classList.remove('resultsRight');
     if (!localStorage.animal) {
-        // divResultsRight.classList.remove("resultsRight");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
         divCenter.classList.remove("widthCenter3Elements");
@@ -706,26 +698,13 @@ function clearLevelChosenPlayer(chosen){
         divLevels.classList.remove("borderLeft");
         divLevels.classList.remove("width3Elements");
         divLevels.classList.add("width2Elements");
-        // divResultsLeft.classList.remove("resultsRight");
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderRight");
     } else {
-        // listResultsRight.forEach((result)=>{
-        //     result.classList.remove("display");
-        // });
-        // divCenter.classList.remove("widthCenter3Elements");
-        // divCenter.classList.add("width2Elements");
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderRight");
-        // divResultsRight.classList.remove("marginResult");
-        // divPictures.classList.remove("width3Elements");
-        // divPictures.classList.add("width2Elements");
-        // divLevels.classList.remove("width3Elements");
-        // divLevels.classList.add("width2Elements");
-
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderRight");
-        // divResultsLeft.classList.remove("marginResult");
         for (let i = 0; i < listResultsRight.length; i++) {
             if (localStorage.animal === "cardsCatAll")
             listResultsRight[i].innerHTML = catResults[i];
@@ -733,14 +712,14 @@ function clearLevelChosenPlayer(chosen){
             listResultsRight[i].innerHTML = dogResults[i];
             if (localStorage.animal === "cardsButterflyAll")
             listResultsRight[i].innerHTML = butterflyResults[i];
-        }
+        };
         listResultsRight.forEach((result)=>{
             result.classList.remove("display");
         });
         divResultsRight.classList.add("width3Elements");
         divResultsRight.classList.add("borderLeft");
-    }
-}
+    };
+};
 
 
 let clickLevel1 = function(){
