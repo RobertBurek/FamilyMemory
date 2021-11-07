@@ -1,7 +1,7 @@
 let htmlResultsCat12 = 
 '                    <div class="linia">' +
-'                        <div class="name">KOTEK  LL 12</div>' +
-'                        <div class="result">8,256 s</div>' +
+'                        <div class="name">CAT</div>' +
+'                        <div class="result">12 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RobertLLL  12</div>' +
@@ -42,8 +42,8 @@ let htmlResultsCat12 =
 
 let htmlResultsCat18 = 
 '                    <div class="linia">' +
-'                        <div class="name">KOTEK LLL  18</div>' +
-'                        <div class="result">15,256 s</div>' +
+'                        <div class="name">CAT</div>' +
+'                        <div class="result">18 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RobertLLL</div>' +
@@ -84,8 +84,8 @@ let htmlResultsCat18 =
 
 let htmlResultsCat24 =
 '                    <div class="linia">' +
-'                        <div class="name">Robertttttttttt</div>' +
-'                        <div class="result">35,256 s</div>' +
+'                        <div class="name">CAT</div>' +
+'                        <div class="result">24 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">KOTEK LLL  24</div>' +
@@ -126,8 +126,8 @@ let htmlResultsCat24 =
 
 let htmlResultsDog12 = 
 '                    <div class="linia">' +
-'                        <div class="name">PIESEK  LL 12</div>' +
-'                        <div class="result">8,256 s</div>' +
+'                        <div class="name">DOG</div>' +
+'                        <div class="result">12 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RobertLLL  12</div>' +
@@ -168,8 +168,8 @@ let htmlResultsDog12 =
 
 let htmlResultsDog18 = 
 '                    <div class="linia">' +
-'                        <div class="name">PIESEK LLL  18</div>' +
-'                        <div class="result">15,256 s</div>' +
+'                        <div class="name">DOG</div>' +
+'                        <div class="result">18 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RobertLLL</div>' +
@@ -210,8 +210,8 @@ let htmlResultsDog18 =
 
 let htmlResultsDog24 =
 '                    <div class="linia">' +
-'                        <div class="name">Robertttttttttt</div>' +
-'                        <div class="result">35,256 s</div>' +
+'                        <div class="name">DOG</div>' +
+'                        <div class="result">24 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">PIESEK LLL  24</div>' +
@@ -252,8 +252,8 @@ let htmlResultsDog24 =
 
 let htmlResultsButterfly12 = 
 '                    <div class="linia">' +
-'                        <div class="name">MOTYLEK  LL 12</div>' +
-'                        <div class="result">8,256 s</div>' +
+'                        <div class="name">BUTTERFLY</div>' +
+'                        <div class="result">12 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RobertLLL  12</div>' +
@@ -294,8 +294,8 @@ let htmlResultsButterfly12 =
 
 let htmlResultsButterfly18 = 
 '                    <div class="linia">' +
-'                        <div class="name">MOTYLEK LLL  18</div>' +
-'                        <div class="result">15,256 s</div>' +
+'                        <div class="name">BUTTERFLY</div>' +
+'                        <div class="result">18 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RobertLLL</div>' +
@@ -336,12 +336,12 @@ let htmlResultsButterfly18 =
 
 let htmlResultsButterfly24 =
 '                    <div class="linia">' +
-'                        <div class="name">Robertttttttttt</div>' +
-'                        <div class="result">35,256 s</div>' +
+'                        <div class="name">BUTTERFLY</div>' +
+'                        <div class="result">24 el.</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">MOTYLEK LLL  24</div>' +
-'                        <div class="result">36,566 s</div>' +
+'                        <div class="result">1136,566 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">Magdalenaaaddccgggggg</div>' +

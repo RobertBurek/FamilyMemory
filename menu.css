@@ -111,7 +111,8 @@
     flex-basis: 100%;
     flex-grow: 1;
     height: 23.33vh;
-    border: 2vw solid white;
+    border: 2vh solid white;
+    padding: 1px;
 }
 
 #resultsRight {
@@ -238,6 +239,18 @@ div.result {
     overflow: hidden;
     font-size: 1.2em;
 }
+
+.titleResult>div:first-child>div:first-child{
+   font-weight: bold;
+   font-style: italic;
+   text-align: end;
+   padding-right: 0.4vh;
+}
+.titleResult>div:first-child>div:last-child{
+    font-weight: bold;
+    font-style: italic;
+    text-align: start;
+ }
 
 .display {
     display: none;
