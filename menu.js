@@ -784,6 +784,9 @@ function clearLevelChosenPlayer(chosen){
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderRight");
     } else {
+        // listResultsRight.forEach((result)=>{
+        //     result.classList.remove("display");
+        // });
         // divCenter.classList.remove("widthCenter3Elements");
         // divCenter.classList.add("width2Elements");
         divResultsRight.classList.remove("width3Elements");
@@ -797,19 +800,19 @@ function clearLevelChosenPlayer(chosen){
         divResultsLeft.classList.remove("width3Elements");
         divResultsLeft.classList.remove("borderRight");
         // divResultsLeft.classList.remove("marginResult");
-        for (let i = 0; i < listResultsLeft.length; i++) {
-            if (localStorage.level === "12")
-            listResultsLeft[i].innerHTML = results12[i];
-            if (localStorage.level === "18")
-            listResultsLeft[i].innerHTML = results18[i];
-            if (localStorage.level === "24")
-            listResultsLeft[i].innerHTML = results24[i];
+        for (let i = 0; i < listResultsRight.length; i++) {
+            if (localStorage.animal === "cardsCatAll")
+            listResultsRight[i].innerHTML = catResults[i];
+            if (localStorage.animal === "cardsDogAll")
+            listResultsRight[i].innerHTML = dogResults[i];
+            if (localStorage.animal === "cardsButterflyAll")
+            listResultsRight[i].innerHTML = butterflyResults[i];
         }
-        listResultsLeft.forEach((result)=>{
+        listResultsRight.forEach((result)=>{
             result.classList.remove("display");
         });
-        divResultsLeft.classList.add("width3Elements");
-        divResultsLeft.classList.add("borderRight");
+        divResultsRight.classList.add("width3Elements");
+        divResultsRight.classList.add("borderLeft");
     }
 }
 
