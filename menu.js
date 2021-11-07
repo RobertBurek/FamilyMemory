@@ -472,8 +472,7 @@ function animalChosenPlayer(chosen){
                 result_2_left.innerHTML = results18[i];
                 if (localStorage.level === "24")
                 result_2_left.innerHTML = results24[i];
-    
-            }
+            };
         };
         //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
         for (let i = 0; i < listLevels.length; i++) {
@@ -594,38 +593,28 @@ animal3.addEventListener('click', clickAnimal3);
 
 
 function levelChosenPlayer(chosen){
-    // console.log(localStorage.level + " - localStorage.level - początek levelChosenPlayer");
     divLevels.classList.add("width3Elements");
     divLevels.classList.add("borderLeft");
     listLevels.forEach(level => {
         level.classList.remove("viewHover");
     });
-    // divCenter.classList.toggle('centerLevel');
-    // pictures.classList.toggle('width100');
-    // pictures.classList.toggle('width50');
     const classChosen = chosen.className;
-    // console.log(classChosen);
-    // console.log(chosen);
     for (let i = 0; i < listLevels.length; i++) {
         listLevels[i].classList.remove(levelClasses[i]);
     };
-
     if (localStorage.animal) {
         listResultsRight.forEach((result)=>{
             result.innerHTML = htmlResultsClear;
         });
         for (let i = 0; i < listLevels.length; i++) {
-            // console.log(i);
             listLevels[i].classList.remove(levelClasses[i]);
             if (listLevels[i] === chosen) {
-                // console.log(butterflyResults[i]);
                 if (localStorage.animal === "cardsCatAll")
                 result_2_right.innerHTML = catResults[i];
                 if (localStorage.animal === "cardsDogAll")
                 result_2_right.innerHTML = dogResults[i];
                 if (localStorage.animal === "cardsButterflyAll")
                 result_2_right.innerHTML = butterflyResults[i];
-    
             };
         };
         //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
@@ -637,7 +626,6 @@ function levelChosenPlayer(chosen){
             listResultsLeft[i].classList.add("display");
             };
         };
-
     } else {
         divResultsLeft.classList.add("width3Elements");
         divResultsLeft.classList.add("borderRight");
@@ -659,8 +647,7 @@ function levelChosenPlayer(chosen){
         listResultsLeft.forEach((result)=>{
             result.classList.remove("display");
         });
-    }
-
+    };
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
     level1.removeEventListener("click", clickLevel1);
@@ -673,9 +660,10 @@ function levelChosenPlayer(chosen){
         // location.href = "memoryPlay.html";
         } else {
             console.log("brak startu gry - levelChosenPlayer()");
-        }
+        };
     },3000);
-}
+};
+
 
 function clearLevelChosenPlayer(chosen){
     // console.log(localStorage.level + " - localStorage.level - początek clearLevelChosenPlayer");
