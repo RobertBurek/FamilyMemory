@@ -688,7 +688,7 @@ function levelChosenPlayer(chosen){
                 if (localStorage.animal === "cardsButterflyAll")
                 result_2_right.innerHTML = butterflyResults[i];
     
-            }
+            };
         };
         //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
         for (let i = 0; i < listLevels.length; i++) {
@@ -697,14 +697,14 @@ function levelChosenPlayer(chosen){
             listResultsRight[i].classList.add("display");
             listPictures[i].classList.add("display");
             listResultsLeft[i].classList.add("display");
-            }
-        }
+            };
+        };
 
     } else {
-        divResultsLeft.classList.remove("width3Elements");
-        divResultsLeft.classList.remove("borderRight");
+        divResultsLeft.classList.add("width3Elements");
+        divResultsLeft.classList.add("borderRight");
         divCenter.classList.add("widthCenter3Elements");
-        divCenter.classList.remove("width2Elements");
+        divCenter.classList.remove("widthCenter2Elements");
         divPictures.classList.add("width3Elements");
         divPictures.classList.remove("width2Elements");
         divLevels.classList.remove("borderRight");
@@ -717,7 +717,10 @@ function levelChosenPlayer(chosen){
             listResultsLeft[i].innerHTML = results18[i];
             if (localStorage.level === "24")
             listResultsLeft[i].innerHTML = results24[i];
-        }
+        };
+        listResultsLeft.forEach((result)=>{
+            result.classList.remove("display");
+        });
     }
 
     level2.classList.add(classChosen);
@@ -771,7 +774,7 @@ function clearLevelChosenPlayer(chosen){
         divResultsRight.classList.remove("width3Elements");
         divResultsRight.classList.remove("borderLeft");
         divCenter.classList.remove("widthCenter3Elements");
-        divCenter.classList.add("width2Elements");
+        divCenter.classList.add("widthCenter2Elements");
         divPictures.classList.remove("width3Elements");
         divPictures.classList.add("width2Elements");
         divLevels.classList.remove("borderLeft");
