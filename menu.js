@@ -584,21 +584,13 @@ let clickAnimal3 = function(){
     if (!localStorage.animal) {
         localStorage.setItem('animal', "cardsButterflyAll");
         animalChosenPlayer(this);
-        // localStorage.setItem('animal', "cardsButterflyAll");
-    } 
-    // else {
-        // clearAnimalAnimalChosenPlayer(this);
-        // localStorage.clear();
-    // }
-    // console.log(localStorage.animal + " - localStorage.animal - po kliknięciu");
-    // location.href = "memoryPlay.html";
-}
+    };
+};
+
 
 animal1.addEventListener('click', clickAnimal1);
 animal2.addEventListener('click', clickAnimal2);
 animal3.addEventListener('click', clickAnimal3);
-
-
 
 
 function levelChosenPlayer(chosen){
