@@ -407,7 +407,7 @@ let divLevels = document.getElementById("levels");
 let divResultsRight = document.getElementById("resultsRight");
 let divResultsLeft = document.getElementById("resultsLeft");
 
-
+let buttonStart = document.getElementById("StartGame");
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
 let listResultsLeft = [result_1_left, result_2_left, result_3_left];
@@ -494,17 +494,28 @@ function animalChosenPlayer(chosen){
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
     animal3.removeEventListener("click",clickAnimal3);
-    if (localStorage.animal && localStorage.level)
-    setTimeout(function(){
-        if (localStorage.animal && localStorage.level) {
-        localStorage.setItem('run',"animalChosenPlayer()");
-        console.log("start gry - animalChosenPlayer()");
-        // location.href = "memoryPlay.html";
-        } else {
-            console.log("brak startu gry - animalChosenPlayer()");
-        }
-    },3000);
+    if (localStorage.animal && localStorage.level) {
+        buttonStart.classList.remove("overlayHidden");
+        buttonStart.classList.add("overlayVisibility")
+    } else {
+        buttonStart.classList.add("overlayHidden");
+        buttonStart.classList.remove("overlayVisibility");
+    }
+    // setTimeout(function(){
+    //     if (localStorage.animal && localStorage.level) {
+    //     localStorage.setItem('run',"animalChosenPlayer()");
+    //     console.log("start gry - animalChosenPlayer()");
+    //     // location.href = "memoryPlay.html";
+    //     // location.href = "#StartGame";
+    //     // let ddd = document.getElementById("StartGame");
+    //     buttonStart.classList.remove("overlayHidden");
+    //     buttonStart.classList.add("overlayVisibility");
+    //     } else {
+    //         console.log("brak startu gry - animalChosenPlayer()");
+    //     }
+    // },3000);
 };
+
 
 function clearAnimalChosenPlayer(chosen){
     animal2.classList.remove("blackFrame");
@@ -560,6 +571,13 @@ function clearAnimalChosenPlayer(chosen){
         divResultsLeft.classList.add("width3Elements");
         divResultsLeft.classList.add("borderRight");
     };
+    if (localStorage.animal && localStorage.level) {
+        buttonStart.classList.remove("overlayHidden");
+        buttonStart.classList.add("overlayVisibility")
+    } else {
+        buttonStart.classList.add("overlayHidden");
+        buttonStart.classList.remove("overlayVisibility");
+    }
 };
 
 let clickAnimal1 = function(){
@@ -652,16 +670,24 @@ function levelChosenPlayer(chosen){
     level2.classList.add("blackFrame");
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
-    if (localStorage.animal && localStorage.level)
-    setTimeout(function(){
-        if (localStorage.animal && localStorage.level) {
-        localStorage.setItem('run',"levelChosenPlayer()");
-        console.log("start gry - levelChosenPlayer()");
-        // location.href = "memoryPlay.html";
-        } else {
-            console.log("brak startu gry - levelChosenPlayer()");
-        };
-    },3000);
+    if (localStorage.animal && localStorage.level) {
+        buttonStart.classList.remove("overlayHidden");
+        buttonStart.classList.add("overlayVisibility")
+    } else {
+        buttonStart.classList.add("overlayHidden");
+        buttonStart.classList.remove("overlayVisibility");
+    }
+    // if (localStorage.animal && localStorage.level)
+    // setTimeout(function(){
+    //     if (localStorage.animal && localStorage.level) {
+    //     localStorage.setItem('run',"levelChosenPlayer()");
+    //     console.log("start gry - levelChosenPlayer()");
+    //     // location.href = "memoryPlay.html";
+    //     location.href = "#StartGame";
+    //     } else {
+    //         console.log("brak startu gry - levelChosenPlayer()");
+    //     };
+    // },3000);
 };
 
 
@@ -719,6 +745,13 @@ function clearLevelChosenPlayer(chosen){
         divResultsRight.classList.add("width3Elements");
         divResultsRight.classList.add("borderLeft");
     };
+    if (localStorage.animal && localStorage.level) {
+        buttonStart.classList.remove("overlayHidden");
+        buttonStart.classList.add("overlayVisibility")
+    } else {
+        buttonStart.classList.add("overlayHidden");
+        buttonStart.classList.remove("overlayVisibility");
+    }
 };
 
 

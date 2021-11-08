@@ -18,14 +18,14 @@ let activePairCards = [];
 
 let resultGame = 0;
 
-function randomCards(elments){
+function randomCards(cardsPlayer){
     // console.log(elments.length);
     for (var step = 0; step < 9; step++) {
-        var index = Math.floor(Math.random() * elments.length);
-        cardsGame.push(elments[index]);
-        cardsGame.push(elments[index]);
+        var index = Math.floor(Math.random() * cardsPlayer.length);
+        cardsGame.push(cardsPlayer[index]);
+        cardsGame.push(cardsPlayer[index]);
         // console.log(elments[index]);
-        elments.splice(index, 1);
+        cardsPlayer.splice(index, 1);
     }
     // console.log(elments);
 }
@@ -35,8 +35,15 @@ function randomCards(elments){
 // cardsGame =[];
 // randomCards(cardsCatAll);
 // console.log(cardsGame);
-const some = Math.floor(Math.random() * picturesCollection.length);
-randomCards(picturesCollection[some]);
+
+// const some = Math.floor(Math.random() * picturesCollection.length);
+// randomCards(picturesCollection[some]);
+if (localStorage.animal === "cardsCatAll") cardsPlayer = cardsCatAll;
+if (localStorage.animal === "cardsDogAll") cardsPlayer = cardsDogAll;
+if (localStorage.animal === "cardsButterflyAll") cardsPlayer = cardsButterflyAll;
+randomCards(cardsPlayer);
+
+
 console.log(cardsGame);
 const pairsGame = cardsGame.length / 2;
 
