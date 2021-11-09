@@ -11,13 +11,33 @@ body {
 
 #container {
     display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.level12,.level18,.level24{
     flex-wrap: wrap;
 }
 
-#container>div {
+.level12>div {
+    flex-basis: 25%;
+    flex-grow: 1;
+    height: 33.33vh;
+    background-color: black;
+    border: 4px solid white;
+}
+
+.level18>div {
     flex-basis: 15%;
     flex-grow: 1;
     height: 33.33vh;
+    background-color: black;
+    border: 4px solid white;
+}
+
+.level24>div {
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 25vh;
     background-color: black;
     border: 4px solid white;
 }
@@ -126,18 +146,6 @@ p {
 
 /*---------------------POPUP--------------------------------------*/
 
-@media (orientation: portrait) {
-    #container>div {
-        flex-basis: 30%;
-        height: 16.16vh;
-    }
-    .popUp {
-        width: 60%;
-    }
-    .again {
-        margin-left: 30%;
-    }
-}
 
 .hidden1 {
     background-image: url(img/cardBack-1.jpg);
@@ -192,4 +200,29 @@ p {
 .success {
     opacity: 0.3;
     filter: alpha(opacity = 30);
+}
+
+@media (orientation: portrait) {
+    /* #container>div {
+        flex-basis: 30%;
+        height: 16.16vh;
+    } */
+    .level12>div {
+        flex-basis: 33%;
+        height: 25vh;
+    }
+    .level18>div {
+        flex-basis: 33%;
+        height: 16.66vh;
+    }
+    .level24>div {
+        flex-basis: 25%;
+        height: 16.66vh;
+    }
+    .popUp {
+        width: 60%;
+    }
+    .again {
+        margin-left: 30%;
+    }
 }
