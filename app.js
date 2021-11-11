@@ -1,6 +1,5 @@
 console.log(localStorage.animal, " - ", localStorage.level);
 
-
 const cardsDogAll = ["puppy1", "puppy2", "puppy3", "puppy4", "puppy5", "puppy6", "puppy7", "puppy8", "puppy9", "puppy10", "puppy11", "puppy12"];
 const cardsCatAll = ["kitty1", "kitty2", "kitty3", "kitty4", "kitty5", "kitty6", "kitty7", "kitty8","kitty9", "kitty10", "kitty11", "kitty12", "kitty13", "kitty14"];
 const cardsButterflyAll = ["butterfly1", "butterfly2", "butterfly3", "butterfly4", "butterfly5","butterfly6", "butterfly7", "butterfly8", "butterfly9", "butterfly10", 
@@ -8,19 +7,24 @@ const cardsButterflyAll = ["butterfly1", "butterfly2", "butterfly3", "butterfly4
 let picturesCollection = [cardsDogAll, cardsCatAll, cardsButterflyAll, cardsCatAll, cardsDogAll, cardsCatAll, cardsButterflyAll, cardsDogAll, cardsCatAll];
 const cardBackAll = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8", "hidden9", "hidden10"];
 const hiddenCardBack = cardBackAll[Math.floor(Math.random() * cardBackAll.length)];
-
+const container = document.getElementById("container");
+let levelsPlayer = 18;
 let cardsGame = [];
-
 const startTimeGame = new Date().getTime();
-
 let activeCard = "";
 let activePairCards = [];
-
 let resultGame = 0;
+if (localStorage.animal === "cardsCatAll") cardsPlayer = cardsCatAll;
+if (localStorage.animal === "cardsDogAll") cardsPlayer = cardsDogAll;
+if (localStorage.animal === "cardsButterflyAll") cardsPlayer = cardsButterflyAll;
+if (localStorage.level === "12") levelsPlayer = 12;
+if (localStorage.level === "18") levelsPlayer = 18;
+if (localStorage.level === "24") levelsPlayer = 24;
+
 
 function randomCards(cardsPlayer){
     // console.log(elments.length);
-    for (var step = 0; step < 9; step++) {
+    for (var step = 0; step < levelsPlayer / 2; step++) {
         var index = Math.floor(Math.random() * cardsPlayer.length);
         cardsGame.push(cardsPlayer[index]);
         cardsGame.push(cardsPlayer[index]);
