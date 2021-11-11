@@ -4,14 +4,8 @@
     box-sizing: border-box;
 }
 
-body {
-    /* display: flex;
-    flex-wrap: wrap; */
-}
-
 #container {
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .level12,.level18,.level24{
@@ -42,23 +36,24 @@ body {
     border: 4px solid white;
 }
 
-/*---------------------POPUP--------------------------------------*/
+.success {
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+}
 
+/*---------------------PopUp------------------------*/
 h3 {
     text-align: center;
 }
-
 p {
     text-align: center;
     font-size: 1.3em;
 }
-  
 .box {
     width: 40%;
     padding: 35px;
     border: 2px solid #fff;
 }
-
 .boxstyle{
     margin: 0 auto;
     background: rgba(255,255,255,0.2);
@@ -66,7 +61,6 @@ p {
     background-clip: padding-box;
     text-align: center;
 }
-  
 .button {
     font-size: 1em;
     padding: 6px;
@@ -78,15 +72,12 @@ p {
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
-
 .button:hover {
     background: #9fa0f9;
 }
-
 .again {
     margin-left: 40%;
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -98,7 +89,6 @@ p {
     visibility: hidden;
     opacity: 0;
 }
-
 .overlay:target {
     visibility: visible;
     opacity: 1;
@@ -107,7 +97,6 @@ p {
     left: 0;
     right: 0;
 }
-  
 .popUp {
     margin: 70px auto;
     padding: 20px;
@@ -116,14 +105,12 @@ p {
     width: 30%;
     position: relative;
 }
-  
 .popUp h3 {
     margin-top: -2px;
     margin-right: 4px;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
 }
-
 .popUp .close {
     position: absolute;
     top: 5px;
@@ -134,79 +121,60 @@ p {
     text-decoration: none;
     color: #333;
 }
-
 .popUp .close:hover {
     color: #9fa0f9;
 }
-
 .popUp .content {
     max-height: 30%;
     overflow: auto;
 }
+/*---------------------PopUp------------------------*/
 
-/*---------------------POPUP--------------------------------------*/
-
-
+/* ----------------Rewersy kart-------------------- */
 .hidden1 {
     background-image: url(img/cardBack-1.jpg);
     background-size: 100% 100%;
 }
-
 .hidden2 {
     background-image: url(img/cardBack-2.png);
     background-size: 100% 100%;
 }
-
 .hidden3 {
     background-image: url(img/cardBack-3.jpg);
     background-size: 100% 100%;
 }
-
 .hidden4 {
     background-image: url(img/cardBack-4.jpg);
     background-size: 100% 100%;
 }
-
 .hidden5 {
     background-image: url(img/cardBack-5.jpg);
     background-size: 100% 100%;
 }
-
 .hidden6 {
     background-image: url(img/cardBack-6.jpg);
     background-size: 100% 100%;
 }
-
 .hidden7 {
     background-image: url(img/cardBack-7.jpg);
     background-size: 100% 100%;
 }
-
 .hidden8 {
     background-image: url(img/cardBack-8.jpg);
     background-size: 100% 100%;
 }
-
 .hidden9 {
     background-image: url(img/cardBack-9.jpg);
     background-size: 100% 100%;
 }
-
 .hidden10 {
     background-image: url(img/cardBack-10.jpg);
     background-size: 100% 100%;
 }
+/* ----------------Rewersy kart-------------------- */
 
-.success {
-    opacity: 0.3;
-    filter: alpha(opacity = 30);
-}
 
 @media (orientation: portrait) {
-    /* #container>div {
-        flex-basis: 30%;
-        height: 16.16vh;
-    } */
     .level12>div {
         flex-basis: 33%;
         height: 25vh;
