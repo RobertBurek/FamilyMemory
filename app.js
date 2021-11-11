@@ -120,7 +120,9 @@ const clickCard = function(){
 };
 
 function reset(){
-    location.href = "#";
+    localStorage.setItem("amnimal", "");
+    localStorage.setItem("level", "");
+    location.href = "index.html";
     location.reload();
 }
 
