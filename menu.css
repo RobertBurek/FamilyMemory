@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 
-
 .center {
     width: 30%;
     background-color: white;
     border-radius: 2em;
-    /* border: 2vh solid black; */
     border: 2vh solid #566dee;
     padding: 1em;
     position: absolute;
@@ -36,28 +34,28 @@
     border-radius: 1em;
 }
 
-.centerLevel {
-    width: 50%;
-}
-.centerLevelsResults {
-    width: 50%;
-}
-.centerPicturesLevels {
-    width: 38%;
-}
-.picturesLevelsResults {
-    width: 38%;
-}
-.width30 {
-    width: 33%;
-}
+/* .centerLevel { */
+    /* width: 50%; */
+/* } */
+/* .centerLevelsResults { */
+    /* width: 50%; */
+/* } */
+/* .centerPicturesLevels { */
+    /* width: 38%; */
+/* } */
+/* .picturesLevelsResults { */
+    /* width: 38%; */
+/* } */
+/* .width30 { */
+    /* width: 33%; */
+/* } */
 .widht1Element {
     width: 100%;
 }
-.levelsPicturesResults {
-    width: 38%;
-    border-left: 2vh solid white;
-}
+/* .levelsPicturesResults { */
+    /* width: 38%; */
+    /* border-left: 2vh solid white; */
+/* } */
 .widthCenter2Elements {
     width: 40%;
 }
@@ -78,12 +76,10 @@
 }
 
 #pictures {
-    /* width: 100%; */
     float: left;
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
-    /* border: 1.8vh solid white; */
 }
 
 #pictures>div {
@@ -93,19 +89,12 @@
     border: 2vh solid white;
 }
 
-
 #levels {
-    /* width: 50%; */
-    /* float: right; */
     float: left;
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
-    /* border-left: 2vh solid white; */
-    /* border: 2vh solid black; */
 }
-
-
 
 #levels>div {
     flex-basis: 100%;
@@ -119,11 +108,6 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 1em;
-    /* font-size:  4vw; */
-    /* font-size: 2vmin; */
-
-    /* border-left: 0.5vh solid white; */
-    /* width: 55%; */
 }
 
 .resultsRight {
@@ -138,10 +122,6 @@
     border-top: 3vh solid white;
     border-bottom: 3vh solid white;
     font-size: 0.8vw;
-
-    /* margin-top: 1.5vh;               */
-    /* margin-left: 1%;   */
-    /* margin-right: 1%; */
     overflow: hidden;
 }
 
@@ -150,11 +130,6 @@
     float: left;
     flex-wrap: wrap;
     border-radius: 1em;
-    /* font-size:  4vw; */
-    /* font-size: 2vmin; */
-
-    /* border-left: 0.5vh solid white; */
-    /* width: 55%; */
 }
 
 .resultsLeft {
@@ -167,40 +142,18 @@
     flex-grow: 1;
     height: 20vh;
     border: 0.8vh solid white;
-    /* font-size: 10px; */
     font-size: 0.8vw;
-
-    /* width: 100%; */
-    /* height: 100%; */
-    /* border: 1px solid black; */
-    margin-top: 1.5vh;              
-    margin-left: 1%;  
+    margin-top: 1.5vh;
+    margin-left: 1%;
     margin-right: 1%;
-    /* padding: 2px;            */
-    /* width: 300px;            */
-    /* vertical-align: top; */
     overflow: hidden;
 }
 
-/* .marginResult {
-    margin-top: 21vh;
-    min-height: 25vh;
-} */
-
 .game {
-    /* position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0; */
     position: absolute;
     top: 34%;
     width: 11vw;
     height: 23.33vh !important;
-    /* transition-property:width, top, height; */
-    /* transition-duration:1s, 2s, 1s; */
-    /* transition-timing-function:linear, ease-in, linear; */
-    /* transition-delay:3s, 0s; */
 }
 
 .game:hover {
@@ -213,22 +166,17 @@
     transition-timing-function: linear, ease-in, linear, linear;
 }
 
-div.linia {             
-    width: inherit;         
-    /* padding: 4px 0 4px 0;    */
+div.linia {
+    width: inherit;
     border: 0; 
-}            
+}
 
-div.name {           
-    display: inline-block;        
+div.name {
+    display: inline-block;
     width: 65%;
     text-align: start;
-
-    /* white-space: nowrap;  */
-    /* width: 50px;  */
     overflow: hidden;
-    text-overflow: ellipsis; 
-    /* border: 1px solid #000000; */
+    text-overflow: ellipsis;
     font-size: 1.2em;
 }
 
@@ -269,49 +217,26 @@ div.result {
     background-size: 100% 100%;
 }
 
-/*---------------------POPUP--------------------------------------*/
-
-  
-
-  
-/* .popUpStart */
+/*---------------------PopUp------------------------*/
 .buttonStart {
     font-size: 1em;
     padding: 6px;
     color: #fff;
     border: 2px solid #566dee;
     box-shadow: 0px 0px 25px 0px #0306a6 inset;
-    /* border: 2px solid #36363a; */
-    /* box-shadow: 0px 0px 25px 0px #020218 inset; */
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
-
-/* .popUpStart */
 .buttonStart:hover {
     background: #9fa0f9;
-    /* background: #36363a; */
 }
-
-
-
 .overlayHidden {
-    /* position: fixed; */
-    /* display: inline-block; */
-    /* top: 50%; */
-    /* bottom: 0; */
-    /* left: 50%; */
-    /* right: 0; */
-    /* background: rgba(0, 0, 0, 0.7); */
-    /* transition: opacity 500ms; */
     visibility: hidden;
     opacity: 0;
 }
-
 #StartGame {
-    /* opacity: 0; */
     position: absolute;
     top: 70%;
     left: 50%;
@@ -319,59 +244,15 @@ div.result {
     transform: translate(-50%, -50%);
     display: flex;
 }
-
 .overlayVisibility {
     visibility: visible;
     opacity: 1;
-    /* top: 0; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* right: 0; */
 }
-
 .overlayStart:target {
     visibility: visible;
     opacity: 1;
-    /* top: 0; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* right: 0; */
 }
-  
 .popUpStart {
-    /* margin: 70px auto; */
-    /* padding: 20px; */
     background: #fff;
-    /* border-radius: 5px; */
-    /* width: 100%; */
-    /* position: relative; */
 }
-  
-/* .popUpStart h3 {
-    margin-top: -2px;
-    margin-right: 4px;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-} */
-
-/* .popUpStart .close {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-} */
-
-/* .popUpStart .close:hover {
-    color: #9fa0f9;
-} */
-
-/* .popUpStart .content {
-    max-height: 30%;
-    overflow: auto;
-} */
-
-/*---------------------POPUP--------------------------------------*/
+/*---------------------PopUp------------------------*/
