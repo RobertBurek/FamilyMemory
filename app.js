@@ -1,4 +1,4 @@
-console.log(localStorage.animal, " - ", localStorage.level);
+// console.log(localStorage.animal, " - ", localStorage.level);
 
 const cardsDogAll = ["puppy1", "puppy2", "puppy3", "puppy4", "puppy5", "puppy6", "puppy7", "puppy8", "puppy9", "puppy10", "puppy11", "puppy12"];
 const cardsCatAll = ["kitty1", "kitty2", "kitty3", "kitty4", "kitty5", "kitty6", "kitty7", "kitty8","kitty9", "kitty10", "kitty11", "kitty12", "kitty13", "kitty14"];
@@ -39,32 +39,16 @@ for (let i = 0; i < levelsPlayer; i++) {
 }
 
 function randomCards(cardsPlayer){
-    // console.log(elments.length);
     for (var step = 0; step < levelsPlayer / 2; step++) {
         var index = Math.floor(Math.random() * cardsPlayer.length);
         cardsGame.push(cardsPlayer[index]);
         cardsGame.push(cardsPlayer[index]);
-        // console.log(elments[index]);
         cardsPlayer.splice(index, 1);
     }
-    // console.log(elments);
 }
 
-// randomCards(cardsDogAll);
-// console.log(cardsGame);
-// cardsGame =[];
-// randomCards(cardsCatAll);
-// console.log(cardsGame);
-
-// const some = Math.floor(Math.random() * picturesCollection.length);
-// randomCards(picturesCollection[some]);
-if (localStorage.animal === "cardsCatAll") cardsPlayer = cardsCatAll;
-if (localStorage.animal === "cardsDogAll") cardsPlayer = cardsDogAll;
-if (localStorage.animal === "cardsButterflyAll") cardsPlayer = cardsButterflyAll;
 randomCards(cardsPlayer);
 
-
-console.log(cardsGame);
 const pairsGame = cardsGame.length / 2;
 
 let cards = document.querySelectorAll("#container>div");
@@ -82,10 +66,9 @@ const clickCard = function(){
             card.removeEventListener("click", clickCard);
         })
         activePairCards[1] = activeCard;
-        // console.log(activePairCards);
         setTimeout(function(){
             if (activePairCards[0].className === activePairCards[1].className) {
-                // console.log("wygrana");
+                // Wygrana
                 activePairCards.forEach(activeCard => {
                     activeCard.classList.add("success");
                 })
@@ -99,12 +82,9 @@ const clickCard = function(){
                     `<h3>Brawo !!! Twój wynik to ${timeGame}s.</h3>
                     <h3> Jesteś w TOP10.</h3>`;
                     location.href = "#infoWynik";
-                    // setTimeout(function(){
-                    //     location.reload()
-                    // },3000);
                 }
             } else {
-                // console.log("przegrana");
+                //  Przegrana
                 activePairCards.forEach(activeCard => {
                     activeCard.classList.add(hiddenCardBack);
                 })
@@ -123,16 +103,11 @@ function reset(){
     localStorage.setItem("amnimal", "");
     localStorage.setItem("level", "");
     location.href = "index.html";
-    location.reload();
 }
 
 const init = function() {
     cards.forEach(function(card){
         const position = Math.floor(Math.random() * cardsGame.length);
-        // card.style.backgroundImage = "url(img/success-1.png), url(img/" + cardsGame[position] +")";
-        // card.style.backgroundImage = "url(img/" + cardsGame[position];
-        // card.style.backgroundImage = "url(img/success-2.png)";
-        // card.style.backgroundSize = "100% 100%";
         card.classList.add(cardsGame[position]);
         cardsGame.splice(position,1);
     });
@@ -144,6 +119,5 @@ const init = function() {
     }, 2000);
 };
 
-// console.log(cards);
 
 init();
