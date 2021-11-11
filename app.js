@@ -17,10 +17,26 @@ let resultGame = 0;
 if (localStorage.animal === "cardsCatAll") cardsPlayer = cardsCatAll;
 if (localStorage.animal === "cardsDogAll") cardsPlayer = cardsDogAll;
 if (localStorage.animal === "cardsButterflyAll") cardsPlayer = cardsButterflyAll;
-if (localStorage.level === "12") levelsPlayer = 12;
-if (localStorage.level === "18") levelsPlayer = 18;
-if (localStorage.level === "24") levelsPlayer = 24;
 
+container.classList.remove("level12");
+container.classList.remove("level18");
+container.classList.remove("level24");
+if (localStorage.level === "12") {
+    levelsPlayer = 12;
+    container.classList.add("level12");
+}
+if (localStorage.level === "18") {
+    levelsPlayer = 18;
+    container.classList.add("level18");
+}
+if (localStorage.level === "24") {
+    levelsPlayer = 24;
+    container.classList.add("level24");
+}
+for (let i = 0; i < levelsPlayer; i++) {
+    var newDiv = document.createElement("div");
+    container.appendChild(newDiv);
+}
 
 function randomCards(cardsPlayer){
     // console.log(elments.length);
