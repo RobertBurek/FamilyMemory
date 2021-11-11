@@ -501,19 +501,6 @@ function animalChosenPlayer(chosen){
         buttonStart.classList.add("overlayHidden");
         buttonStart.classList.remove("overlayVisibility");
     }
-    // setTimeout(function(){
-    //     if (localStorage.animal && localStorage.level) {
-    //     localStorage.setItem('run',"animalChosenPlayer()");
-    //     console.log("start gry - animalChosenPlayer()");
-    //     // location.href = "memoryPlay.html";
-    //     // location.href = "#StartGame";
-    //     // let ddd = document.getElementById("StartGame");
-    //     buttonStart.classList.remove("overlayHidden");
-    //     buttonStart.classList.add("overlayVisibility");
-    //     } else {
-    //         console.log("brak startu gry - animalChosenPlayer()");
-    //     }
-    // },3000);
 };
 
 
@@ -677,17 +664,6 @@ function levelChosenPlayer(chosen){
         buttonStart.classList.add("overlayHidden");
         buttonStart.classList.remove("overlayVisibility");
     }
-    // if (localStorage.animal && localStorage.level)
-    // setTimeout(function(){
-    //     if (localStorage.animal && localStorage.level) {
-    //     localStorage.setItem('run',"levelChosenPlayer()");
-    //     console.log("start gry - levelChosenPlayer()");
-    //     // location.href = "memoryPlay.html";
-    //     location.href = "#StartGame";
-    //     } else {
-    //         console.log("brak startu gry - levelChosenPlayer()");
-    //     };
-    // },3000);
 };
 
 
@@ -759,47 +735,24 @@ let clickLevel1 = function(){
     if (!localStorage.level) {
         localStorage.setItem('level', "12");
         levelChosenPlayer(this);
-        // localStorage.setItem('level', "12");
-    } 
-    // else {
-        // clearLevelChosenPlayer(this);
-        // var animalLocalStorage = localStorage.animal;
-        // localStorage.clear();
-        // localStorage.setItem('animal', animalLocalStorage);
-    // }
-    // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level1");
-    // location.href = "memoryPlay.html";
+    }
 }
 
 let clickLevel2 = function(){
     if (!localStorage.level) {
         localStorage.setItem('level', "18");
         levelChosenPlayer(this);
-        // localStorage.setItem('level', "18");
     } else {
         localStorage.setItem('level', "");
         clearLevelChosenPlayer(this);
-        // var animalLocalStorage = localStorage.animal;
-        // localStorage.setItem('animal', animalLocalStorage);
     }
-    // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level2");
-    // location.href = "memoryPlay.html";
 }
 
 let clickLevel3 = function(){
     if (!localStorage.level) {
         localStorage.setItem('level', "24");
         levelChosenPlayer(this);
-        // localStorage.setItem('level', "24");
     } 
-    // else {
-        // clearLevelChosenPlayer(this);
-        // var animalLocalStorage = localStorage.animal;
-        // localStorage.clear();
-        // localStorage.setItem('animal', animalLocalStorage);
-    // }
-    // console.log(localStorage.level + " - localStorage.level - po kliknięciu w level3");
-    // location.href = "memoryPlay.html";
 }
 
 
