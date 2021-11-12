@@ -184,7 +184,7 @@ div.name {
     text-align: start;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 div.result {
@@ -192,18 +192,18 @@ div.result {
     width: 33%;
     text-align: end;
     overflow: hidden;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .titleResult>div:first-child>div:first-child{
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
     text-align: end;
     padding-right: 0.5vh;
 }
 .titleResult>div:first-child>div:last-child{
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
     text-align: start;
