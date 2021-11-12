@@ -14,6 +14,7 @@ const startTimeGame = new Date().getTime();
 let activeCard = "";
 let activePairCards = [];
 let resultGame = 0;
+let cardsPlayer = [];
 if (localStorage.animal === "cardsCatAll") cardsPlayer = cardsCatAll;
 if (localStorage.animal === "cardsDogAll") cardsPlayer = cardsDogAll;
 if (localStorage.animal === "cardsButterflyAll") cardsPlayer = cardsButterflyAll;
