@@ -36,6 +36,10 @@ let htmlResultsCat12 =
 '                        <div class="result">30,256 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
+'                        <div class="name">Roman 12</div>' +
+'                        <div class="result">30,256 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
 '                        <div class="name">MonikaLLL</div>' +
 '                        <div class="result">31,256 s</div>' +
 '                    </div>';
@@ -72,6 +76,10 @@ let htmlResultsCat18 =
 '                    <div class="linia">' +
 '                        <div class="name">KOTEK LLL  18</div>' +
 '                        <div class="result">33,256 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
+'                        <div class="name">RomanLLL</div>' +
+'                        <div class="result">34,256 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RomanLLL</div>' +
@@ -120,6 +128,10 @@ let htmlResultsCat24 =
 '                        <div class="result">64,856 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
+'                        <div class="name">KOTEK LLL</div>' +
+'                        <div class="result">64,856 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
 '                        <div class="name">MonikaLLL 24</div>' +
 '                        <div class="result">66,756 s</div>' +
 '                    </div>';
@@ -156,6 +168,10 @@ let htmlResultsDog12 =
 '                    <div class="linia">' +
 '                        <div class="name">GrzegorzLLL</div>' +
 '                        <div class="result">28,256 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
+'                        <div class="name">Roman 12</div>' +
+'                        <div class="result">30,256 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">Roman 12</div>' +
@@ -204,6 +220,10 @@ let htmlResultsDog18 =
 '                        <div class="result">34,256 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
+'                        <div class="name">RomanLLL</div>' +
+'                        <div class="result">34,256 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
 '                        <div class="name">PIESEK LLL</div>' +
 '                        <div class="result">36,256 s</div>' +
 '                    </div>';
@@ -240,6 +260,10 @@ let htmlResultsDog24 =
 '                    <div class="linia">' +
 '                        <div class="name">PIESEK LLL</div>' +
 '                        <div class="result">63,256 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
+'                        <div class="name">PIESEK LLL</div>' +
+'                        <div class="result">64,856 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">PIESEK LLL</div>' +
@@ -288,6 +312,10 @@ let htmlResultsButterfly12 =
 '                        <div class="result">30,256 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
+'                        <div class="name">Roman 12</div>' +
+'                        <div class="result">30,256 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
 '                        <div class="name">MonikaLLL</div>' +
 '                        <div class="result">31,256 s</div>' +
 '                    </div>';
@@ -324,6 +352,10 @@ let htmlResultsButterfly18 =
 '                    <div class="linia">' +
 '                        <div class="name">MOTYLEK LLL  18</div>' +
 '                        <div class="result">33,256 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
+'                        <div class="name">RomanLLL</div>' +
+'                        <div class="result">34,256 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
 '                        <div class="name">RomanLLL</div>' +
@@ -372,6 +404,10 @@ let htmlResultsButterfly24 =
 '                        <div class="result">64,856 s</div>' +
 '                    </div>' +
 '                    <div class="linia">' +
+'                        <div class="name">MOTYLEK LLL</div>' +
+'                        <div class="result">64,856 s</div>' +
+'                    </div>' +
+'                    <div class="linia">' +
 '                        <div class="name">MonikaLLL 24</div>' +
 '                        <div class="result">66,756 s</div>' +
 '                    </div>';
@@ -389,25 +425,20 @@ let results12 = [htmlResultsCat12, htmlResultsDog12, htmlResultsButterfly12];
 let results18 = [htmlResultsCat18, htmlResultsDog18, htmlResultsButterfly18];
 let results24 = [htmlResultsCat24, htmlResultsDog24, htmlResultsButterfly24];
 
-let animal1 = document.getElementById("animal1");
-let animal2 = document.getElementById("animal2");
-let animal3 = document.getElementById("animal3");
-let level1 = document.getElementById("level1");
-let level2 = document.getElementById("level2");
-let level3 = document.getElementById("level3");
-let result_1_left = document.getElementById("result_1_left");
-let result_2_left = document.getElementById("result_2_left");
-let result_3_left = document.getElementById("result_3_left");
-let result_1_right = document.getElementById("result_1_right");
-let result_2_right = document.getElementById("result_2_right");
-let result_3_right = document.getElementById("result_3_right");
-let divCenter = document.getElementById("center");
-let divPictures = document.getElementById("pictures");
-let divLevels = document.getElementById("levels");
-let divResultsRight = document.getElementById("resultsRight");
-let divResultsLeft = document.getElementById("resultsLeft");
+// let animal1 = document.getElementById("animal1");
+// let animal2 = document.getElementById("animal2");
+// let animal3 = document.getElementById("animal3");
+// let level1 = document.getElementById("level1");
+// let level2 = document.getElementById("level2");
+// let level3 = document.getElementById("level3");
+// let result_1_left = document.getElementById("result_1_left");
+// let result_2_left = document.getElementById("result_2_left");
+// let result_3_left = document.getElementById("result_3_left");
+// let result_1_right = document.getElementById("result_1_right");
+// let result_2_right = document.getElementById("result_2_right");
+// let result_3_right = document.getElementById("result_3_right");
 
-let buttonStart = document.getElementById("StartGame");
+// let StartGame = document.getElementById("StartGame");
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
 let listResultsLeft = [result_1_left, result_2_left, result_3_left];
@@ -439,12 +470,15 @@ function animalChosenPlayer(chosen){
     listLevels.forEach(level => {
         level.classList.remove("display");
     });
-    divLevels.classList.add("width3Elements");
-    divLevels.classList.add("borderLeft");
+    levels.classList.remove("width2Elements");
+    levels.classList.add("width3Elements");
+    levels.classList.add("borderLeft");
+    center.classList.remove("widthCenter2Elements");
+    center.classList.add("widthCenter3Elements");
     listPictures.forEach(picture => {
         picture.classList.remove("viewHover");
     });
-    divCenter.classList.add("widthCenter3Elements");
+    pictures.classList.remove("width2Elements");
     pictures.classList.remove("widht1Element");
     pictures.classList.add("width3Elements");
     const classChosen = chosen.className;
@@ -487,19 +521,19 @@ function animalChosenPlayer(chosen){
         listResultsRight.forEach((result)=>{
             result.classList.remove("display");
         });
-        divResultsRight.classList.add("width3Elements");
-        divResultsRight.classList.add("borderLeft");
+        resultsRight.classList.add("width3Elements");
+        resultsRight.classList.add("borderLeft");
     };
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
     animal3.removeEventListener("click",clickAnimal3);
     if (localStorage.animal && localStorage.level) {
-        buttonStart.classList.remove("overlayHidden");
-        buttonStart.classList.add("overlayVisibility")
+        StartGame.classList.remove("overlayHidden");
+        StartGame.classList.add("overlayVisibility")
     } else {
-        buttonStart.classList.add("overlayHidden");
-        buttonStart.classList.remove("overlayVisibility");
+        StartGame.classList.add("overlayHidden");
+        StartGame.classList.remove("overlayVisibility");
     }
 };
 
@@ -528,22 +562,22 @@ function clearAnimalChosenPlayer(chosen){
     animal1.addEventListener('click', clickAnimal1);
     animal3.addEventListener('click', clickAnimal3);
     if (!localStorage.level) {
-        divResultsRight.classList.remove("width3Elements");
-        divResultsRight.classList.remove("borderLeft");
-        divCenter.classList.remove("widthCenter3Elements");
-        divCenter.classList.add("widthCenter2Elements");
-        divPictures.classList.remove("width3Elements");
-        divPictures.classList.add("width2Elements");
-        divLevels.classList.remove("borderLeft");
-        divLevels.classList.remove("width3Elements");
-        divLevels.classList.add("width2Elements");
-        divResultsLeft.classList.remove("width3Elements");
-        divResultsLeft.classList.remove("borderRight");
+        resultsRight.classList.remove("width3Elements");
+        resultsRight.classList.remove("borderLeft");
+        center.classList.remove("widthCenter3Elements");
+        center.classList.add("widthCenter2Elements");
+        pictures.classList.remove("width3Elements");
+        pictures.classList.add("width2Elements");
+        levels.classList.remove("borderLeft");
+        levels.classList.remove("width3Elements");
+        levels.classList.add("width2Elements");
+        resultsLeft.classList.remove("width3Elements");
+        resultsLeft.classList.remove("borderRight");
     } else {
-        divResultsRight.classList.remove("width3Elements");
-        divResultsRight.classList.remove("borderLeft");
-        divResultsLeft.classList.remove("width3Elements");
-        divResultsLeft.classList.remove("borderRight");
+        resultsRight.classList.remove("width3Elements");
+        resultsRight.classList.remove("borderLeft");
+        resultsLeft.classList.remove("width3Elements");
+        resultsLeft.classList.remove("borderRight");
         for (let i = 0; i < listResultsLeft.length; i++) {
             if (localStorage.level === "12")
             listResultsLeft[i].innerHTML = results12[i];
@@ -555,15 +589,15 @@ function clearAnimalChosenPlayer(chosen){
         listResultsLeft.forEach((result)=>{
             result.classList.remove("display");
         });
-        divResultsLeft.classList.add("width3Elements");
-        divResultsLeft.classList.add("borderRight");
+        resultsLeft.classList.add("width3Elements");
+        resultsLeft.classList.add("borderRight");
     };
     if (localStorage.animal && localStorage.level) {
-        buttonStart.classList.remove("overlayHidden");
-        buttonStart.classList.add("overlayVisibility")
+        StartGame.classList.remove("overlayHidden");
+        StartGame.classList.add("overlayVisibility")
     } else {
-        buttonStart.classList.add("overlayHidden");
-        buttonStart.classList.remove("overlayVisibility");
+        StartGame.classList.add("overlayHidden");
+        StartGame.classList.remove("overlayVisibility");
     }
 };
 
@@ -598,8 +632,8 @@ animal3.addEventListener('click', clickAnimal3);
 
 
 function levelChosenPlayer(chosen){
-    divLevels.classList.add("width3Elements");
-    divLevels.classList.add("borderLeft");
+    levels.classList.add("width3Elements");
+    levels.classList.add("borderLeft");
     listLevels.forEach(level => {
         level.classList.remove("viewHover");
     });
@@ -632,15 +666,15 @@ function levelChosenPlayer(chosen){
             };
         };
     } else {
-        divResultsLeft.classList.add("width3Elements");
-        divResultsLeft.classList.add("borderRight");
-        divCenter.classList.add("widthCenter3Elements");
-        divCenter.classList.remove("widthCenter2Elements");
-        divPictures.classList.add("width3Elements");
-        divPictures.classList.remove("width2Elements");
-        divLevels.classList.remove("borderRight");
-        divLevels.classList.add("width3Elements");
-        divLevels.classList.remove("width2Elements");
+        resultsLeft.classList.add("width3Elements");
+        resultsLeft.classList.add("borderRight");
+        center.classList.add("widthCenter3Elements");
+        center.classList.remove("widthCenter2Elements");
+        pictures.classList.add("width3Elements");
+        pictures.classList.remove("width2Elements");
+        levels.classList.remove("borderRight");
+        levels.classList.add("width3Elements");
+        levels.classList.remove("width2Elements");
         for (let i = 0; i < listResultsLeft.length; i++) {
             if (localStorage.level === "12")
             listResultsLeft[i].innerHTML = results12[i];
@@ -658,11 +692,11 @@ function levelChosenPlayer(chosen){
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
     if (localStorage.animal && localStorage.level) {
-        buttonStart.classList.remove("overlayHidden");
-        buttonStart.classList.add("overlayVisibility")
+        StartGame.classList.remove("overlayHidden");
+        StartGame.classList.add("overlayVisibility")
     } else {
-        buttonStart.classList.add("overlayHidden");
-        buttonStart.classList.remove("overlayVisibility");
+        StartGame.classList.add("overlayHidden");
+        StartGame.classList.remove("overlayVisibility");
     }
 };
 
@@ -691,22 +725,22 @@ function clearLevelChosenPlayer(chosen){
     level1.addEventListener('click', clickLevel1);
     level3.addEventListener('click', clickLevel3);
     if (!localStorage.animal) {
-        divResultsRight.classList.remove("width3Elements");
-        divResultsRight.classList.remove("borderLeft");
-        divCenter.classList.remove("widthCenter3Elements");
-        divCenter.classList.add("widthCenter2Elements");
-        divPictures.classList.remove("width3Elements");
-        divPictures.classList.add("width2Elements");
-        divLevels.classList.remove("borderLeft");
-        divLevels.classList.remove("width3Elements");
-        divLevels.classList.add("width2Elements");
-        divResultsLeft.classList.remove("width3Elements");
-        divResultsLeft.classList.remove("borderRight");
+        resultsRight.classList.remove("width3Elements");
+        resultsRight.classList.remove("borderLeft");
+        center.classList.remove("widthCenter3Elements");
+        center.classList.add("widthCenter2Elements");
+        pictures.classList.remove("width3Elements");
+        pictures.classList.add("width2Elements");
+        levels.classList.remove("borderLeft");
+        levels.classList.remove("width3Elements");
+        levels.classList.add("width2Elements");
+        resultsLeft.classList.remove("width3Elements");
+        resultsLeft.classList.remove("borderRight");
     } else {
-        divResultsRight.classList.remove("width3Elements");
-        divResultsRight.classList.remove("borderRight");
-        divResultsLeft.classList.remove("width3Elements");
-        divResultsLeft.classList.remove("borderRight");
+        resultsRight.classList.remove("width3Elements");
+        resultsRight.classList.remove("borderRight");
+        resultsLeft.classList.remove("width3Elements");
+        resultsLeft.classList.remove("borderRight");
         for (let i = 0; i < listResultsRight.length; i++) {
             if (localStorage.animal === "cardsCatAll")
             listResultsRight[i].innerHTML = catResults[i];
@@ -718,15 +752,15 @@ function clearLevelChosenPlayer(chosen){
         listResultsRight.forEach((result)=>{
             result.classList.remove("display");
         });
-        divResultsRight.classList.add("width3Elements");
-        divResultsRight.classList.add("borderLeft");
+        resultsRight.classList.add("width3Elements");
+        resultsRight.classList.add("borderLeft");
     };
     if (localStorage.animal && localStorage.level) {
-        buttonStart.classList.remove("overlayHidden");
-        buttonStart.classList.add("overlayVisibility")
+        StartGame.classList.remove("overlayHidden");
+        StartGame.classList.add("overlayVisibility")
     } else {
-        buttonStart.classList.add("overlayHidden");
-        buttonStart.classList.remove("overlayVisibility");
+        StartGame.classList.add("overlayHidden");
+        StartGame.classList.remove("overlayVisibility");
     }
 };
 
