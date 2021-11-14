@@ -1,44 +1,11 @@
-'                    <div class="linia">'
-'                        <div class="name">BUTTERFLY</div>'
-'                        <div class="result">12 el.</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">RobertLLL  12</div>'
-'                        <div class="result">11,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">Magdalenaaaddccgggggg</div>'
-'                        <div class="result">15,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">MOTYLEK LLL</div>'
-'                        <div class="result">16,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">KrzyśLLL</div>'
-'                        <div class="result">18,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">Mirosław 12</div>'
-'                        <div class="result">20,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">MOTYLEK LLL</div>'
-'                        <div class="result">21,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">GrzegorzLLL</div>'
-'                        <div class="result">28,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">Roman 12</div>'
-'                        <div class="result">30,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">Roman 12</div>'
-'                        <div class="result">30,256 s</div>'
-'                    </div>'
-'                    <div class="linia">'
-'                        <div class="name">MonikaLLL</div>'
-'                        <div class="result">31,256 s</div>'
-'                    </div>'
+BUTTERFLY,12 el.
+RobertLLL  12,11.256
+Magdalenaaaddccgggggg,15.256
+MOTYLEK LLL,16.256
+KrzyśLLL,18.256
+Mirosław 12,20.256
+MOTYLEK LLL,21.256
+GrzegorzLLL,28.256
+Roman 12,30.256
+Royyyyman 12,30.856
+ddddddddddd,31.256

@@ -1,39 +1,52 @@
 <?php
+	session_start();
+if (!file_exists('.\results\butterfly12.txt')) 
+{
+  echo 'Nie znaleziono pliku!';
+  exit;
+}
+$resultsBatt12=file('.\results\butterfly12.txt');
+if (count($resultsBatt12)===0)
+{
+  echo 'Plik jest pusty!';
+  exit;
+}
+$plik = [];
 
-// wczytanie starych danych
+foreach($resultsBatt12 as $wiersz){
+echo $wiersz.'<br/>';
+array_push($plik, $wiersz);
+}
 
-// otwarcie pliku do odczytu
-$fp = fopen("\results\butterfly12.txt", "r");
+echo '<br/>';echo '<br/>';
+echo $plik[4];
+echo '<br/>';echo '<br/>';
 
-//odczytanie danych
-$stareDane = fread($fp, filesize("\results\butterfly12.txt"));
-echo $stareDane;
-
-// zamknięcie pliku
-fclose($fp)
-
-// stworzenie nowych danych
-
-$noweDaneStart  = "To, co chcesz, żeby było na początku\n";
-$noweDaneEnd  = "To, co chcesz, żeby było na końcu\n";
-$noweDaneStart .= $stareDane;
-$stareDane .= $noweDaneEnd;
-
-// zapisanie nowych danych
-
-// otwarcie pliku do zapisu
-$fp = fopen("\results\butterfly12.txt", "w");
-
-// zapisanie danych
-fputs($fp, $noweDane);
-
-// zamknięcie pliku
-fclose($fp);
+$data = array(['Jan', 'Kowalski'],['Robert','Burek']);
+// echo $data;
+echo json_encode($data);
+echo json_encode($data[1]);
+// $_SESSION['dane']=$data;
+// echo $data;
+// echo $_SESSION['dane'];
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script type="text/javascript">
+    let myvar='<?php echo json_encode($data);?>';
+    let resultsB12='<?php echo json_encode($resultsBatt12);?>';
+    for (let index = 0; index <= 12; index++) {
+    };
+
+    console.log(myvar);
+    console.log(resultsB12);
+    // console.log(pll);
+    localStorage.setItem("plik",resultsB12);
+</script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +55,7 @@ fclose($fp);
     <link rel="stylesheet" href="dogs.css">
     <link rel="stylesheet" href="butterflies.css">
     <link rel="stylesheet" href="style.css">
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
 </head>
 <body>
     <div id="container">
