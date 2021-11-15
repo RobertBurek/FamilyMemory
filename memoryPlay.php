@@ -13,6 +13,11 @@ if (count($resultsBatt12)===0)
 }
 $plik = [];
 
+$dog12 = implode('', file('.\results\putty12.txt'));
+$listaDog12 = array($dog12);
+echo json_encode($listaDog12);
+// foreach($dog12 as $wiersz) echo $wiersz.'<br/>';
+
 foreach($resultsBatt12 as $wiersz){
 echo $wiersz.'<br/>';
 array_push($plik, $wiersz);
@@ -30,6 +35,33 @@ echo json_encode($data[1]);
 // echo $data;
 // echo $_SESSION['dane'];
 
+// wczytanie starych danych
+
+// otwarcie pliku do odczytu
+$fp = fopen('.\results\putty12.txt', "r");
+
+//odczytanie danych
+$stareDane = fread($fp, filesize('.\results\putty12.txt'));
+
+// zamknięcie pliku
+fclose($fp);
+
+// stworzenie nowych danych
+
+$noweDane = 'To, co chcesz, żeby było na początku';
+$noweDane .= $stareDane;
+
+// zapisanie nowych danych
+
+// otwarcie pliku do zapisu
+$fp2 = fopen('.\results\putty12.txt', "w");
+
+// zapisanie danych
+fputs($fp2, $noweDane);
+
+// zamknięcie pliku
+fclose($fp2);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,11 +72,12 @@ echo json_encode($data[1]);
     let resultsB12='<?php echo json_encode($resultsBatt12);?>';
     for (let index = 0; index <= 12; index++) {
     };
-
+    
     console.log(myvar);
     console.log(resultsB12);
     // console.log(pll);
     localStorage.setItem("plik",resultsB12);
+    // localStorage.setItem("dog12",dog12);
 </script>
 
     <meta charset="UTF-8">
