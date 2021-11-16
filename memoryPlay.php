@@ -48,7 +48,7 @@ fclose($fp);
 
 // stworzenie nowych danych
 
-$noweDane = 'To, co chcesz, żeby było na początku';
+$noweDane = '[DDDDOOOOOGGGGGGG,8.258]';
 $noweDane .= $stareDane;
 
 // zapisanie nowych danych
