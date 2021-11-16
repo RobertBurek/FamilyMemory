@@ -44,7 +44,7 @@ while(!feof($fp))
 }
 var_dump($arrayA);
 echo '<br/><br/>';
-// unset($arrayA[count($arrayA)-1]);
+unset($arrayA[count($arrayA)-1]);
 var_dump($arrayA);
 // $results = fread($fp, filesize($nazwa_pliku));
 // $results = implode('', file($nazwa_pliku));
@@ -59,7 +59,7 @@ $a2=array($a22, 6);
 // $a=array($a1,$a2);
 // $a=array("sfsdfsf\r\n","piopipoip\r\n","gfhghjfgjghj\r\n"); //'["sfsdfsf","piopipoip","gfhghjfgjghj"]'
 $a=$arrayA;                                        //'["Kolejna linia 1\r\n","Kolejna linia 2\r\n"]'
-var_dump($a);
+// var_dump($a);
 ?>
 
 <!DOCTYPE html>
@@ -81,7 +81,7 @@ console.log(a[1][1]);
 
 
 
-    let results='<?php echo json_encode($arrayA);?>';
+    let results=eval('<?php echo json_encode($arrayA);?>');
     console.log(results);
     var a = eval(results);
 
