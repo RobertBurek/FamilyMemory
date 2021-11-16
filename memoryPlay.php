@@ -6,14 +6,14 @@ if (!file_exists($nazwa_pliku))
   echo 'Nie znaleziono pliku!';
   exit;
 }
-$results=file($nazwa_pliku);
-if (count($results)===0)
-{
-  echo 'Plik jest pusty!';
-//   exit;
-}
+// $results=file($nazwa_pliku);
+// if (count($results)===0)
+// {
+//   echo 'Plik jest pusty!';
+// //   exit;
+// }
 
-$liczba_linii = count(file($nazwa_pliku));
+// $liczba_linii = count(file($nazwa_pliku));
 // $kolejna = "Kolejna linia ".$liczba_linii+1;
 
 // if (is_writeable($nazwa_pliku))
@@ -31,34 +31,54 @@ $liczba_linii = count(file($nazwa_pliku));
 
 //   } else echo "Do pliku nie można dopisać informacji lub on nie istnieje...";
 
-$arrayA = [];
+function readResults($nameFile){
+    $results = [];
+    $fp = fopen($nameFile, "rb");
+    while(!feof($fp)) 
+    {
+       $name = substr(fgets($fp), 0, -2);//echo $name;
+       $result = substr(fgets($fp), 0, -2);//echo $result;
+       $oneResult = array($name, $result);
+       array_push($results, $oneResult);
+    };
+    fclose($fp);
+    unset($results[count($results)-1]);
+    return $results;
+};
 
-$fp = fopen($nazwa_pliku, "rb");
-while(!feof($fp))
-{
-   $linia = substr(fgets($fp), 0, -2);
-   $name = substr(fgets($fp), 0, -2);
-   $arrayLinia = array($linia,$name);
+$resultsDog12 = readResults('.\results\puppy12.txt');
+$resultsButterfly12 = readResults('.\results\butterfly12.txt');
+$resultsDog18 = readResults('.\results\puppy18.txt');
+// var_dump($resultsDog12);
+
+// $arrayA = [];
+
+// $fp = fopen($nazwa_pliku, "rb");
+// while(!feof($fp))
+// {
+//    $linia = substr(fgets($fp), 0, -2);
+//    $name = substr(fgets($fp), 0, -2);
+//    $arrayLinia = array($linia,$name);
 //    array_push($arrayA, $linia);
-   array_push($arrayA, $arrayLinia);
-}
-var_dump($arrayA);
-echo '<br/><br/>';
-unset($arrayA[count($arrayA)-1]);
-var_dump($arrayA);
+//    array_push($arrayA, $arrayLinia);
+// }
+// var_dump($arrayA);
+// echo '<br/><br/>';
+// unset($arrayA[count($arrayA)-1]);
+// var_dump($arrayA);
 // $results = fread($fp, filesize($nazwa_pliku));
 // $results = implode('', file($nazwa_pliku));
 // echo $results[5];
 // foreach($results as $wiersz)
 // echo @wiersz;
 
-echo '<br/><br/>';
-$a1=array(1,2,3);
-$a22=array("ggggggg",5);
-$a2=array($a22, 6);
+// echo '<br/><br/>';
+// $a1=array(1,2,3);
+// $a22=array("ggggggg",5);
+// $a2=array($a22, 6);
 // $a=array($a1,$a2);
 // $a=array("sfsdfsf\r\n","piopipoip\r\n","gfhghjfgjghj\r\n"); //'["sfsdfsf","piopipoip","gfhghjfgjghj"]'
-$a=$arrayA;                                        //'["Kolejna linia 1\r\n","Kolejna linia 2\r\n"]'
+// $a=$arrayA;                                        //'["Kolejna linia 1\r\n","Kolejna linia 2\r\n"]'
 // var_dump($a);
 ?>
 
@@ -73,26 +93,29 @@ var json='<?php
         // $a22=array("ggggggg",5);
         // $a2=array($a22, 6);
         // $a=array($a1,$a2);
-        echo json_encode($a);
+        // echo json_encode($a);
+        // echo json_encode($arrayA);
 ?>';
-var a=eval(json);
-document.write(a[1]);
-console.log(a[1][1]);
+// var a=eval(json);
+// document.write(a[1]);
+// console.log(a[1][1]);
 
 
 
-    let results=eval('<?php echo json_encode($arrayA);?>');
-    console.log(results);
-    var a = eval(results);
+    let resultsDog12=eval('<?php echo json_encode($resultsDog12);?>');
+    let resultsButterfly12=eval('<?php echo json_encode($resultsButterfly12);?>');
+    let resultsDog18=eval('<?php echo json_encode($resultsDog18);?>');
+    // console.log(resultsDog12);
+    // var a = eval(resultsDog12);
 
-    console.log(a[1]);
+    // console.log(resultsDog12[5]);
 
 
     
     // console.log(myvar);
 
     // console.log(pll);
-    localStorage.setItem("plik",results);
+    // localStorage.setItem("plik",resultsDog12);
     // localStorage.setItem("dog12",dog12);
 </script>
 
