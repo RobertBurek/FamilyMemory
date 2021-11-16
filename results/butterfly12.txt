@@ -1,11 +1,23 @@
-BUTTERFLY,12 el.
-RobertLLL  12,11.256
-Magdalenaaaddccgggggg,15.256
-MOTYLEK LLL,16.256
-KrzyśLLL,18.256
-Mirosław 12,20.256
-MOTYLEK LLL,21.256
-GrzegorzLLL,28.256
-Roman 12,30.256
-Royyyyman 12,30.856
-ddddddddddd,31.256
+BUTTERFLY
+12 el.
+RobertLLL  12
+11.256
+Magdalenaaaddccgggggg
+15.256
+MOTYLEK LLL
+16.256
+KrzyśLLL
+18.256
+Mirosław 12
+20.256
+MOTYLEK LLL
+21.256
+GrzegorzLLL
+28.256
+Roman 12
+30.256
+Royyyyman 12
+30.856
+ddddddddddd
+31.256
+

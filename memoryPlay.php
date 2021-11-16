@@ -1,82 +1,98 @@
 <?php
 	session_start();
-if (!file_exists('.\results\butterfly12.txt')) 
+    $nazwa_pliku = '.\results\butterfly12.txt';
+if (!file_exists($nazwa_pliku)) 
 {
   echo 'Nie znaleziono pliku!';
   exit;
 }
-$resultsBatt12=file('.\results\butterfly12.txt');
-if (count($resultsBatt12)===0)
+$results=file($nazwa_pliku);
+if (count($results)===0)
 {
   echo 'Plik jest pusty!';
-  exit;
-}
-$plik = [];
-
-$dog12 = implode('', file('.\results\putty12.txt'));
-$listaDog12 = array($dog12);
-echo json_encode($listaDog12);
-// foreach($dog12 as $wiersz) echo $wiersz.'<br/>';
-
-foreach($resultsBatt12 as $wiersz){
-echo $wiersz.'<br/>';
-array_push($plik, $wiersz);
+//   exit;
 }
 
-echo '<br/>';echo '<br/>';
-echo $plik[4];
-echo '<br/>';echo '<br/>';
+$liczba_linii = count(file($nazwa_pliku));
+// $kolejna = "Kolejna linia ".$liczba_linii+1;
 
-$data = array(['Jan', 'Kowalski'],['Robert','Burek']);
-// echo $data;
-echo json_encode($data);
-echo json_encode($data[1]);
-// $_SESSION['dane']=$data;
-// echo $data;
-// echo $_SESSION['dane'];
+// if (is_writeable($nazwa_pliku))
+//   {
+//    if ($plik = fopen($nazwa_pliku, "a"))
+//      {
+//       if (fwrite($plik, "".$kolejna."
+// ") !== FALSE) 
+//             echo "Zapis do pliku zakończył się powodzeniem..."."<br/>";
+//         else echo "Zapis do pliku się nie powiódł...";
 
-// wczytanie starych danych
+//       fclose($plik);
 
-// otwarcie pliku do odczytu
-$fp = fopen('.\results\putty12.txt', "r");
+//      } else echo "Nie mogę nawiązać połączenia z plikiem...";
 
-//odczytanie danych
-$stareDane = fread($fp, filesize('.\results\putty12.txt'));
+//   } else echo "Do pliku nie można dopisać informacji lub on nie istnieje...";
 
-// zamknięcie pliku
-fclose($fp);
+$arrayA = [];
 
-// stworzenie nowych danych
+$fp = fopen($nazwa_pliku, "rb");
+while(!feof($fp))
+{
+   $linia = substr(fgets($fp), 0, -2);
+   $name = substr(fgets($fp), 0, -2);
+   $arrayLinia = array($linia,$name);
+//    array_push($arrayA, $linia);
+   array_push($arrayA, $arrayLinia);
+}
+var_dump($arrayA);
+echo '<br/><br/>';
+// unset($arrayA[count($arrayA)-1]);
+var_dump($arrayA);
+// $results = fread($fp, filesize($nazwa_pliku));
+// $results = implode('', file($nazwa_pliku));
+// echo $results[5];
+// foreach($results as $wiersz)
+// echo @wiersz;
 
-$noweDane = '[DDDDOOOOOGGGGGGG,8.258]';
-$noweDane .= $stareDane;
-
-// zapisanie nowych danych
-
-// otwarcie pliku do zapisu
-$fp2 = fopen('.\results\putty12.txt', "w");
-
-// zapisanie danych
-fputs($fp2, $noweDane);
-
-// zamknięcie pliku
-fclose($fp2);
-
+echo '<br/><br/>';
+$a1=array(1,2,3);
+$a22=array("ggggggg",5);
+$a2=array($a22, 6);
+// $a=array($a1,$a2);
+// $a=array("sfsdfsf\r\n","piopipoip\r\n","gfhghjfgjghj\r\n"); //'["sfsdfsf","piopipoip","gfhghjfgjghj"]'
+$a=$arrayA;                                        //'["Kolejna linia 1\r\n","Kolejna linia 2\r\n"]'
+var_dump($a);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
 <script type="text/javascript">
-    let myvar='<?php echo json_encode($data);?>';
-    let resultsB12='<?php echo json_encode($resultsBatt12);?>';
-    for (let index = 0; index <= 12; index++) {
-    };
+
+var json='<?php
+        // $a1=array(1,2,3);
+        // $a22=array("ggggggg",5);
+        // $a2=array($a22, 6);
+        // $a=array($a1,$a2);
+        echo json_encode($a);
+?>';
+var a=eval(json);
+document.write(a[1]);
+console.log(a[1][1]);
+
+
+
+    let results='<?php echo json_encode($arrayA);?>';
+    console.log(results);
+    var a = eval(results);
+
+    console.log(a[1]);
+
+
     
-    console.log(myvar);
-    console.log(resultsB12);
+    // console.log(myvar);
+
     // console.log(pll);
-    localStorage.setItem("plik",resultsB12);
+    localStorage.setItem("plik",results);
     // localStorage.setItem("dog12",dog12);
 </script>
 

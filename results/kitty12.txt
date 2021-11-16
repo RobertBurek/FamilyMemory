@@ -1,0 +1,48 @@
+{
+    "results" : [
+        {
+            "name" : "CAT",
+            "result" : "12 el."
+        },
+        {
+            "name" : "wynik1",
+            "result" : "11.258",
+        },
+                {
+            "name" : "wynik2",
+            "result" : "12.254"
+        },
+        {
+            "name" : "bg102",
+            "result" : "11.258",
+        },
+                {
+            "name" : "wynik4",
+            "result" : "12.584"
+        },
+        {
+            "name" : "bg102",
+            "result" : "11.258",
+        },
+                {
+            "name" : "wynik6",
+            "result" : "15.269"
+        },
+        {
+            "name" : "bg102",
+            "result" : "11.258",
+        },
+                {
+            "name" : "wynik8",
+            "result" : "18.247"
+        },
+        {
+            "name" : "bg102",
+            "result" : "11.258",
+        },
+                {
+            "name" : "wynik10",
+            "result" : "19.258",
+        }
+    ]
+}

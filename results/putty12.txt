@@ -1,11 +1,11 @@
-[DOGGG,12 el.]
-[DOGRobertLLL  12,11.256]
-[DOGMagdalenaaaddccgggggg,15.256]
-[DOGMOTYLEK LLL,16.256]
-[DOGKrzyśLLL,18.256]
-[DOGMirosław 12,20.256]
-[DOGMOTYLEK LLL,21.256]
-[DOGGrzegorzLLL,28.256]
-[DOGRoman 12,30.256]
-[DOGRoyyyyman 12,30.856]
-[DOGddddddddddd,31.256]
+PUTTY,12 el.
+RobertLLL  12,11.256
+Magdalenaaaddccgggggg,15.256
+MOTYLEK LLL,16.256
+KrzyśLLL,18.256
+Mirosław 12,20.256
+MOTYLEK LLL,21.256
+GrzegorzLLL,28.256
+Roman 12,30.256
+Royyyyman 12,30.856
+ddddddddddd,31.256
