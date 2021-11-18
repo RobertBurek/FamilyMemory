@@ -47,6 +47,7 @@ function readResults($nameFile){
 };
 
 $resultsDog12 = readResults('.\results\puppy12.txt');
+$_SESSION['resultsDog12'] = $resultsDog12;
 $resultsButterfly12 = readResults('.\results\butterfly12.txt');
 $resultsDog18 = readResults('.\results\puppy18.txt');
 // var_dump($resultsDog12);
@@ -134,7 +135,7 @@ var json='<?php
         <!-- Zawartość wypełniona przez app.js -->
         <!-- w zależności od dokonanego wyboru w menu. -->
     </div>
-    <!-- <a class="button" href="#infoWynik">Info</a> -->
+    <a class="button" href="#infoWynik">Info</a>
     <div id="infoWynik" class="overlay">
         <div class="popUp">
             <br>
@@ -142,14 +143,15 @@ var json='<?php
                 <!-- <h3>Brawo !!! Twój wynik to 24s.</h3>
                 <h3> Jesteś w TOP10.</h3> -->
             </div>
-            <form action="#" method="POST">
+            <form action="saveResults.php" method="POST">
                 <p>
                     Podaj swoje imię: 
                     <input class="boxstyle" type="text" name="name" value="" autofocus="autofocus">
                 </p>
                 <a class="close" href="#">&times;</a>
                 <br>
-                <a class="button again" href="javascript:reset()"> Jeszcze raz ? </a>
+                <!-- <a class="button again" href="javascript:reset()"> Jeszcze raz ? </a> -->
+                <a class="button again" href="saveResults.php"> Jeszcze raz ? </a>
             </form>
         </div>
     </div>
