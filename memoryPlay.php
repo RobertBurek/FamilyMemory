@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	// session_start();
     $nazwa_pliku = '.\results\butterfly12.txt';
 if (!file_exists($nazwa_pliku)) 
 {
@@ -147,16 +147,25 @@ var json='<?php
                 <p>
                     Podaj swoje imię: 
                     <input class="boxstyle" type="text" name="name" value="" autofocus="autofocus">
+                    <input type="text" name="result" value="16.258" hidden/>
+                    <input type="text" name="level" value=resultsDog18 hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>
                 <br>
                 <!-- <a class="button again" href="javascript:reset()"> Jeszcze raz ? </a> -->
-                <a class="button again" href="saveResults.php"> Jeszcze raz ? </a>
+                <!-- <a class="button again" href="saveResults.php" type="submit"> Jeszcze raz ? </a> -->
+                <br /><input class="button again" type="submit" value="Jeszcze raz ?" />
             </form>
+            <!-- <form action="saveResults.php" method="post">
+            <input class="boxstyle" type="text" name="name" value="" autofocus="autofocus">
+                <input type="text" name="pole1" />
+                <input type="text" name="pole2" />
+                <br /><input class="button again" type="submit" value="Jeszcze raz ?" />
+            </form> -->
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 
 </body>
 </html>
