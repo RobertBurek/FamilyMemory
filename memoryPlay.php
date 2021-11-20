@@ -147,8 +147,8 @@ var json='<?php
                 <p>
                     Podaj swoje imię: 
                     <input class="boxstyle" type="text" name="name" value="" autofocus="autofocus">
-                    <input type="text" name="result" value="16.258" hidden/>
-                    <input type="text" name="level" value=resultsDog18 hidden/>
+                    <input type="text" name="result" value="19.524" hidden/>
+                    <input type="text" name="level" value=resultsDog12 hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>
                 <br>

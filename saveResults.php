@@ -15,7 +15,7 @@ echo 'zrobione '.$name.'<br/>';
 if ($result<>"" && $level<>"") {
   $tresc="$result - $level\n";
   $tresc=$tresc.$name."\n";
-  $f=fopen("dane.txt", "a");
+  $f=fopen("results.txt", "a");
   fputs($f, $tresc);
   fclose($f);
 //   mail("robertburek@wp.pl", "Wygrał dzisiaj", $tresc);
