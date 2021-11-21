@@ -2,206 +2,206 @@ resultsCat12
 CAT
 12 el.
 Robert
-8.125
+8.125 s
 Kasia
-9.256
+9.256 s
 Iza
-10.247
+10.247 s
 Mateusz
-10.598
+10.598 s
 Paweł
-10.658
+10.658 s
 Robert
-10.985
+10.985 s
 Kasia
-11.124
+11.124 s
 Iza
-12.560
+12.560 s
 Mateusz
-12.856
+12.856 s
 Paweł
-13.245
+13.245 s
 resultsCat18
 CAT
 18 el.
 Mateusz
-12.856
+12.856 s
 Paweł
-13.245
+13.245 s
 Robert
-14.985
+14.985 s
 Kasia
-15.124
+15.124 s
 Kasia
-16.256
+16.256 s
 Iza
-17.247
+17.247 s
 Mateusz
-18.598
+18.598 s
 Paweł
-18.658
+18.658 s
 Robert
-18.985
+18.985 s
 Tymek
-19.256
+19.256 s
 resultsCat24
 CAT
 24 el.
 Mateusz
-22.856
+22.856 s
 Paweł
-23.245
+23.245 s
 Robert
-24.985
+24.985 s
 Kasia
-25.124
+25.124 s
 Kasia
-26.256
+26.256 s
 Iza
-27.247
+27.247 s
 Mateusz
-28.598
+28.598 s
 Paweł
-28.658
+28.658 s
 Robert
-28.985
+28.985 s
 Tymek
-29.256
+29.256 s
 resultsDog12
 DOG
 12 el.
 Robert
-7.125
+7.125 s
 Kasia
-7.256
+7.256 s
 Iza
-8.247
+8.247 s
 Mateusz
-8.598
+8.598 s
 Paweł
-8.658
+8.658 s
 Robert
-8.985
+8.985 s
 Kasia
-9.124
+9.124 s
 Iza
-9.560
+9.560 s
 Mateusz
-9.856
+9.856 s
 Paweł
-10.245
+10.245 s
 resultsDog18
 DOG
 18 el.
 Robert
-11.985
+11.985 s
 Kasia
-12.124
+12.124 s
 Iza
-12.560
+12.560 s
 Mateusz
-12.856
+12.856 s
 Paweł
-13.245
+13.245 s
 Robert
-14.125
+14.125 s
 Kasia
-14.256
+14.256 s
 Iza
-15.247
+15.247 s
 Mateusz
-15.598
+15.598 s
 Paweł
-15.658
+15.658 s
 resultsDog24
 DOG
 24 el.
 Mateusz
-32.856
+32.856 s
 Paweł
-33.245
+33.245 s
 Robert
-34.985
+34.985 s
 Kasia
-35.124
+35.124 s
 Kasia
-36.256
+36.256 s
 Iza
-37.247
+37.247 s
 Mateusz
-38.598
+38.598 s
 Paweł
-38.658
+38.658 s
 Robert
-38.985
+38.985 s
 Tymek
-39.256
+39.256 s
 resultsButterfly12
 BATTERFLY
 12 el.
 Robert
-5.125
+5.125 s
 Kasia
-5.256
+5.256 s
 Iza
-6.247
+6.247 s
 Mateusz
-6.598
+6.598 s
 Paweł
-6.658
+6.658 s
 Robert
-6.985
+6.985 s
 Kasia
-7.124
+7.124 s
 Iza
-7.560
+7.560 s
 Mateusz
-7.856
+7.856 s
 Paweł
-8.333
+8.333 s
 resultsButterfly18
 BATTERFLY
 18 el.
 Paweł
-22.658
+22.658 s
 Robert
-22.985
+22.985 s
 Tymek
-23.256
+23.256 s
 Mateusz
-23.856
+23.856 s
 Paweł
-24.245
+24.245 s
 Robert
-24.985
+24.985 s
 Kasia
-25.124
+25.124 s
 Kasia
-25.256
+25.256 s
 Iza
-26.247
+26.247 s
 Mateusz
-26.444
+26.444 s
 resultsButterfly24
 BATTERFLY
 24 el.
 Kasia
-26.256
+26.256 s
 Iza
-27.247
+27.247 s
 Mateusz
-28.598
+28.598 s
 Paweł
-28.658
+28.658 s
 Robert
-28.985
+28.985 s
 Tymek
-29.256
+29.256 s
 Mateusz
-32.856
+32.856 s
 Paweł
-33.245
+33.245 s
 Robert
-34.985
+34.985 s
 Kasia
-35.555
+35.555 s

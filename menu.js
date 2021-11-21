@@ -438,7 +438,7 @@ function htmlResults (results) {
             arrayHTML = arrayHTML +
 '        <div class="linia">' +
 '             <div class="name">' + results[i] + '</div>' +
-'             <div class="result">' + results[i+1] + ' s</div>' +
+'             <div class="result">' + results[i+1] + '</div>' +
 '        </div>';
         }
     }
@@ -446,14 +446,14 @@ function htmlResults (results) {
 }
 
 let resultsCat12 = htmlResults(allResults[0]);
-let resultsCat18 = allResults[1];
-let resultsCat24 = allResults[2];
-let resultsDog12 = allResults[3];
-let resultsDog18 = allResults[4];
-let resultsDog24 = allResults[5];
-let resultsButterfly12 = allResults[6];
-let resultsButterfly18 = allResults[7];
-let resultsButterfly24 = allResults[8];
+let resultsCat18 = htmlResults(allResults[1]);
+let resultsCat24 = htmlResults(allResults[2]);
+let resultsDog12 = htmlResults(allResults[3]);
+let resultsDog18 = htmlResults(allResults[4]);
+let resultsDog24 = htmlResults(allResults[5]);
+let resultsButterfly12 = htmlResults(allResults[6]);
+let resultsButterfly18 = htmlResults(allResults[7]);
+let resultsButterfly24 = htmlResults(allResults[8]);
 let resultsClear = '';
 let resultsPlarey = '';
 
