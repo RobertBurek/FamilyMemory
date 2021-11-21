@@ -1,5 +1,5 @@
 <?php
-    $name_file = '.\results\results.txty';
+    $name_file = '.\results\results.txt';
     $default_file = '.\results\defaultResults.php';
     $results = [];
     if (file_exists($name_file)) {
@@ -60,6 +60,12 @@
             foreach ($results as $result) {
                 if ($result === 'Kasia') $tresc = $tresc."Katarzyna\n";
                 else $tresc = $tresc.$result."\n";
+                // if ($result === 'cardsCatAll18') {
+                    // $.'cardsCatAll18'='to jest to';
+                    // echo $.'cardsCatAll18';
+                    // define('STALA', array('ergerg'));
+                    // echo STALA[0];
+                // }
             }
         //   $tresc="$result - $level\n";
         //   $tresc=$tresc.$name."\n";

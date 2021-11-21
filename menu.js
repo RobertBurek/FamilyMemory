@@ -1,4 +1,4 @@
-let htmlResultsCat12 = 
+let resultsCat12 = 
 '                    <div class="linia">' +
 '                        <div class="name">CAT</div>' +
 '                        <div class="result">12 el.</div>' +
@@ -44,7 +44,7 @@ let htmlResultsCat12 =
 '                        <div class="result">31,256 s</div>' +
 '                    </div>';
 
-let htmlResultsCat18 = 
+let resultsCat18 = 
 '                    <div class="linia">' +
 '                        <div class="name">CAT</div>' +
 '                        <div class="result">18 el.</div>' +
@@ -90,7 +90,7 @@ let htmlResultsCat18 =
 '                        <div class="result">36,256 s</div>' +
 '                    </div>';
 
-let htmlResultsCat24 =
+let resultsCat24 =
 '                    <div class="linia">' +
 '                        <div class="name">CAT</div>' +
 '                        <div class="result">24 el.</div>' +
@@ -136,7 +136,7 @@ let htmlResultsCat24 =
 '                        <div class="result">66,756 s</div>' +
 '                    </div>';
 
-let htmlResultsDog12 = 
+let resultsDog12 = 
 '                    <div class="linia">' +
 '                        <div class="name">DOG</div>' +
 '                        <div class="result">12 el.</div>' +
@@ -182,7 +182,7 @@ let htmlResultsDog12 =
 '                        <div class="result">31,256 s</div>' +
 '                    </div>';
 
-let htmlResultsDog18 = 
+let resultsDog18 = 
 '                    <div class="linia">' +
 '                        <div class="name">DOG</div>' +
 '                        <div class="result">18 el.</div>' +
@@ -228,7 +228,7 @@ let htmlResultsDog18 =
 '                        <div class="result">36,256 s</div>' +
 '                    </div>';
 
-let htmlResultsDog24 =
+let resultsDog24 =
 '                    <div class="linia">' +
 '                        <div class="name">DOG</div>' +
 '                        <div class="result">24 el.</div>' +
@@ -274,7 +274,7 @@ let htmlResultsDog24 =
 '                        <div class="result">66,756 s</div>' +
 '                    </div>';
 
-let htmlResultsButterfly12 = 
+let resultsButterfly12 = 
 '                    <div class="linia">' +
 '                        <div class="name">BUTTERFLY</div>' +
 '                        <div class="result">12 el.</div>' +
@@ -320,7 +320,7 @@ let htmlResultsButterfly12 =
 '                        <div class="result">31,256 s</div>' +
 '                    </div>';
 
-let htmlResultsButterfly18 = 
+let resultsButterfly18 = 
 '                    <div class="linia">' +
 '                        <div class="name">BUTTERFLY</div>' +
 '                        <div class="result">18 el.</div>' +
@@ -366,7 +366,7 @@ let htmlResultsButterfly18 =
 '                        <div class="result">36,256 s</div>' +
 '                    </div>';
 
-let htmlResultsButterfly24 =
+let resultsButterfly24 =
 '                    <div class="linia">' +
 '                        <div class="name">BUTTERFLY</div>' +
 '                        <div class="result">24 el.</div>' +
@@ -412,21 +412,37 @@ let htmlResultsButterfly24 =
 '                        <div class="result">66,756 s</div>' +
 '                    </div>';
 
-let htmlResultsClear = '';
-let htmlResultsPlarey = '';
+let resultsClear = '';
+let resultsPlarey = '';
 
-console.log(results);
+// console.log(results);
+let allResults=[resultsCat12, resultsCat18, resultsCat24, resultsDog12, resultsDog18, resultsDog24, resultsButterfly12, resultsButterfly18, resultsButterfly24];
+
+var j = -1;
+for (let i = 0; i < results.length; i++) {
+    // var j = -1;
+    if (i%23 === 0) {
+        j = j + 1;
+        allResults[j] = [];
+        console.log(allResults[j]);
+        // var arrayTemp = [];
+    } else {
+        allResults[j].push(results[i]);
+    }
+};
+console.log(resultsCat18);
 
 const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];
 const resultLeftClasses = ["result_1_left", "result_2_left", "result_3_left"];
 const resultRightClasses = ["result_1_right", "result_2_right", "result_3_right"];
-let catResults = [htmlResultsCat12, htmlResultsCat18, htmlResultsCat24 ];
-let dogResults = [htmlResultsDog12, htmlResultsDog18, htmlResultsDog24 ];
-let butterflyResults = [htmlResultsButterfly12, htmlResultsButterfly18, htmlResultsButterfly24 ];
-let results12 = [htmlResultsCat12, htmlResultsDog12, htmlResultsButterfly12];
-let results18 = [htmlResultsCat18, htmlResultsDog18, htmlResultsButterfly18];
-let results24 = [htmlResultsCat24, htmlResultsDog24, htmlResultsButterfly24];
+// let allResults=[resultsCat12, resultsCat18, resultsCat24, resultsDog12, resultsDog18, resultsDog24, resultsButterfly12, resultsButterfly18, resultsButterfly24];
+let catResults = [resultsCat12, resultsCat18, resultsCat24];
+let dogResults = [resultsDog12, resultsDog18, resultsDog24];
+let butterflyResults = [resultsButterfly12, resultsButterfly18, resultsButterfly24];
+let results12 = [resultsCat12, resultsDog12, resultsButterfly12];
+let results18 = [resultsCat18, resultsDog18, resultsButterfly18];
+let results24 = [resultsCat24, resultsDog24, resultsButterfly24];
 
 // let animal1 = document.getElementById("animal1");
 // let animal2 = document.getElementById("animal2");
@@ -498,7 +514,7 @@ function animalChosenPlayer(chosen){
     };
     if (localStorage.level) {
         listResultsLeft.forEach((result)=>{
-            result.innerHTML = htmlResultsClear;
+            result.innerHTML = resultsClear;
         });
         for (let i = 0; i < listPictures.length; i++) {
             listPictures[i].classList.remove(animalClasses[i]);
@@ -646,7 +662,7 @@ function levelChosenPlayer(chosen){
     };
     if (localStorage.animal) {
         listResultsRight.forEach((result)=>{
-            result.innerHTML = htmlResultsClear;
+            result.innerHTML = resultsClear;
         });
         for (let i = 0; i < listLevels.length; i++) {
             listLevels[i].classList.remove(levelClasses[i]);
