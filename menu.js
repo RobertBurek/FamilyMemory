@@ -413,6 +413,9 @@ let htmlResultsButterfly24 =
 '                    </div>';
 
 let htmlResultsClear = '';
+let htmlResultsPlarey = '';
+
+console.log(results);
 
 const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];

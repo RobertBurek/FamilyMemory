@@ -5,7 +5,7 @@
 // console.log(myvar);
 // console.log(localStorage);
 // let resultsButterfly12=eval('<?php echo json_encode($resultsButterfly12);?>');
-console.log(results);
+// console.log(results);
 // var a = eval(resultsDog12);
 
 // console.log(resultsDog12[5]);
