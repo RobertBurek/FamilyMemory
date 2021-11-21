@@ -3,7 +3,7 @@ CAT
 12 el.
 Robert
 8.125
-Kasia
+Katarzyna
 9.256
 Iza
 10.247
@@ -13,7 +13,7 @@ Paweł
 10.658
 Robert
 10.985
-Kasia
+Katarzyna
 11.124
 Iza
 12.560
@@ -30,9 +30,9 @@ Paweł
 13.245
 Robert
 14.985
-Kasia
+Katarzyna
 15.124
-Kasia
+Katarzyna
 16.256
 Iza
 17.247
@@ -53,9 +53,9 @@ Paweł
 23.245
 Robert
 24.985
-Kasia
+Katarzyna
 25.124
-Kasia
+Katarzyna
 26.256
 Iza
 27.247
@@ -72,7 +72,7 @@ DOG
 12 el.
 Robert
 7.125
-Kasia
+Katarzyna
 7.256
 Iza
 8.247
@@ -82,7 +82,7 @@ Paweł
 8.658
 Robert
 8.985
-Kasia
+Katarzyna
 9.124
 Iza
 9.560
@@ -95,7 +95,7 @@ DOG
 18 el.
 Robert
 11.985
-Kasia
+Katarzyna
 12.124
 Iza
 12.560
@@ -105,7 +105,7 @@ Paweł
 13.245
 Robert
 14.125
-Kasia
+Katarzyna
 14.256
 Iza
 15.247
@@ -122,9 +122,9 @@ Paweł
 33.245
 Robert
 34.985
-Kasia
+Katarzyna
 35.124
-Kasia
+Katarzyna
 36.256
 Iza
 37.247
@@ -140,7 +140,7 @@ cardsButterflyAll12
 12 el.
 Robert
 5.125
-Kasia
+Katarzyna
 5.256
 Iza
 6.247
@@ -150,7 +150,7 @@ Paweł
 6.658
 Robert
 6.985
-Kasia
+Katarzyna
 7.124
 Iza
 7.560
@@ -172,9 +172,9 @@ Paweł
 24.245
 Robert
 24.985
-Kasia
+Katarzyna
 25.124
-Kasia
+Katarzyna
 25.256
 Iza
 26.247
@@ -182,7 +182,7 @@ Mateusz
 26.598
 cardsButterflyAll24
 24 el.
-Kasia
+Katarzyna
 26.256
 Iza
 27.247
@@ -200,5 +200,5 @@ Paweł
 33.245
 Robert
 34.985
-Kasia
+Katarzyna
 35.124

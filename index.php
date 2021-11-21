@@ -1,14 +1,9 @@
 <?php
-    $nazwa_pliku = '.\results\results.txt';
-    if (!file_exists($nazwa_pliku)) 
-    {
-      echo 'Nie znaleziono pliku!';
-      exit;
-    }
-
-    function readResults($nameFile){
-        $results = [];
-        $fp = fopen($nameFile, "rb");
+    $name_file = '.\results\results.txty';
+    $default_file = '.\results\defaultResults.php';
+    $results = [];
+    if (file_exists($name_file)) {
+        $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
         {
            $line = substr(fgets($fp), 0, -2);
@@ -16,10 +11,26 @@
         };
         fclose($fp);
         unset($results[count($results)-1]);
-        return $results;
-    };
+    }
+    else{
+    //   echo 'Nie znaleziono pliku!';
+      require_once $default_file;
+    }
 
-    $results = readResults($nazwa_pliku);
+    // function readResults($nameFile){
+    //     $results = [];
+    //     $fp = fopen($nameFile, "rb");
+    //     while(!feof($fp)) 
+    //     {
+    //        $line = substr(fgets($fp), 0, -2);
+    //        array_push($results, $line);
+    //     };
+    //     fclose($fp);
+    //     unset($results[count($results)-1]);
+    //     return $results;
+    // };
+
+    // $results = readResults($nazwa_pliku);
 ?>
 
 
@@ -38,6 +49,7 @@
 
     <script type="text/javascript">
     let results = eval('<?php echo json_encode($results);?>');
+    console.log(results[124]);
     </script>
     <?php
         // level = stripslashes(trim($_POST["level"]));
@@ -46,7 +58,7 @@
         $tresc = '';
         if ($results<>"") {
             foreach ($results as $result) {
-                if ($result === 'Tymek') $tresc = $tresc."Tymoteusz\n";
+                if ($result === 'Kasia') $tresc = $tresc."Katarzyna\n";
                 else $tresc = $tresc.$result."\n";
             }
         //   $tresc="$result - $level\n";
