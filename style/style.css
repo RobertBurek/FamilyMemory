@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+}
+
+.level12,.level18,.level24{
+    flex-wrap: wrap;
+}
+
+.level12>div {
+    flex-basis: 25%;
+    flex-grow: 1;
+    height: 33.33vh;
+    background-color: black;
+    border: 4px solid white;
+}
+
+.level18>div {
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 33.33vh;
+    background-color: black;
+    border: 4px solid white;
+}
+
+.level24>div {
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 25vh;
+    background-color: black;
+    border: 4px solid white;
+}
+
+.success {
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+}
+
+/*---------------------PopUp------------------------*/
+h3 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 1.3em;
+}
+.box {
+    width: 40%;
+    padding: 35px;
+    border: 2px solid #fff;
+}
+.boxstyle{
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+.button {
+    font-size: 1em;
+    padding: 6px;
+    color: #fff;
+    border: 2px solid #566dee;
+    box-shadow: 0px 0px 25px 0px #0306a6 inset;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.button:hover {
+    background: #9fa0f9;
+}
+.again {
+    margin-left: 40%;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.popUp {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+.popUp h3 {
+    margin-top: -2px;
+    margin-right: 4px;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popUp .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popUp .close:hover {
+    color: #9fa0f9;
+}
+.popUp .content {
+    max-height: 30%;
+    overflow: auto;
+}
+/*---------------------PopUp------------------------*/
+
+/* ----------------Rewersy kart-------------------- */
+.hidden1 {
+    background-image: url(../img/cardBack-1.jpg);
+    background-size: 100% 100%;
+}
+.hidden2 {
+    background-image: url(../img/cardBack-2.png);
+    background-size: 100% 100%;
+}
+.hidden3 {
+    background-image: url(../img/cardBack-3.jpg);
+    background-size: 100% 100%;
+}
+.hidden4 {
+    background-image: url(../img/cardBack-4.jpg);
+    background-size: 100% 100%;
+}
+.hidden5 {
+    background-image: url(../img/cardBack-5.jpg);
+    background-size: 100% 100%;
+}
+.hidden6 {
+    background-image: url(../img/cardBack-6.jpg);
+    background-size: 100% 100%;
+}
+.hidden7 {
+    background-image: url(../img/cardBack-7.jpg);
+    background-size: 100% 100%;
+}
+.hidden8 {
+    background-image: url(../img/cardBack-8.jpg);
+    background-size: 100% 100%;
+}
+.hidden9 {
+    background-image: url(../img/cardBack-9.jpg);
+    background-size: 100% 100%;
+}
+.hidden10 {
+    background-image: url(../img/cardBack-10.jpg);
+    background-size: 100% 100%;
+}
+/* ----------------Rewersy kart-------------------- */
+
+
+@media (orientation: portrait) {
+    .level12>div {
+        flex-basis: 33%;
+        height: 25vh;
+    }
+    .level18>div {
+        flex-basis: 33%;
+        height: 16.66vh;
+    }
+    .level24>div {
+        flex-basis: 25%;
+        height: 16.66vh;
+    }
+    .popUp {
+        width: 60%;
+    }
+    .again {
+        margin-left: 30%;
+    }
+}

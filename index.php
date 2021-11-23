@@ -6,7 +6,7 @@
         $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
         {
-           $line = substr(fgets($fp), 0, -1);
+           $line = substr(fgets($fp), 0, -2);
            array_push($results, $line);
         };
         fclose($fp);
@@ -41,11 +41,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Memory</title>
-    <link rel="stylesheet" href="cats.css">
-    <link rel="stylesheet" href="dogs.css">
-    <link rel="stylesheet" href="butterflies.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style/cats.css">
+    <link rel="stylesheet" href="style/dogs.css">
+    <link rel="stylesheet" href="style/butterflies.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/menu.css">
 
     <script type="text/javascript">
     let results = eval('<?php echo json_encode($results);?>');
