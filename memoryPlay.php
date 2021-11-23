@@ -1,11 +1,12 @@
 <?php
 	// session_start();
-    $nazwa_pliku = 'results.txt';
-if (!file_exists($nazwa_pliku)) 
-{
-  echo 'Nie znaleziono pliku!';
-  exit;
-}
+    // $nazwa_pliku = 'results.txt';
+// if (!file_exists($nazwa_pliku)) 
+// {
+//   echo 'Nie znaleziono pliku!';
+//   exit;
+// }
+
 // $results=file($nazwa_pliku);
 // if (count($results)===0)
 // {
@@ -31,23 +32,26 @@ if (!file_exists($nazwa_pliku))
 
 //   } else echo "Do pliku nie można dopisać informacji lub on nie istnieje...";
 
-function readResults($nameFile){
-    $results = [];
-    $fp = fopen($nameFile, "rb");
-    while(!feof($fp)) 
-    {
-       $line = substr(fgets($fp), 0, -1);//echo $name;
-    //    $result = substr(fgets($fp), 0, -2);//echo $result;
-    //    $oneResult = array($name, $result);
-       array_push($results, $line);
-    };
-    fclose($fp);
-    unset($results[count($results)-1]);
-    return $results;
-};
 
-$results = readResults('results.txt');
-$_SESSION["results"] = $results;
+// function readResults($nameFile){
+//     $results = [];
+//     $fp = fopen($nameFile, "rb");
+//     while(!feof($fp)) 
+//     {
+//        $line = substr(fgets($fp), 0, -1);//echo $name;
+//     //    $result = substr(fgets($fp), 0, -2);//echo $result;
+//     //    $oneResult = array($name, $result);
+//        array_push($results, $line);
+//     };
+//     fclose($fp);
+//     unset($results[count($results)-1]);
+//     return $results;
+// };
+
+// $results = readResults('results.txt');
+
+
+// $_SESSION["results"] = $results;
 // $_SESSION['resultsDog12'] = $resultsDog12;
 // $resultsButterfly12 = readResults('.\results\butterfly12.txt');
 // $resultsDog18 = readResults('.\results\puppy18.txt');
@@ -104,7 +108,13 @@ var json='<?php
 
 
 
-    let results = eval('<?php echo json_encode($results);?>');
+    // let results = eval('
+    <?php 
+    // echo json_encode($results);
+    ?>
+    // ');
+
+    
     // console.log(resultsDog12);
     // var a = eval(resultsDog12);
 

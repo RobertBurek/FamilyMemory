@@ -1,19 +1,19 @@
 <?php
-    $name_file = '.\results\results.txt';
-    $default_file = '.\results\defaultResults.php';
+    $name_file = 'results.txt';
+    $default_file = 'defaultResults.php';
     $results = [];
     if (file_exists($name_file)) {
         $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
         {
-           $line = substr(fgets($fp), 0, -2);
+           $line = substr(fgets($fp), 0, -1);
            array_push($results, $line);
         };
         fclose($fp);
         unset($results[count($results)-1]);
     }
     else{
-    //   echo 'Nie znaleziono pliku!';
+      echo 'Nie znaleziono pliku!';
       require_once $default_file;
     }
 
@@ -69,7 +69,7 @@
             }
         //   $tresc="$result - $level\n";
         //   $tresc=$tresc.$name."\n";
-          $f=fopen('.\results\dane.txt', "a");
+          $f=fopen('dane.txt', "a");
           ftruncate($f, 0);
           fputs($f, $tresc);
           fclose($f);

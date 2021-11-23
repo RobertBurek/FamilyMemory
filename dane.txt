@@ -3,7 +3,7 @@ CAT
 12 el.
 Robert
 8.125 s
-Kasia
+Katarzyna
 9.256 s
 Iza
 10.247 s
@@ -13,7 +13,7 @@ Paweł
 10.658 s
 Robert
 10.985 s
-Kasia
+Katarzyna
 11.124 s
 Iza
 12.560 s
@@ -30,9 +30,9 @@ Paweł
 13.245 s
 Robert
 14.985 s
-Kasia
+Katarzyna
 15.124 s
-Kasia
+Katarzyna
 16.256 s
 Iza
 17.247 s
@@ -53,9 +53,9 @@ Paweł
 23.245 s
 Robert
 24.985 s
-Kasia
+Katarzyna
 25.124 s
-Kasia
+Katarzyna
 26.256 s
 Iza
 27.247 s
@@ -72,7 +72,7 @@ DOG
 12 el.
 Robert
 7.125 s
-Kasia
+Katarzyna
 7.256 s
 Iza
 8.247 s
@@ -82,7 +82,7 @@ Paweł
 8.658 s
 Robert
 8.985 s
-Kasia
+Katarzyna
 9.124 s
 Iza
 9.560 s
@@ -95,7 +95,7 @@ DOG
 18 el.
 Robert
 11.985 s
-Kasia
+Katarzyna
 12.124 s
 Iza
 12.560 s
@@ -105,7 +105,7 @@ Paweł
 13.245 s
 Robert
 14.125 s
-Kasia
+Katarzyna
 14.256 s
 Iza
 15.247 s
@@ -122,9 +122,9 @@ Paweł
 33.245 s
 Robert
 34.985 s
-Kasia
+Katarzyna
 35.124 s
-Kasia
+Katarzyna
 36.256 s
 Iza
 37.247 s
@@ -141,7 +141,7 @@ BATTERFLY
 12 el.
 Robert
 5.125 s
-Kasia
+Katarzyna
 5.256 s
 Iza
 6.247 s
@@ -151,7 +151,7 @@ Paweł
 6.658 s
 Robert
 6.985 s
-Kasia
+Katarzyna
 7.124 s
 Iza
 7.560 s
@@ -174,9 +174,9 @@ Paweł
 24.245 s
 Robert
 24.985 s
-Kasia
+Katarzyna
 25.124 s
-Kasia
+Katarzyna
 25.256 s
 Iza
 26.247 s
@@ -185,7 +185,7 @@ Mateusz
 resultsButterfly24
 BATTERFLY
 24 el.
-Kasia
+Katarzyna
 26.256 s
 Iza
 27.247 s
@@ -203,5 +203,5 @@ Paweł
 33.245 s
 Robert
 34.985 s
-Kasia
+Katarzyna
 35.555 s
