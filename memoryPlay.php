@@ -47,6 +47,7 @@ function readResults($nameFile){
 };
 
 $results = readResults('results.txt');
+$_SESSION["results"] = $results;
 // $_SESSION['resultsDog12'] = $resultsDog12;
 // $resultsButterfly12 = readResults('.\results\butterfly12.txt');
 // $resultsDog18 = readResults('.\results\puppy18.txt');
@@ -133,7 +134,7 @@ var json='<?php
         <!-- Zawartość wypełniona przez app.js -->
         <!-- w zależności od dokonanego wyboru w menu. -->
     </div>
-    <!-- <a class="button" href="#infoWynik">Info</a> -->
+    <a class="button" href="#infoWynik">Info</a>
     <div id="infoWynik" class="overlay">
         <div class="popUp">
             <br>
@@ -163,7 +164,7 @@ var json='<?php
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 
 </body>
 </html>
