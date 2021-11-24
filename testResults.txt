@@ -4,7 +4,7 @@ CAT
 7.584 s
 Robert
 8.125 s
-Katarzyna
+Kasia
 9.256 s
 Iza
 10.247 s
@@ -14,7 +14,7 @@ Paweł
 10.658 s
 Robert
 10.985 s
-Katarzyna
+Kasia
 11.124 s
 Iza
 12.560 s
@@ -31,9 +31,9 @@ Paweł
 13.245 s
 Robert
 14.985 s
-Katarzyna
+Kasia
 15.124 s
-Katarzyna
+Kasia
 16.256 s
 Iza
 17.247 s
@@ -54,9 +54,9 @@ Paweł
 23.245 s
 Robert
 24.985 s
-Katarzyna
+Kasia
 25.124 s
-Katarzyna
+Kasia
 26.256 s
 Iza
 27.247 s
@@ -73,7 +73,7 @@ DOG
 7.025 s
 Robert
 7.125 s
-Katarzyna
+Kasia
 7.256 s
 Iza
 8.247 s
@@ -83,7 +83,7 @@ Paweł
 8.658 s
 Robert
 8.985 s
-Katarzyna
+Kasia
 9.124 s
 Iza
 9.560 s
@@ -96,7 +96,7 @@ DOG
 11.589 s
 Robert
 11.985 s
-Katarzyna
+Kasia
 12.124 s
 Iza
 12.560 s
@@ -106,7 +106,7 @@ Paweł
 13.245 s
 Robert
 14.125 s
-Katarzyna
+Kasia
 14.256 s
 Iza
 15.247 s
@@ -123,9 +123,9 @@ Paweł
 33.245 s
 Robert
 34.985 s
-Katarzyna
+Kasia
 35.124 s
-Katarzyna
+Kasia
 36.256 s
 Iza
 37.247 s
@@ -142,22 +142,20 @@ BATTERFLY
 5.058 s
 Robert
 5.125 s
-Katarzyna
+Kasia
 5.256 s
 Iza
 6.247 s
 Mateusz
-6.598 s
-Paweł
+6.524
+Roman Waleczny
 6.658 s
-Robert
+Roman Waleczny
 6.985 s
-Katarzyna
+Roman Waleczny
 7.124 s
-Iza
+Roman Waleczny
 7.560 s
-Mateusz
-7.856 s
 Paweł
 cardsButterflyAll18
 BATTERFLY
@@ -175,9 +173,9 @@ Paweł
 24.245 s
 Robert
 24.985 s
-Katarzyna
+Kasia
 25.124 s
-Katarzyna
+Kasia
 25.256 s
 Iza
 26.247 s
@@ -186,7 +184,7 @@ cardsButterflyAll24
 BATTERFLY
 24 el.
 25.158 s
-Katarzyna
+Kasia
 26.256 s
 Iza
 27.247 s
@@ -204,4 +202,4 @@ Paweł
 33.245 s
 Robert
 34.985 s
-Katarzyna
+Kasia
