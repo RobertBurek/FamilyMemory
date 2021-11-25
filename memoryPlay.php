@@ -155,8 +155,8 @@ var json='<?php
             <form action="saveResults.php" method="POST">
                 <p>
                     Podaj swoje imię: 
-                    <input id=name type="text" class="boxstyle" name="name" value="Roman Waleczny" autofocus="autofocus">
-                    <input id="result" type="text" name="result" value="6.524" hidden/>
+                    <input id=name type="text" class="boxstyle" name="name" value="Minionek" autofocus="autofocus">
+                    <input id="result" type="text" name="result" value="5.999 s" hidden/>
                     <input id="level" type="text" name="level" value="cardsButterflyAll12" hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>

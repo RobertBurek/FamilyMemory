@@ -6,7 +6,7 @@
         $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
         {
-           $line = substr(fgets($fp), 0, -2);
+           $line = substr(fgets($fp), 0, -1);
            array_push($results, $line);
         };
         fclose($fp);

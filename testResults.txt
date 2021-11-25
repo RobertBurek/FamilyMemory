@@ -145,16 +145,16 @@ Robert
 Kasia
 5.256 s
 Iza
-6.247 s
-Mateusz
+5.999 s
+Minionek
 6.524
-Roman Waleczny
+Minionek
 6.658 s
-Roman Waleczny
+Minionek
 6.985 s
-Roman Waleczny
+Minionek
 7.124 s
-Roman Waleczny
+Minionek
 7.560 s
 Paweł
 cardsButterflyAll18

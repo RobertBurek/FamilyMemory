@@ -18,7 +18,7 @@ $name = stripslashes(trim($_POST["name"]));
         $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
         {
-           $line = substr(fgets($fp), 0, -2);
+           $line = substr(fgets($fp), 0, -1);
            if ($line === "".$level) {
                $thisLevel = true;
                $nextResult = 0;

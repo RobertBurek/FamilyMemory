@@ -147,17 +147,15 @@ Kasia
 Iza
 6.247 s
 Mateusz
-6.598 s
-Paweł
+6.524
+Roman Waleczny
 6.658 s
-Robert
+Roman Waleczny
 6.985 s
-Kasia
+Roman Waleczny
 7.124 s
-Iza
+Roman Waleczny
 7.560 s
-Mateusz
-7.856 s
 Paweł
 cardsButterflyAll18
 BATTERFLY
