@@ -33,6 +33,7 @@ $name = stripslashes(trim($_POST["name"]));
                if (($nextResult > 4) && ($nextResult % 2 == 0) && ($nextResult < 21)) {
                 if ($changePlayer) {
                     $line = $name;
+                    $changePlayer = false;
                 }
            }
                ++$nextResult;
