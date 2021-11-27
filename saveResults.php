@@ -46,10 +46,14 @@ $name_file = 'results.txt';
             //         };
             //     }
                ++$nextResult;
-           }
-           if ($thisLevel && ($nextResult==22||$nextResult==23)) {
-
+            //    array_push($results, $line);
+               if ($nextResult < 22) array_push($results, $line);
+               if ($nextResult > 22) $thisLevel = false;
            } else array_push($results, $line);
+        //    if ($thisLevel && ($nextResult == 22 || $nextResult == 23)) {
+            // if (!$thisLevel)// && ($nextResult == 22 || $nextResult == 23)) {
+            //  array_push($results, $line);
+        //    } else array_push($results, $line);
         };
         fclose($fp);
         unset($results[count($results)-1]);

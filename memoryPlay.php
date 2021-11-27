@@ -162,15 +162,15 @@ var json='<?php
                 <a class="close" href="#">&times;</a>
                         <div>
 		                    <select name="lista" size="4">
+                                <option>cardsCatAll12</option>
+		                    	<option>cardsCatAll18</option>
+                                <option>cardsCatAll24</option>
+                                <option>cardsDogAll12</option>
+                                <option>cardsDogAll18</option>
+		                    	<option>cardsDogAll24</option>
 		                    	<option>cardsButterflyAll12</option>
 		                    	<option>cardsButterflyAll18</option>
 		                    	<option>cardsButterflyAll24</option>
-		                    	<option>cardsDogAll12</option>
-                                <option>cardsDogAll18</option>
-		                    	<option>cardsDogAll24</option>
-		                    	<option>cardsCatAll12</option>
-		                    	<option>cardsCatAll18</option>
-                                <option>cardsCatAll24</option>
 		                    </select>
 	                    </div>
                 <br>
