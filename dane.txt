@@ -5,6 +5,8 @@ CAT
 Minionek
 7.584
 Robert
+8.000
+Minionek
 8.125
 Katarzyna
 9.256
@@ -19,8 +21,6 @@ Mateusz
 Paweł
 10.658
 Robert
-10.985
-Katarzyna
 cardsCatAll18
 CAT
 18 el.
@@ -32,18 +32,18 @@ Minionek
 Minionek
 11.111
 Minionek
+12.110
+123456789101112
 12.147
 Mateusz
 12.856
 Paweł
-13.245
-Robert
-14.985
-Katarzyna
-15.124
-Katarzyna
-16.256
-Iza
+12.900
+Minionek55
+13.000
+Minionek55
+13.000
+Minionek2
 cardsCatAll24
 CAT
 24 el.

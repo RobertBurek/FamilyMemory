@@ -4,7 +4,7 @@
 // echo 'zrobione '.$name.'<br/>';
 // var_dump($_SESSION["results"]);
 
-$result = $_POST["result"];
+$result = sprintf("%01.3f", $_POST["result"]);
 // $level = $_POST["level"];
 // echo $_POST["lista"];
 $level = $_POST["lista"];
