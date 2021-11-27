@@ -65,8 +65,8 @@ Mateusz
 Paweł
 28.658 s
 Robert
-28.985 s
-Tymek
+28.888 s
+Romek
 cardsDogAll12
 DOG
 12 el.
@@ -134,8 +134,8 @@ Mateusz
 Paweł
 38.658 s
 Robert
-38.985 s
-Tymek
+38.888 s
+Zenek
 cardsButterflyAll12
 BATTERFLY
 12 el.
@@ -203,5 +203,5 @@ Mateusz
 Paweł
 33.245 s
 Robert
-34.985 s
-Katarzyna
+33.333 s
+Robert!!!
