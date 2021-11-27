@@ -156,7 +156,7 @@ var json='<?php
                 <p>
                     Podaj swoje imię: 
                     <input id=name type="text" class="boxstyle" name="name" value="Minionek" autofocus="autofocus">
-                    <input id="result" type="text" name="result" value="5.999 s" hidden/>
+                    <input id="result" type="text" name="result" value="6.888 s" hidden/>
                     <input id="level" type="text" name="level" value="cardsButterflyAll12" hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>

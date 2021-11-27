@@ -14,6 +14,8 @@ $name = stripslashes(trim($_POST["name"]));
     $thisLevel = false;
     $thisLevel = false;
     $changePlayer = false;
+    $afterChange = false;
+    $nextResult = 0;
     if (file_exists($name_file)) {
         $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
@@ -21,24 +23,25 @@ $name = stripslashes(trim($_POST["name"]));
            $line = substr(fgets($fp), 0, -1);
            if ($line === "".$level) {
                $thisLevel = true;
-               $nextResult = 0;
+            //    $nextResult = 0;
            }
            if ($thisLevel) {
-               if (($nextResult > 4) && ($nextResult % 2 == 1) && ($nextResult < 21)) {
-                    if ($result <= $line && !$changePlayer) {
-                        $line = $result;
+               if (($nextResult > 4) && ($nextResult % 2 == 1) && ($nextResult < 23)) {
+                    if ($result <= $line && !$changePlayer && !$afterChange) {
+                        array_push($results, $result);
                         $changePlayer = true;
                     }
                }
-               if (($nextResult > 4) && ($nextResult % 2 == 0) && ($nextResult < 21)) {
-                if ($changePlayer) {
-                    $line = $name;
+               if (($nextResult > 4) && ($nextResult % 2 == 0) && ($nextResult < 23)) {
+                    if ($changePlayer && !$afterChange) {
+                    array_push($results, $name);
                     $changePlayer = false;
+                    !$afterChange = true;
+                    };
                 }
-           }
                ++$nextResult;
            }
-           if ($thisLevel && ($nextResult==21||$nextResult==22)) {
+           if ($thisLevel && ($nextResult==23||$nextResult==24)) {
 
            } else array_push($results, $line);
         };

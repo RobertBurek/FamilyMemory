@@ -140,24 +140,28 @@ cardsButterflyAll12
 BATTERFLY
 12 el.
 5.058 s
-Robert
+Robert1
 5.125 s
-Kasia
+Kasia2
 5.256 s
-Iza
-5.999 s
-Barbara
-5.999 s
-Barbara
-5.999 s
-Barbara
-5.999 s
-Barbara
-5.999 s
-Barbara
-5.999 s
-BATTERFLY
-18 el.
+Iza3
+6.247 s
+Mateusz4
+6.598 s
+Paweł5
+6.658 s
+Robert6
+6.888 s
+6.985 s
+Minionek
+Kasia7
+7.124 s
+Iza8
+7.560 s
+Mateusz9
+7.856 s
+Paweł10
+cardsButterflyAll18
 22.547 s
 Paweł
 22.658 s

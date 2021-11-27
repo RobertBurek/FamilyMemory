@@ -140,23 +140,25 @@ cardsButterflyAll12
 BATTERFLY
 12 el.
 5.058 s
-Robert
+Robert1
 5.125 s
-Kasia
+Kasia2
 5.256 s
-Iza
+Iza3
 6.247 s
-Mateusz
-6.524
-Roman Waleczny
+Mateusz4
+6.598 s
+Paweł5
 6.658 s
-Roman Waleczny
+Robert6
 6.985 s
-Roman Waleczny
+Kasia7
 7.124 s
-Roman Waleczny
+Iza8
 7.560 s
-Paweł
+Mateusz9
+7.856 s
+Paweł10
 cardsButterflyAll18
 BATTERFLY
 18 el.
