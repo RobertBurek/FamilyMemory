@@ -29,19 +29,21 @@ $name = stripslashes(trim($_POST["name"]));
                if (($nextResult > 4) && ($nextResult % 2 == 1) && ($nextResult < 23)) {
                     if ($result <= $line && !$changePlayer && !$afterChange) {
                         array_push($results, $result);
+                        array_push($results, $name);
+                        $afterChange = true;
                         $changePlayer = true;
                     }
                }
-               if (($nextResult > 4) && ($nextResult % 2 == 0) && ($nextResult < 23)) {
-                    if ($changePlayer && !$afterChange) {
-                    array_push($results, $name);
-                    $changePlayer = false;
-                    !$afterChange = true;
-                    };
-                }
+            //    if (($nextResult > 4) && ($nextResult % 2 == 0) && ($nextResult < 23)) {
+            //         if ($changePlayer && !$afterChange) {
+            //         array_push($results, $name);
+            //         $changePlayer = false;
+            //         !$afterChange = true;
+            //         };
+            //     }
                ++$nextResult;
            }
-           if ($thisLevel && ($nextResult==23||$nextResult==24)) {
+           if ($thisLevel && ($nextResult==22||$nextResult==23)) {
 
            } else array_push($results, $line);
         };

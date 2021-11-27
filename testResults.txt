@@ -152,16 +152,16 @@ Paweł5
 6.658 s
 Robert6
 6.888 s
+Minionek7
 6.985 s
-Minionek
 Kasia7
 7.124 s
 Iza8
 7.560 s
 Mateusz9
-7.856 s
-Paweł10
 cardsButterflyAll18
+BATTERFLY
+18 el.
 22.547 s
 Paweł
 22.658 s
