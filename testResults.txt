@@ -3,6 +3,8 @@ CAT
 12 el.
 7.584 s
 Robert
+6.000 s
+Minionek
 8.125 s
 Kasia
 9.256 s
@@ -19,8 +21,6 @@ Kasia
 Iza
 12.560 s
 Mateusz
-12.856 s
-Paweł
 cardsCatAll18
 CAT
 18 el.
@@ -151,14 +151,14 @@ Mateusz4
 Paweł5
 6.658 s
 Robert6
-6.888 s
-Minionek7
 6.985 s
 Kasia7
 7.124 s
 Iza8
 7.560 s
 Mateusz9
+7.856 s
+Paweł10
 cardsButterflyAll18
 BATTERFLY
 18 el.

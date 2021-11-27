@@ -6,9 +6,13 @@
 
 $result = $_POST["result"];
 $level = $_POST["level"];
+// echo $_POST["lista"];
+$level = $_POST["lista"];
 $name = stripslashes(trim($_POST["name"]));
 
-    $name_file = 'results.txt';
+header("Location: http://localhost/FamilyMemory/index.php");
+
+$name_file = 'results.txt';
     $default_file = 'defaultResults.php';
     $results = [];
     $thisLevel = false;
@@ -80,10 +84,12 @@ if ($results<>"") {
     }
 //   $tresc="$result - $level\n";
 //   $tresc=$tresc.$name."\n";
-    $f=fopen("testResults.txt", "a");
+    $f=fopen("results.txt", "a");
     ftruncate($f, 0);
     fputs($f, $tresc);
     fclose($f);
+
+    // header("Location: http://localhost/FamilyMemory/index.php");
 //   mail("robertburek@wp.pl", "Wygrał dzisiaj", $tresc);
 }
 //   $f=fopen("testResults.txt", "a");

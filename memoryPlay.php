@@ -156,10 +156,23 @@ var json='<?php
                 <p>
                     Podaj swoje imię: 
                     <input id=name type="text" class="boxstyle" name="name" value="Minionek" autofocus="autofocus">
-                    <input id="result" type="text" name="result" value="6.888 s" hidden/>
+                    <input id="result" type="text" name="result" value="6.888 s"/>
                     <input id="level" type="text" name="level" value="cardsButterflyAll12" hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>
+                        <div>
+		                    <select name="lista" size="4">
+		                    	<option>cardsButterflyAll12</option>
+		                    	<option>cardsButterflyAll18</option>
+		                    	<option>cardsButterflyAll24</option>
+		                    	<option>cardsDogAll12</option>
+                                <option>cardsDogAll18</option>
+		                    	<option>cardsDogAll24</option>
+		                    	<option>cardsCatAll12</option>
+		                    	<option>cardsCatAll18</option>
+                                <option>cardsCatAll24</option>
+		                    </select>
+	                    </div>
                 <br>
                 <!-- <a class="button again" href="javascript:reset()"> Jeszcze raz ? </a> -->
                 <!-- <a class="button again" href="saveResults.php" type="submit"> Jeszcze raz ? </a> -->

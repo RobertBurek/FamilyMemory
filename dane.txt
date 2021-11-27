@@ -3,8 +3,12 @@ CAT
 12 el.
 7.584 s
 Robert
+7.000 s
+Minionek
 8.125 s
 Katarzyna
+9.000 s
+Minionek
 9.256 s
 Iza
 10.247 s
@@ -17,10 +21,6 @@ Robert
 Katarzyna
 11.124 s
 Iza
-12.560 s
-Mateusz
-12.856 s
-Paweł
 cardsCatAll18
 CAT
 18 el.
@@ -28,6 +28,8 @@ CAT
 Mateusz
 12.856 s
 Paweł
+13.000 s
+Monika
 13.245 s
 Robert
 14.985 s
@@ -42,8 +44,6 @@ Mateusz
 Paweł
 18.658 s
 Robert
-18.985 s
-Tymek
 cardsCatAll24
 CAT
 24 el.
@@ -53,6 +53,8 @@ Mateusz
 Paweł
 23.245 s
 Robert
+24.000 s
+Monika
 24.985 s
 Katarzyna
 25.124 s
@@ -65,8 +67,6 @@ Mateusz
 Paweł
 28.658 s
 Robert
-28.985 s
-Tymek
 cardsDogAll12
 DOG
 12 el.
@@ -76,6 +76,8 @@ Robert
 Katarzyna
 7.256 s
 Iza
+8.000 s
+Mariola
 8.247 s
 Mateusz
 8.598 s
@@ -88,8 +90,6 @@ Katarzyna
 Iza
 9.560 s
 Mateusz
-9.856 s
-Paweł
 cardsDogAll18
 DOG
 18 el.
@@ -97,6 +97,8 @@ DOG
 Robert
 11.985 s
 Katarzyna
+12.000 s
+Mariola
 12.124 s
 Iza
 12.560 s
@@ -111,8 +113,6 @@ Katarzyna
 Iza
 15.247 s
 Mateusz
-15.598 s
-Paweł
 cardsDogAll24
 DOG
 24 el.
@@ -122,6 +122,8 @@ Mateusz
 Paweł
 33.245 s
 Robert
+34.000 s
+Mariolla
 34.985 s
 Katarzyna
 35.124 s
@@ -134,8 +136,6 @@ Mateusz
 Paweł
 38.658 s
 Robert
-38.985 s
-Tymek
 cardsButterflyAll12
 BATTERFLY
 12 el.
@@ -145,6 +145,8 @@ Robert1
 Kasia2
 5.256 s
 Iza3
+6.000 s
+Mariolla
 6.247 s
 Mateusz4
 6.598 s
@@ -157,8 +159,6 @@ Kasia7
 Iza8
 7.560 s
 Mateusz9
-7.856 s
-Paweł10
 cardsButterflyAll18
 BATTERFLY
 18 el.
@@ -168,6 +168,8 @@ Paweł
 Robert
 22.985 s
 Tymek
+23.000 s
+Mariolla
 23.256 s
 Mateusz
 23.856 s
@@ -180,8 +182,6 @@ Katarzyna
 Katarzyna
 25.256 s
 Iza
-26.247 s
-Mateusz
 cardsButterflyAll24
 BATTERFLY
 24 el.
@@ -189,6 +189,8 @@ BATTERFLY
 Katarzyna
 26.256 s
 Iza
+27.000 s
+Minionek
 27.247 s
 Mateusz
 28.598 s
@@ -203,5 +205,3 @@ Mateusz
 Paweł
 33.245 s
 Robert
-34.985 s
-Katarzyna
