@@ -1,207 +1,207 @@
 cardsCatAll12
 CAT
 12 el.
-7.584 s
+6.888
+Minionek
+7.584
 Robert
-8.125 s
+8.125
 Kasia
-8.888 s
-Robert
-9.256 s
+9.256
 Iza
-10.247 s
+9.999
+Minionek
+10.000
+Minionek
+10.247
 Mateusz
-10.598 s
+10.598
 Paweł
-10.658 s
+10.658
 Robert
-10.985 s
+10.985
 Kasia
-11.124 s
-Iza
-12.560 s
-Mateusz
 cardsCatAll18
 CAT
 18 el.
-12.147 s
+6.888
+Minionek
+8.888
+Minionek
+10.000
+Minionek
+11.111
+Minionek
+12.147
 Mateusz
-12.856 s
+12.856
 Paweł
-13.245 s
+13.245
 Robert
-14.985 s
+14.985
 Kasia
-15.124 s
+15.124
 Kasia
-16.256 s
+16.256
 Iza
-17.247 s
-Mateusz
-18.598 s
-Paweł
-18.658 s
-Robert
-18.985 s
-Tymek
 cardsCatAll24
 CAT
 24 el.
-21.259 s
+21.259
 Mateusz
-22.856 s
+22.856
 Paweł
-23.245 s
+23.245
 Robert
-24.985 s
+24.985
 Kasia
-25.124 s
+25.124
 Kasia
-26.256 s
+26.256
 Iza
-27.247 s
+27.247
 Mateusz
-28.598 s
+28.598
 Paweł
-28.658 s
+28.658
 Robert
-28.888 s
-Romek
+28.985
+Tymek
 cardsDogAll12
 DOG
 12 el.
-7.025 s
-Robert
-7.125 s
-Kasia
-7.256 s
-Iza
-8.247 s
-Mateusz
-8.598 s
-Paweł
-8.658 s
-Robert
-8.985 s
-Kasia
-9.124 s
-Iza
-9.560 s
-Mateusz
-9.856 s
-Paweł
+6.888
+Minionek
+7.025
+Robe
+7.125
+Kas
+7.256
+I
+8.247
+Mateu
+8.598
+Paw
+8.658
+Robe
+8.985
+Kas
+9.124
+I
+9.560
+Mateu
 cardsDogAll18
 DOG
 18 el.
-11.589 s
-Robert
-11.985 s
-Kasia
-12.124 s
-Iza
-12.560 s
-Mateusz
-12.856 s
-Paweł
-13.245 s
-Robert
-14.125 s
-Kasia
-14.256 s
-Iza
-15.247 s
-Mateusz
-15.598 s
-Paweł
+6.888
+Minionek
+11.589
+Robe
+11.985
+Kas
+12.000
+Minionek
+12.124
+I
+12.560
+Mateu
+12.856
+Paw
+13.000
+Minionek
+13.245
+Robe
+14.000
+Minionek
 cardsDogAll24
 DOG
 24 el.
-32.126 s
-Mateusz
-32.856 s
-Paweł
-33.245 s
-Robert
-34.985 s
-Kasia
-35.124 s
-Kasia
-36.256 s
-Iza
-37.247 s
-Mateusz
-38.598 s
-Paweł
-38.658 s
-Robert
-38.888 s
-Zenek
+32
+Minionek
+32.126
+Mateu
+32.856
+Paw
+33.245
+Robe
+34.985
+Kas
+35.124
+Kas
+36.256
+I
+37.247
+Mateu
+38.598
+Paw
+38.658
+Robe
 cardsButterflyAll12
 BATTERFLY
 12 el.
-5.058 s
-Robert1
-5.125 s
-Kasia2
-5.256 s
-Iza3
-6.247 s
-Mateusz4
-6.598 s
-Paweł5
-6.658 s
-Robert6
-6.985 s
-Kasia7
-7.124 s
-Iza8
-7.560 s
-Mateusz9
-7.856 s
+5.058
+Rober
+5.125
+Kasi
+5.256
+Iz
+6.247
+Mateus
+6.598
+Pawe
+6.658
+Rober
+6.985
+Kasi
+7.124
+Iz
+7.560
+Mateus
+7.856
 Paweł10
 cardsButterflyAll18
 BATTERFLY
 18 el.
-22.547 s
-Paweł
-22.658 s
-Robert
-22.985 s
-Tymek
-23.256 s
-Mateusz
-23.856 s
-Paweł
-24.245 s
-Robert
-24.985 s
-Kasia
-25.124 s
-Kasia
-25.256 s
-Iza
-26.247 s
+22.547
+Paw
+22.658
+Robe
+22.985
+Tym
+23.256
+Mateu
+23.856
+Paw
+24.245
+Robe
+24.985
+Kas
+25.124
+Kas
+25.256
+I
+26.247
 Mateusz
 cardsButterflyAll24
 BATTERFLY
 24 el.
-25.158 s
-Kasia
-26.256 s
-Iza
-27.247 s
-Mateusz
-28.598 s
-Paweł
-28.658 s
-Robert
-28.985 s
-Tymek
-29.256 s
-Mateusz
-32.856 s
-Paweł
-33.245 s
-Robert
-33.333 s
-Robert!!!
+6.888
+Minionek
+25.000
+Minionek
+25.158
+Kas
+26.000
+Minionek
+26.256
+I
+27.247
+Mateu
+27.777
+Minionek
+28
+Minionek
+28.598
+Paw
+28.658
+Robe

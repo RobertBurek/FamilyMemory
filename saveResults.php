@@ -5,7 +5,7 @@
 // var_dump($_SESSION["results"]);
 
 $result = $_POST["result"];
-$level = $_POST["level"];
+// $level = $_POST["level"];
 // echo $_POST["lista"];
 $level = $_POST["lista"];
 $name = stripslashes(trim($_POST["name"]));
@@ -25,16 +25,16 @@ $name_file = 'results.txt';
         while(!feof($fp)) 
         {
            $line = substr(fgets($fp), 0, -1);
-           if ($line === "".$level) {
+           if ($line == $level) {
                $thisLevel = true;
             //    $nextResult = 0;
            }
            if ($thisLevel) {
-               if (($nextResult > 4) && ($nextResult % 2 == 1) && ($nextResult < 23)) {
-                    if ($result <= $line && !$changePlayer && !$afterChange) {
+               if (($nextResult > 2) && ($nextResult % 2 == 1) && ($nextResult <= 22)) {
+                    if ($result <= $line && !$changePlayer) {
                         array_push($results, $result);
                         array_push($results, $name);
-                        $afterChange = true;
+                        // $afterChange = true;
                         $changePlayer = true;
                     }
                }
@@ -45,10 +45,15 @@ $name_file = 'results.txt';
             //         !$afterChange = true;
             //         };
             //     }
+            //    ++$nextResult;
+               array_push($results, $line);
+               if ($changePlayer && $nextResult == 22) {
+                   array_pop($results);
+                   array_pop($results);
+               };
+            //    if ($nextResult < 21) array_push($results, $line);
+               if ($nextResult == 22) $thisLevel = false;
                ++$nextResult;
-            //    array_push($results, $line);
-               if ($nextResult < 22) array_push($results, $line);
-               if ($nextResult > 22) $thisLevel = false;
            } else array_push($results, $line);
         //    if ($thisLevel && ($nextResult == 22 || $nextResult == 23)) {
             // if (!$thisLevel)// && ($nextResult == 22 || $nextResult == 23)) {
