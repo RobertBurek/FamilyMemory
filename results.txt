@@ -1,7 +1,11 @@
 cardsCatAll12
 CAT
 12 el.
+6.000
+Minionek
 6.888
+Minionek
+7.000
 Minionek
 7.584
 Robert
@@ -17,13 +21,11 @@ Minionek
 Minionek
 10.247
 Mateusz
-10.598
-Paweł
-10.658
-Robert
 cardsCatAll18
 CAT
 18 el.
+6.886
+Minionek
 6.888
 Minionek
 8.888
@@ -42,8 +44,6 @@ Paweł
 Minionek55
 13.000
 Minionek55
-13.000
-Minionek2
 cardsCatAll24
 CAT
 24 el.
@@ -72,12 +72,16 @@ DOG
 12 el.
 6.888
 Minionek
+6.888
+Minionek
 7.025
 Robe
 7.125
 Kas
 7.256
 I
+7.888
+Minionek
 8.247
 Mateu
 8.598
@@ -86,13 +90,11 @@ Paw
 Robe
 8.985
 Kas
-9.124
-I
-9.560
-Mateu
 cardsDogAll18
 DOG
 18 el.
+6.000
+Minionek
 6.888
 Minionek
 11.589
@@ -111,8 +113,6 @@ Paw
 Minionek
 13.245
 Robe
-14.000
-Minionek
 cardsDogAll24
 DOG
 24 el.
@@ -124,21 +124,23 @@ Mateu
 Paw
 33.245
 Robe
+33.333
+Minionek
 34.985
 Kas
 35.124
 Kas
 36.256
 I
+36.666
+Minionek
 37.247
 Mateu
-38.598
-Paw
-38.658
-Robe
 cardsButterflyAll12
 BATTERFLY
 12 el.
+4.256
+Minionek
 5.058
 Rober
 5.125
@@ -157,8 +159,6 @@ Kasi
 Iz
 7.560
 Mateus
-7.856
-Paweł10
 cardsButterflyAll18
 BATTERFLY
 18 el.
@@ -187,21 +187,21 @@ BATTERFLY
 24 el.
 6.888
 Minionek
+9.258
+Minionek
+10.658
+Robert
+11.111
+Minionek
+15.245
+Minionek
+16.000
+Minionek
+18.000
+Minionek
 25.000
 Minionek
 25.158
 Kas
 26.000
 Minionek
-26.256
-I
-27.247
-Mateu
-27.777
-Minionek
-28
-Minionek
-28.598
-Paw
-28.658
-Robe

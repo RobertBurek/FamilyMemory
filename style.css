@@ -42,6 +42,10 @@
 }
 
 /*---------------------PopUp------------------------*/
+a {
+    float: right;
+    margin-right: 7vw;
+}
 h3 {
     text-align: center;
 }
@@ -76,7 +80,7 @@ p {
     background: #9fa0f9;
 }
 .again {
-    margin-left: 40%;
+    margin-left: 7vw;
 }
 .overlay {
     position: fixed;
@@ -191,6 +195,6 @@ p {
         width: 60%;
     }
     .again {
-        margin-left: 30%;
+        margin-left: 3vw;
     }
 }

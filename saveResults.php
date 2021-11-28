@@ -1,18 +1,15 @@
 <?php
-// session_start();
-// $name = $_POST["name"];
-// echo 'zrobione '.$name.'<br/>';
-// var_dump($_SESSION["results"]);
 
-$result = sprintf("%01.3f", $_POST["result"]);
-// $level = $_POST["level"];
-// echo $_POST["lista"];
-$level = $_POST["lista"];
-$name = stripslashes(trim($_POST["name"]));
+    $result = sprintf("%01.3f", $_POST["result"]);
+    $level = $_POST["level"];
+    $name = stripslashes(trim($_POST["name"]));
 
-header("Location: http://localhost/FamilyMemory/index.php");
+        // header("Location: http://localhost/FamilyMemory/index.php");
+        header("Location: http://localhost/FamilyMemory/memoryPlay.php");
+        $level = $_POST["lista"];
 
-$name_file = 'results.txt';
+
+    $name_file = 'results.txt';
     $default_file = 'defaultResults.php';
     $results = [];
     $thisLevel = false;
