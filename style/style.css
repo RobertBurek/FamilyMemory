@@ -42,12 +42,18 @@
 }
 
 /*---------------------PopUp------------------------*/
+a {
+    margin-left: 15%;
+}
 h3 {
     text-align: center;
 }
 p {
     text-align: center;
     font-size: 1.3em;
+}
+.menu { 
+    text-align: center;
 }
 .box {
     width: 40%;
@@ -74,9 +80,6 @@ p {
 }
 .button:hover {
     background: #9fa0f9;
-}
-.again {
-    margin-left: 40%;
 }
 .overlay {
     position: fixed;
@@ -132,43 +135,43 @@ p {
 
 /* ----------------Rewersy kart-------------------- */
 .hidden1 {
-    background-image: url(../img/cardBack-1.jpg);
+    background-image: url(img/cardBack-1.jpg);
     background-size: 100% 100%;
 }
 .hidden2 {
-    background-image: url(../img/cardBack-2.png);
+    background-image: url(img/cardBack-2.png);
     background-size: 100% 100%;
 }
 .hidden3 {
-    background-image: url(../img/cardBack-3.jpg);
+    background-image: url(img/cardBack-3.jpg);
     background-size: 100% 100%;
 }
 .hidden4 {
-    background-image: url(../img/cardBack-4.jpg);
+    background-image: url(img/cardBack-4.jpg);
     background-size: 100% 100%;
 }
 .hidden5 {
-    background-image: url(../img/cardBack-5.jpg);
+    background-image: url(img/cardBack-5.jpg);
     background-size: 100% 100%;
 }
 .hidden6 {
-    background-image: url(../img/cardBack-6.jpg);
+    background-image: url(img/cardBack-6.jpg);
     background-size: 100% 100%;
 }
 .hidden7 {
-    background-image: url(../img/cardBack-7.jpg);
+    background-image: url(img/cardBack-7.jpg);
     background-size: 100% 100%;
 }
 .hidden8 {
-    background-image: url(../img/cardBack-8.jpg);
+    background-image: url(img/cardBack-8.jpg);
     background-size: 100% 100%;
 }
 .hidden9 {
-    background-image: url(../img/cardBack-9.jpg);
+    background-image: url(img/cardBack-9.jpg);
     background-size: 100% 100%;
 }
 .hidden10 {
-    background-image: url(../img/cardBack-10.jpg);
+    background-image: url(img/cardBack-10.jpg);
     background-size: 100% 100%;
 }
 /* ----------------Rewersy kart-------------------- */
@@ -189,8 +192,5 @@ p {
     }
     .popUp {
         width: 60%;
-    }
-    .again {
-        margin-left: 30%;
     }
 }

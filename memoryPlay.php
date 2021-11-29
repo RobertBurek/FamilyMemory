@@ -20,8 +20,8 @@
         <div class="popUp">
             <br>
             <div id="contentInfo">
-                <h3>Brawo !!! Twój wynik to 24s.</h3>
-                <h3> Jesteś w TOP10.</h3>
+                <h3>Brawo !!! Jesteś w TOP10.</h3>
+                <h3>Twój wynik to 24.564 s</h3>
                 <!-- Zawartość wypełniona przez app.js -->
                 <!-- w zależności od dokonanego wyboru w menu. -->
             </div>
@@ -54,9 +54,10 @@
 		                    </select>
                         </p> -->
 
-                <br>
-                <br/><input class="button again" type="submit" value="Jeszcze raz?"/>
+                <div class="menu">
+                <br/><input class="button" type="submit" value="Jeszcze raz?"/>
                 <a class="button" href="saveResults.php" type="submit">Od nowa?</a>
+                </div>
             </form>
         </div>
     </div>

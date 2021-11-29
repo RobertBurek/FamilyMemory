@@ -53,6 +53,10 @@ p {
     text-align: center;
     font-size: 1.3em;
 }
+#menu { 
+    text-align: center;
+    margin: 20px;
+}
 .box {
     width: 40%;
     padding: 35px;
