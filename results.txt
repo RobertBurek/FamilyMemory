@@ -3,6 +3,8 @@ CAT
 12 el.
 7.584
 Robert
+7.888
+Robert
 8.125
 Kasia
 9.256
@@ -19,8 +21,6 @@ Kasia
 Iza
 12.560
 Mateusz
-12.856
-Paweł
 cardsCatAll18
 CAT
 18 el.

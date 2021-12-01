@@ -6,7 +6,7 @@
 
         // header("Location: http://localhost/FamilyMemory/index.php");
         header("Location: http://localhost/FamilyMemory/memoryPlay.php");
-        $level = $_POST["lista"];
+        // $level = $_POST["lista"];
 
 
     $name_file = 'results.txt';
