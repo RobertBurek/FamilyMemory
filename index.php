@@ -11,8 +11,20 @@
         };
         fclose($fp);
         unset($results[count($results)-1]);
+        // echo strlen($results[3]);
+        if (strlen($results[3]) == 6) {
+            $results = [];
+            $fp = fopen($name_file, "rb");
+            while(!feof($fp)) 
+            {
+                $line = substr(fgets($fp), 0, -2);
+                array_push($results, $line);
+            };
+            fclose($fp);
+            unset($results[count($results)-1]);
+        }
     }
-    else{
+    else {
       echo 'Nie znaleziono pliku!';
       require_once $default_file;
     }

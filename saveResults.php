@@ -5,7 +5,7 @@
     $name = stripslashes(trim($_POST["name"]));
 
         // header("Location: http://localhost/FamilyMemory/index.php");
-        header("Location: http://localhost/FamilyMemory/memoryPlay.php");
+        header("Location: http://localhost/MemoryPHP/memoryPlay.php");
         // $level = $_POST["lista"];
 
 
@@ -22,6 +22,7 @@
         while(!feof($fp)) 
         {
            $line = substr(fgets($fp), 0, -1);
+        //    $line = str_replace('\n', '', str_replace('\r', '', fgets($fp)));
            if ($line == $level) {
                $thisLevel = true;
             //    $nextResult = 0;
@@ -29,6 +30,8 @@
            if ($thisLevel) {
                if (($nextResult > 2) && ($nextResult % 2 == 1) && ($nextResult <= 22)) {
                     if ($result <= $line && !$changePlayer) {
+                        // array_push($results, $result.'\r\n');  //  .'\n'
+                        // array_push($results, $name.'\r\n');  //  .'\n'
                         array_push($results, $result);
                         array_push($results, $name);
                         // $afterChange = true;
@@ -51,7 +54,8 @@
             //    if ($nextResult < 21) array_push($results, $line);
                if ($nextResult == 22) $thisLevel = false;
                ++$nextResult;
-           } else array_push($results, $line);
+            // } else array_push($results, $line);
+            } else array_push($results, $line);
         //    if ($thisLevel && ($nextResult == 22 || $nextResult == 23)) {
             // if (!$thisLevel)// && ($nextResult == 22 || $nextResult == 23)) {
             //  array_push($results, $line);
@@ -80,7 +84,7 @@ if ($results<>"") {
     foreach ($results as $result) {
         // if ($result === 'Kasia') $tresc = $tresc."Katarzyna\n";
         // else 
-        $tresc = $tresc.$result."\n";
+        $tresc = $tresc.$result;//."\n";
         // if ($result === 'cardsCatAll18') {
             // $.'cardsCatAll18'='to jest to';
             // echo $.'cardsCatAll18';
