@@ -8,6 +8,8 @@ Kasia
 9.256
 Iza
 10.000
+Roberto
+10.005
 Robercik!!!
 10.111
 Marta
@@ -19,8 +21,6 @@ Paweł
 Robercik!!!
 10.985
 Kasia
-11.124
-Iza
 cardsCatAll18
 CAT
 18 el.

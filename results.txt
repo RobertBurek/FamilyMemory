@@ -5,11 +5,13 @@ CAT
 Robert
 8.125
 Kasia
+9.125
+Martusia
 9.256
 Iza
 10.000
-Robert
-10.000
+Roberto
+10.005
 Robert
 10.111
 Marta
@@ -19,8 +21,6 @@ Mateusz
 Paweł
 10.658
 Robert
-10.985
-Kasia
 cardsCatAll18
 CAT
 18 el.
