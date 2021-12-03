@@ -28,8 +28,8 @@
             <form action="saveResults.php" method="POST">
                 <p>
                     Podaj swoje imię: 
-                    <input id=name type="text" class="boxstyle" name="name" value="Martusia" autofocus="autofocus">
-                    <input id="result" type="text" name="result" value="9.125" hidden/>
+                    <input id=name type="text" class="boxstyle" name="name" value="Pawełek" autofocus="autofocus">
+                    <input id="result" type="text" name="result" value="9.888" hidden/>
                     <input id="level" type="text" name="level" value="cardsCatAll12" hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>

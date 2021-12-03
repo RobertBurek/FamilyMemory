@@ -4,47 +4,18 @@
     $results = [];
     if (file_exists($name_file)) {
         $fp = fopen($name_file, "rb");
-        while(!feof($fp)) 
-        {
+        while(!feof($fp)) {
             $line = str_replace("\n", "", fgets($fp));
             $line = str_replace("\r", "", $line);
-            // $line = substr(fgets($fp), 0, -1);
             array_push($results, $line);
         };
         fclose($fp);
         unset($results[count($results)-1]);
-        // echo strlen($results[3]);
-        // if (strlen($results[3]) == 6) {
-        //     $results = [];
-        //     $fp = fopen($name_file, "rb");
-        //     while(!feof($fp)) 
-        //     {
-        //         $line = substr(fgets($fp), 0, -2);
-        //         array_push($results, $line);
-        //     };
-        //     fclose($fp);
-        //     unset($results[count($results)-1]);
-        // }
     }
     else {
       echo 'Nie znaleziono pliku!';
       require_once $default_file;
-    }
-
-    // function readResults($nameFile){
-    //     $results = [];
-    //     $fp = fopen($nameFile, "rb");
-    //     while(!feof($fp)) 
-    //     {
-    //        $line = substr(fgets($fp), 0, -2);
-    //        array_push($results, $line);
-    //     };
-    //     fclose($fp);
-    //     unset($results[count($results)-1]);
-    //     return $results;
-    // };
-
-    // $results = readResults($nazwa_pliku);
+    };
 ?>
 
 
@@ -63,32 +34,19 @@
 
     <script type="text/javascript">
     let results = eval('<?php echo json_encode($results);?>');
-    console.log(results[124]);
     </script>
     <?php
-        // level = stripslashes(trim($_POST["level"]));
-        // name = $_POST["name"];
-        // cho 'zrobione '.$name.'<br/>';
-        $tresc = '';
-        if ($results<>"") {
-            foreach ($results as $result) {
-                if ($result == 'Robert') $tresc = $tresc."Robercik!!!\n";
-                else $tresc = $tresc.$result."\n";
-                // if ($result === 'cardsCatAll18') {
-                    // $.'cardsCatAll18'='to jest to';
-                    // echo $.'cardsCatAll18';
-                    // define('STALA', array('ergerg'));
-                    // echo STALA[0];
-                // }
-            }
-        //   $tresc="$result - $level\n";
-        //   $tresc=$tresc.$name."\n";
-          $f=fopen('dane.txt', "a");
-          ftruncate($f, 0);
-          fputs($f, $tresc);
-          fclose($f);
-        //   mail("robertburek@wp.pl", "Wygrał dzisiaj", $tresc);
-        }
+        // $tresc = '';
+        // if ($results<>"") {
+        //     foreach ($results as $result) {
+        //         if ($result == 'Robert') $tresc = $tresc."Robercik!!!\n";
+        //         else $tresc = $tresc.$result."\n";
+        //     }
+        // $f=fopen('dane.txt', "a");
+        // ftruncate($f, 0);
+        // fputs($f, $tresc);
+        // fclose($f);
+        // };
     ?>
 </head>
 <body>

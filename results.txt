@@ -9,6 +9,8 @@ Kasia
 Martusia
 9.256
 Iza
+9.888
+Pawełek
 10.000
 Roberto
 10.005
@@ -19,8 +21,6 @@ Marta
 Mateusz
 10.598
 Paweł
-10.658
-Robert
 cardsCatAll18
 CAT
 18 el.

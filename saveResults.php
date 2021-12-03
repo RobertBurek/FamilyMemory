@@ -17,13 +17,12 @@
     $nextResult = 0;
     if (file_exists($name_file)) {
         $fp = fopen($name_file, "rb");
-        while(!feof($fp)) 
-        {
+        while(!feof($fp)) {
             $line = str_replace("\n", "", fgets($fp));
             $line = str_replace("\r", "", $line);
            if ($line == $level) {
                $thisLevel = true;
-           }
+           };
            if ($thisLevel) {
                if (($nextResult > 2) && ($nextResult % 2 == 1) && ($nextResult <= 22)) {
                     if ($result <= $line && !$changePlayer) {
@@ -44,10 +43,10 @@
         fclose($fp);
         unset($results[count($results)-1]);
     }
-    else{
+    else {
       echo 'Nie znaleziono pliku!';
       require_once $default_file;
-    }
+    };
     $tresc = "";
     if ($results<>"") {
         foreach ($results as $result) {
@@ -57,6 +56,6 @@
         ftruncate($f, 0);
         fputs($f, $tresc);
         fclose($f);
-    }
+    };
 //   mail("robertburek@wp.pl", "Wygrał dzisiaj", $tresc);
 ?>
