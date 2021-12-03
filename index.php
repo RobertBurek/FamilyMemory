@@ -6,23 +6,25 @@
         $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
         {
-           $line = substr(fgets($fp), 0, -1);
-           array_push($results, $line);
+            $line = str_replace("\n", "", fgets($fp));
+            $line = str_replace("\r", "", $line);
+            // $line = substr(fgets($fp), 0, -1);
+            array_push($results, $line);
         };
         fclose($fp);
         unset($results[count($results)-1]);
         // echo strlen($results[3]);
-        if (strlen($results[3]) == 6) {
-            $results = [];
-            $fp = fopen($name_file, "rb");
-            while(!feof($fp)) 
-            {
-                $line = substr(fgets($fp), 0, -2);
-                array_push($results, $line);
-            };
-            fclose($fp);
-            unset($results[count($results)-1]);
-        }
+        // if (strlen($results[3]) == 6) {
+        //     $results = [];
+        //     $fp = fopen($name_file, "rb");
+        //     while(!feof($fp)) 
+        //     {
+        //         $line = substr(fgets($fp), 0, -2);
+        //         array_push($results, $line);
+        //     };
+        //     fclose($fp);
+        //     unset($results[count($results)-1]);
+        // }
     }
     else {
       echo 'Nie znaleziono pliku!';
@@ -70,7 +72,7 @@
         $tresc = '';
         if ($results<>"") {
             foreach ($results as $result) {
-                if ($result === 'Kasia') $tresc = $tresc."Katarzyna\n";
+                if ($result == 'Robert') $tresc = $tresc."Robercik!!!\n";
                 else $tresc = $tresc.$result."\n";
                 // if ($result === 'cardsCatAll18') {
                     // $.'cardsCatAll18'='to jest to';

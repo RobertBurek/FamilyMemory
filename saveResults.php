@@ -80,17 +80,21 @@
 //   $tresc="$result - $level\n";
 //   $tresc=$tresc.$name."\n";
 $tresc = "";
+// $f=fopen("results.txt", "a");
+// ftruncate($f, 0);
 if ($results<>"") {
     foreach ($results as $result) {
         // if ($result === 'Kasia') $tresc = $tresc."Katarzyna\n";
         // else 
-        $tresc = $tresc.$result;//."\n";
+        // $tresc = $tresc.$result.'\r\n';//."\n";
+        $tresc = $tresc.$result."\n";//."\n";
         // if ($result === 'cardsCatAll18') {
             // $.'cardsCatAll18'='to jest to';
             // echo $.'cardsCatAll18';
             // define('STALA', array('ergerg'));
             // echo STALA[0];
         // }
+        // fputs($f, $result.'\n');
     }
 //   $tresc="$result - $level\n";
 //   $tresc=$tresc.$name."\n";
@@ -102,6 +106,7 @@ if ($results<>"") {
     // header("Location: http://localhost/FamilyMemory/index.php");
 //   mail("robertburek@wp.pl", "Wygrał dzisiaj", $tresc);
 }
+// fclose($f);
 //   $f=fopen("testResults.txt", "a");
 //   fputs($f, $results);
 //   fclose($f);

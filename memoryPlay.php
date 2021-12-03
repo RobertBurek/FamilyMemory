@@ -29,7 +29,7 @@
                 <p>
                     Podaj swoje imię: 
                     <input id=name type="text" class="boxstyle" name="name" value="Robert" autofocus="autofocus">
-                    <input id="result" type="text" name="result" value="7.888" hidden/>
+                    <input id="result" type="text" name="result" value="10" hidden/>
                     <input id="level" type="text" name="level" value="cardsCatAll12" hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>

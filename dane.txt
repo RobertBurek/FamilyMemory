@@ -2,21 +2,21 @@ cardsCatAll12
 CAT
 12 el.
 7.584
-Robert
-7.888
-Robert
+Robercik!!!
 8.125
-Katarzyna
+Kasia
 9.256
 Iza
+10.111
+Marta
 10.247
 Mateusz
 10.598
 Paweł
 10.658
-Robert
+Robercik!!!
 10.985
-Katarzyna
+Kasia
 11.124
 Iza
 12.560
@@ -29,11 +29,11 @@ Mateusz
 12.856
 Paweł
 13.245
-Robert
+Robercik!!!
 14.985
-Katarzyna
+Kasia
 15.124
-Katarzyna
+Kasia
 16.256
 Iza
 17.247
@@ -41,7 +41,7 @@ Mateusz
 18.598
 Paweł
 18.658
-Robert
+Robercik!!!
 18.985
 Tymek
 cardsCatAll24
@@ -52,11 +52,11 @@ Mateusz
 22.856
 Paweł
 23.245
-Robert
+Robercik!!!
 24.985
-Katarzyna
+Kasia
 25.124
-Katarzyna
+Kasia
 26.256
 Iza
 27.247
@@ -64,16 +64,16 @@ Mateusz
 28.598
 Paweł
 28.658
-Robert
+Robercik!!!
 28.985
 Tymek
 cardsDogAll12
 DOG
 12 el.
 7.025
-Robert
+Robercik!!!
 7.125
-Katarzyna
+Kasia
 7.256
 Iza
 8.247
@@ -81,9 +81,9 @@ Mateusz
 8.598
 Paweł
 8.658
-Robert
+Robercik!!!
 8.985
-Katarzyna
+Kasia
 9.124
 Iza
 9.560
@@ -94,9 +94,9 @@ cardsDogAll18
 DOG
 18 el.
 11.589
-Robert
+Robercik!!!
 11.985
-Katarzyna
+Kasia
 12.124
 Iza
 12.560
@@ -104,9 +104,9 @@ Mateusz
 12.856
 Paweł
 13.245
-Robert
+Robercik!!!
 14.125
-Katarzyna
+Kasia
 14.256
 Iza
 15.247
@@ -121,11 +121,11 @@ Mateusz
 32.856
 Paweł
 33.245
-Robert
+Robercik!!!
 34.985
-Katarzyna
+Kasia
 35.124
-Katarzyna
+Kasia
 36.256
 Iza
 37.247
@@ -133,7 +133,7 @@ Mateusz
 38.598
 Paweł
 38.658
-Robert
+Robercik!!!
 38.985
 Tymek
 cardsButterflyAll12
@@ -165,7 +165,7 @@ BATTERFLY
 22.547
 Paweł
 22.658
-Robert
+Robercik!!!
 22.985
 Tymek
 23.256
@@ -173,11 +173,11 @@ Mateusz
 23.856
 Paweł
 24.245
-Robert
+Robercik!!!
 24.985
-Katarzyna
+Kasia
 25.124
-Katarzyna
+Kasia
 25.256
 Iza
 26.247
@@ -186,7 +186,7 @@ cardsButterflyAll24
 BATTERFLY
 24 el.
 25.158
-Katarzyna
+Kasia
 26.256
 Iza
 27.247
@@ -194,7 +194,7 @@ Mateusz
 28.598
 Paweł
 28.658
-Robert
+Robercik!!!
 28.985
 Tymek
 29.256
@@ -202,6 +202,6 @@ Mateusz
 32.856
 Paweł
 33.245
-Robert
+Robercik!!!
 34.985
-Katarzyna
+Kasia
