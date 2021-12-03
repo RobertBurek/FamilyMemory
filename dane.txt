@@ -7,6 +7,8 @@ Robercik!!!
 Kasia
 9.256
 Iza
+10.000
+Robercik!!!
 10.111
 Marta
 10.247
@@ -19,8 +21,6 @@ Robercik!!!
 Kasia
 11.124
 Iza
-12.560
-Mateusz
 cardsCatAll18
 CAT
 18 el.

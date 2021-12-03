@@ -9,6 +9,8 @@ Kasia
 Iza
 10.000
 Robert
+10.000
+Robert
 10.111
 Marta
 10.247
@@ -19,8 +21,6 @@ Paweł
 Robert
 10.985
 Kasia
-11.124
-Iza
 cardsCatAll18
 CAT
 18 el.

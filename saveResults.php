@@ -21,7 +21,9 @@
         $fp = fopen($name_file, "rb");
         while(!feof($fp)) 
         {
-           $line = substr(fgets($fp), 0, -1);
+            $line = str_replace("\n", "", fgets($fp));
+            $line = str_replace("\r", "", $line);
+        //    $line = substr(fgets($fp), 0, -1);
         //    $line = str_replace('\n', '', str_replace('\r', '', fgets($fp)));
            if ($line == $level) {
                $thisLevel = true;
