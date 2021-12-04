@@ -56,7 +56,7 @@
 
                 <div class="menu">
                 <br/><input class="button" type="submit" value="Jeszcze raz?"/>
-                <a class="button" href="saveResults.php" type="submit">Od nowa?</a>
+                <a class="button" href="saveResults.php" type="submit">Nowa gra?</a>
                 </div>
             </form>
         </div>
