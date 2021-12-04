@@ -88,7 +88,7 @@
         <a class="buttonStart" href="memoryPlay.php"> S T A R T</a>
     </div>
 
-    <script src="menu.js"></script>
+    <script src="js/menu.js"></script>
 
 </body>
 </html>
