@@ -13,7 +13,7 @@
         unset($results[count($results)-1]);
     }
     else {
-      echo 'Nie znaleziono pliku!';
+    //   echo 'Nie znaleziono pliku!';
       require_once $default_file;
     };
 ?>
