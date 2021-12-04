@@ -11,16 +11,16 @@ Martusia
 Iza
 9.888
 Pawełek
+9.888
+Paweł
+9.888
+Pawełek
+9.888
+Pawełek
 10.000
 Roberto
 10.005
 Robert
-10.111
-Marta
-10.247
-Mateusz
-10.598
-Paweł
 cardsCatAll18
 CAT
 18 el.
