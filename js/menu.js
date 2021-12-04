@@ -73,6 +73,17 @@ for (let i = 0; i < listResultsLeft.length; i++) {
 
 localStorage.clear();
 
+function reduceFrame() {
+    for (let i = 0; i < listLevels.length; i++) {
+        if (i != 1) {
+        listLevels[i].classList.add("display");
+        listResultsRight[i].classList.add("display");
+        listPictures[i].classList.add("display");
+        listResultsLeft[i].classList.add("display");
+        };
+    };
+}
+
 function animalChosenPlayer(chosen){
     listLevels.forEach(level => {
         level.classList.remove("display");
@@ -115,15 +126,7 @@ function animalChosenPlayer(chosen){
                 result_2_left.innerHTML = results24[i];
             };
         };
-        //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
-        for (let i = 0; i < listLevels.length; i++) {
-            if (i != 1) {
-            listLevels[i].classList.add("display");
-            listResultsRight[i].classList.add("display");
-            listPictures[i].classList.add("display");
-            listResultsLeft[i].classList.add("display");
-            };
-        };
+        reduceFrame();
     } else {
         listResultsRight.forEach((result)=>{
             result.classList.remove("display");
@@ -261,15 +264,7 @@ function levelChosenPlayer(chosen){
                 result_2_right.innerHTML = butterflyResults[i];
             };
         };
-        //  SKRACANIE WYSOKOŚCI OKNA WYBORU !!! DO OSOBNEJ FUNKCJI
-        for (let i = 0; i < listLevels.length; i++) {
-            if (i != 1) {
-            listLevels[i].classList.add("display");
-            listResultsRight[i].classList.add("display");
-            listPictures[i].classList.add("display");
-            listResultsLeft[i].classList.add("display");
-            };
-        };
+        reduceFrame();
     } else {
         resultsLeft.classList.add("width3Elements");
         resultsLeft.classList.add("borderRight");
