@@ -17,7 +17,7 @@ function htmlResults (results) {
             arrayHTML = arrayHTML +
 '        <div class="linia">' +
 '             <div class="name">' + results[i + 1] + '</div>' +
-'             <div class="result">' + results[i] + '</div>' +
+'             <div class="result">' + results[i] + ' s</div>' +
 '        </div>';
         }
     }
