@@ -1,432 +1,11 @@
-// let resultsCat12 = [];
-// '                    <div class="linia">' +
-// '                        <div class="name">CAT</div>' +
-// '                        <div class="result">12 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RobertLLL  12</div>' +
-// '                        <div class="result">11,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">15,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL</div>' +
-// '                        <div class="result">16,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KrzyśLLL</div>' +
-// '                        <div class="result">18,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Mirosław 12</div>' +
-// '                        <div class="result">20,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL</div>' +
-// '                        <div class="result">21,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">GrzegorzLLL</div>' +
-// '                        <div class="result">28,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Roman 12</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Roman 12</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MonikaLLL</div>' +
-// '                        <div class="result">31,256 s</div>' +
-// '                    </div>';
-
-// let resultsCat18 =  [];
-// '                    <div class="linia">' +
-// '                        <div class="name">CAT</div>' +
-// '                        <div class="result">18 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RobertLLL</div>' +
-// '                        <div class="result">25,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">26,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Robertttttttttt</div>' +
-// '                        <div class="result">27,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL  18</div>' +
-// '                        <div class="result">28,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Mirosław 18</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">GrzegorzLLL</div>' +
-// '                        <div class="result">32,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL  18</div>' +
-// '                        <div class="result">33,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RomanLLL</div>' +
-// '                        <div class="result">34,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RomanLLL</div>' +
-// '                        <div class="result">34,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL</div>' +
-// '                        <div class="result">36,256 s</div>' +
-// '                    </div>';
-
-// let resultsCat24 =  [];
-// '                    <div class="linia">' +
-// '                        <div class="name">CAT</div>' +
-// '                        <div class="result">24 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL  24</div>' +
-// '                        <div class="result">36,566 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">39,846 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL  24</div>' +
-// '                        <div class="result">45,576 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KrzyśLLL</div>' +
-// '                        <div class="result">47,346 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL</div>' +
-// '                        <div class="result">51,236 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL 24</div>' +
-// '                        <div class="result">55,976 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL</div>' +
-// '                        <div class="result">63,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL</div>' +
-// '                        <div class="result">64,856 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KOTEK LLL</div>' +
-// '                        <div class="result">64,856 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MonikaLLL 24</div>' +
-// '                        <div class="result">66,756 s</div>' +
-// '                    </div>';
-
-// let resultsDog12 =  [];
-// '                    <div class="linia">' +
-// '                        <div class="name">DOG</div>' +
-// '                        <div class="result">12 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RobertLLL  12</div>' +
-// '                        <div class="result">11,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">15,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL</div>' +
-// '                        <div class="result">16,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KrzyśLLL</div>' +
-// '                        <div class="result">18,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Mirosław 12</div>' +
-// '                        <div class="result">20,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL</div>' +
-// '                        <div class="result">21,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">GrzegorzLLL</div>' +
-// '                        <div class="result">28,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Roman 12</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Roman 12</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MonikaLLL</div>' +
-// '                        <div class="result">31,256 s</div>' +
-// '                    </div>';
-
-// let resultsDog18 =  [];
-// '                    <div class="linia">' +
-// '                        <div class="name">DOG</div>' +
-// '                        <div class="result">18 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RobertLLL</div>' +
-// '                        <div class="result">25,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">26,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Robertttttttttt</div>' +
-// '                        <div class="result">27,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL  18</div>' +
-// '                        <div class="result">28,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Mirosław 18</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">GrzegorzLLL</div>' +
-// '                        <div class="result">32,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL  18</div>' +
-// '                        <div class="result">33,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RomanLLL</div>' +
-// '                        <div class="result">34,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RomanLLL</div>' +
-// '                        <div class="result">34,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL</div>' +
-// '                        <div class="result">36,256 s</div>' +
-// '                    </div>';
-
-// let resultsDog24 =  [];
-// '                    <div class="linia">' +
-// '                        <div class="name">DOG</div>' +
-// '                        <div class="result">24 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL  24</div>' +
-// '                        <div class="result">36,566 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">39,846 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL  24</div>' +
-// '                        <div class="result">45,576 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KrzyśLLL</div>' +
-// '                        <div class="result">47,346 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL</div>' +
-// '                        <div class="result">51,236 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL 24</div>' +
-// '                        <div class="result">55,976 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL</div>' +
-// '                        <div class="result">63,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL</div>' +
-// '                        <div class="result">64,856 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">PIESEK LLL</div>' +
-// '                        <div class="result">64,856 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MonikaLLL 24</div>' +
-// '                        <div class="result">66,756 s</div>' +
-// '                    </div>';
-
-// let resultsButterfly12 =  [];
-// '                    <div class="linia">' +
-// '                        <div class="name">BUTTERFLY</div>' +
-// '                        <div class="result">12 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RobertLLL  12</div>' +
-// '                        <div class="result">11,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">15,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL</div>' +
-// '                        <div class="result">16,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KrzyśLLL</div>' +
-// '                        <div class="result">18,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Mirosław 12</div>' +
-// '                        <div class="result">20,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL</div>' +
-// '                        <div class="result">21,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">GrzegorzLLL</div>' +
-// '                        <div class="result">28,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Roman 12</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Roman 12</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MonikaLLL</div>' +
-// '                        <div class="result">31,256 s</div>' +
-// '                    </div>';
-
-// let resultsButterfly18 =  [];
-// '                    <div class="linia">' +
-// '                        <div class="name">BUTTERFLY</div>' +
-// '                        <div class="result">18 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RobertLLL</div>' +
-// '                        <div class="result">25,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">26,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Robertttttttttt</div>' +
-// '                        <div class="result">27,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL  18</div>' +
-// '                        <div class="result">28,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Mirosław 18</div>' +
-// '                        <div class="result">30,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">GrzegorzLLL</div>' +
-// '                        <div class="result">32,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL  18</div>' +
-// '                        <div class="result">33,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RomanLLL</div>' +
-// '                        <div class="result">34,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">RomanLLL</div>' +
-// '                        <div class="result">34,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL</div>' +
-// '                        <div class="result">36,256 s</div>' +
-// '                    </div>';
-
-// let resultsButterfly24 =[];
-// '                    <div class="linia">' +
-// '                        <div class="name">BUTTERFLY</div>' +
-// '                        <div class="result">24 el.</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL  24</div>' +
-// '                        <div class="result">1136,566 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">Magdalenaaaddccgggggg</div>' +
-// '                        <div class="result">39,846 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">M O T Y L E K L L L 2 4</div>' +
-// '                        <div class="result">45,576 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">KrzyśLLL</div>' +
-// '                        <div class="result">47,346 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL</div>' +
-// '                        <div class="result">51,236 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL 24</div>' +
-// '                        <div class="result">55,976 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL</div>' +
-// '                        <div class="result">63,256 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL</div>' +
-// '                        <div class="result">64,856 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MOTYLEK LLL</div>' +
-// '                        <div class="result">64,856 s</div>' +
-// '                    </div>' +
-// '                    <div class="linia">' +
-// '                        <div class="name">MonikaLLL 24</div>' +
-// '                        <div class="result">66,756 s</div>' +
-// '                    </div>';
-
-// console.log(results);
 let allResults=[];
-// console.log(allResults);
 
 var j = -1;
 for (let i = 0; i < results.length; i++) {
-    // var j = -1;
     if (i%23 === 0) {
         j = j + 1;
         allResults[j] = [];
-        // console.log(allResults[j]);
-        // var arrayTemp = [];
-
     } else {
-
         allResults[j].push(results[i]);
     };
 };
@@ -437,8 +16,8 @@ function htmlResults (results) {
         if (i%2 === 0) {
             arrayHTML = arrayHTML +
 '        <div class="linia">' +
-'             <div class="name">' + results[i] + '</div>' +
-'             <div class="result">' + results[i+1] + '</div>' +
+'             <div class="name">' + results[i + 1] + '</div>' +
+'             <div class="result">' + results[i] + '</div>' +
 '        </div>';
         }
     }
@@ -457,18 +36,10 @@ let resultsButterfly24 = htmlResults(allResults[8]);
 let resultsClear = '';
 let resultsPlarey = '';
 
-// console.log(allResults[0][0]==resultsCat12[0]);
-
-// resultsButterfly12 = allResults[6];
-// resultsButterfly18 = allResults[7];
-// resultsButterfly24 = allResults[8];
-// console.log(resultsButterfly24);
-
 const animalClasses = ["kitty11", "puppy8", "butterfly10"];
 const levelClasses = ["elements12", "elements18", "elements24"];
 const resultLeftClasses = ["result_1_left", "result_2_left", "result_3_left"];
 const resultRightClasses = ["result_1_right", "result_2_right", "result_3_right"];
-// let allResults=[resultsCat12, resultsCat18, resultsCat24, resultsDog12, resultsDog18, resultsDog24, resultsButterfly12, resultsButterfly18, resultsButterfly24];
 let catResults = [resultsCat12, resultsCat18, resultsCat24];
 let dogResults = [resultsDog12, resultsDog18, resultsDog24];
 let butterflyResults = [resultsButterfly12, resultsButterfly18, resultsButterfly24];
@@ -476,20 +47,6 @@ let results12 = [resultsCat12, resultsDog12, resultsButterfly12];
 let results18 = [resultsCat18, resultsDog18, resultsButterfly18];
 let results24 = [resultsCat24, resultsDog24, resultsButterfly24];
 
-// let animal1 = document.getElementById("animal1");
-// let animal2 = document.getElementById("animal2");
-// let animal3 = document.getElementById("animal3");
-// let level1 = document.getElementById("level1");
-// let level2 = document.getElementById("level2");
-// let level3 = document.getElementById("level3");
-// let result_1_left = document.getElementById("result_1_left");
-// let result_2_left = document.getElementById("result_2_left");
-// let result_3_left = document.getElementById("result_3_left");
-// let result_1_right = document.getElementById("result_1_right");
-// let result_2_right = document.getElementById("result_2_right");
-// let result_3_right = document.getElementById("result_3_right");
-
-// let StartGame = document.getElementById("StartGame");
 let listPictures = [animal1, animal2, animal3];
 let listLevels = [level1, level2, level3];
 let listResultsLeft = [result_1_left, result_2_left, result_3_left];
@@ -515,7 +72,6 @@ for (let i = 0; i < listResultsLeft.length; i++) {
 }
 
 localStorage.clear();
-// console.log(localStorage);
 
 function animalChosenPlayer(chosen){
     listLevels.forEach(level => {
@@ -676,11 +232,9 @@ let clickAnimal3 = function(){
     };
 };
 
-
 animal1.addEventListener('click', clickAnimal1);
 animal2.addEventListener('click', clickAnimal2);
 animal3.addEventListener('click', clickAnimal3);
-
 
 function levelChosenPlayer(chosen){
     levels.classList.add("width3Elements");
@@ -840,11 +394,9 @@ let clickLevel3 = function(){
     } 
 }
 
-
 level1.addEventListener('click', clickLevel1);
 level2.addEventListener('click', clickLevel2);
 level3.addEventListener('click', clickLevel3);
-
 
 function playWithStorage(val1, val2) {
     localStorage.clear();
