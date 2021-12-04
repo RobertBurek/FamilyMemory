@@ -1,16 +1,3 @@
-// console.log(localStorage.animal, " - ", localStorage.level);
-
-// var myvar='<?php echo json_encode($data);?>';
-// var resultsB12='<?php echo json_encode($resultsBatt12);?>';
-// console.log(myvar);
-// console.log(localStorage);
-// let resultsButterfly12=eval('<?php echo json_encode($resultsButterfly12);?>');
-// console.log(results);
-// var a = eval(resultsDog12);
-
-// console.log(resultsDog12[5]);
-// console.log(resultsDog18[0]);
-
 const cardsDogAll = ["puppy1", "puppy2", "puppy3", "puppy4", "puppy5", "puppy6", "puppy7", "puppy8", "puppy9", "puppy10", "puppy11", "puppy12"];
 const cardsCatAll = ["kitty1", "kitty2", "kitty3", "kitty4", "kitty5", "kitty6", "kitty7", "kitty8","kitty9", "kitty10", "kitty11", "kitty12", "kitty13", "kitty14"];
 const cardsButterflyAll = ["butterfly1", "butterfly2", "butterfly3", "butterfly4", "butterfly5","butterfly6", "butterfly7", "butterfly8", "butterfly9", "butterfly10", 
