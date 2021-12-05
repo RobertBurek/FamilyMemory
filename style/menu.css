@@ -25,13 +25,15 @@
 
 .viewHover:hover {
     cursor: pointer;
-    border: 2vh solid #0306a6 !important;
+    /* border: 2vh solid #0306a6 !important; */
+    border: 1em solid #0306a6 !important;
     border-radius: 1em;
 }
 
 .blackFrame {
     cursor: pointer;
-    border: 2vh solid #566dee !important;
+    /* border: 2vh solid #566dee !important; */
+    border: 1em solid #566dee !important;
     border-radius: 1em;
 }
 
@@ -126,8 +128,10 @@
     flex-basis: 100%;
     flex-grow: 1;
     height: 23.33vh;
-    border-top: 2vh solid white;
-    border-bottom: 2vh solid white;
+    /* border-top: 2vh solid white; */
+    border-top: 1em solid white;
+    /* border-bottom: 2vh solid white; */
+    border-bottom: 1em solid white;
     font-size: 0.8vw;
     overflow: hidden;
 }
@@ -296,10 +300,12 @@ div.result {
     .width3Elements {
         width: 38%;
     }
+    /* ??? */
     .borderLeft {
         border-left: 1.5vh solid white;
     }
     .borderRight {
         border-right: 1.5vh solid white;
     }
+    /* ??? */
 }
