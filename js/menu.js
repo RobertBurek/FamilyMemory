@@ -247,7 +247,7 @@ animal3.addEventListener('click', clickAnimal3);
 
 function levelChosenPlayer(chosen){
     levels.classList.add("width3Elements");
-    levels.classList.add("borderLeft");
+    // levels.classList.add("borderLeft");
     listLevels.forEach(level => {
         level.classList.remove("viewHover");
     });
