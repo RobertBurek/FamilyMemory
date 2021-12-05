@@ -1,6 +1,6 @@
 cardsCatAll12
-CAT
-12 el.
+12 el -
+CAT  
 5.584
 Robert
 5.125
@@ -22,8 +22,8 @@ Pawełek
 9.999
 Pawełek
 cardsCatAll18
-CAT
-18 el.
+18 el -
+CAT  
 12.147
 Mateusz
 12.856
@@ -45,8 +45,8 @@ Robert
 18.985
 Tymek
 cardsCatAll24
-CAT
-24 el.
+24 el -
+CAT  
 21.259
 Mateusz
 22.856
@@ -68,8 +68,8 @@ Robert
 28.985
 Tymek
 cardsDogAll12
-DOG
-12 el.
+12 el -
+DOG  
 7.025
 Robert
 7.125
@@ -91,8 +91,8 @@ Mateusz
 9.856
 Paweł
 cardsDogAll18
-DOG
-18 el.
+18 el -
+DOG  
 11.589
 Robert
 11.985
@@ -114,8 +114,8 @@ Mateusz
 15.598
 Paweł
 cardsDogAll24
-DOG
-24 el.
+24 el -
+DOG  
 32.126
 Mateusz
 32.856
@@ -137,8 +137,8 @@ Robert
 38.985
 Tymek
 cardsButterflyAll12
-BATTERFLY
-12 el.
+12 el -
+BATTERFLY  
 5.058
 Robert1
 5.125
@@ -160,8 +160,8 @@ Mateusz9
 7.856
 Paweł10
 cardsButterflyAll18
-BATTERFLY
-18 el.
+18 el -
+BATTERFLY  
 22.547
 Paweł
 22.658
@@ -183,8 +183,8 @@ Iza
 26.247
 Mateusz
 cardsButterflyAll24
-BATTERFLY
-24 el.
+24 el -
+BATTERFLY  
 25.158
 Kasia
 26.256
