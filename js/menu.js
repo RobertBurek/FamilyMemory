@@ -85,20 +85,22 @@ function reduceFrame() {
 }
 
 function animalChosenPlayer(chosen){
+    pictures.classList.remove("widht1Element");
     listLevels.forEach(level => {
         level.classList.remove("display");
     });
     levels.classList.remove("width2Elements");
     levels.classList.add("width3Elements");
-    levels.classList.add("borderLeft");
+    // levels.classList.add("borderLeft");
+    levels.classList.add("borderRight");
     center.classList.remove("widthCenter2Elements");
     center.classList.add("widthCenter3Elements");
     listPictures.forEach(picture => {
         picture.classList.remove("viewHover");
     });
     pictures.classList.remove("width2Elements");
-    pictures.classList.remove("widht1Element");
     pictures.classList.add("width3Elements");
+    pictures.classList.add("borderRight");
     const classChosen = chosen.className;
     for (let i = 0; i < listPictures.length; i++) {
         listPictures[i].classList.remove(animalClasses[i]);
@@ -132,7 +134,7 @@ function animalChosenPlayer(chosen){
             result.classList.remove("display");
         });
         resultsRight.classList.add("width3Elements");
-        resultsRight.classList.add("borderLeft");
+        // resultsRight.classList.add("borderLeft");
     };
     animal2.classList.add(classChosen);
     animal2.classList.add("blackFrame");
@@ -171,9 +173,13 @@ function clearAnimalChosenPlayer(chosen){
     });
     animal1.addEventListener('click', clickAnimal1);
     animal3.addEventListener('click', clickAnimal3);
+    resultsRight.classList.remove("width3Elements");
+    resultsRight.classList.remove("borderLeft");
+    resultsLeft.classList.remove("width3Elements");
+    resultsLeft.classList.remove("borderRight");
     if (!localStorage.level) {
-        resultsRight.classList.remove("width3Elements");
-        resultsRight.classList.remove("borderLeft");
+        // resultsRight.classList.remove("width3Elements");
+        // resultsRight.classList.remove("borderLeft");
         center.classList.remove("widthCenter3Elements");
         center.classList.add("widthCenter2Elements");
         pictures.classList.remove("width3Elements");
@@ -181,13 +187,13 @@ function clearAnimalChosenPlayer(chosen){
         levels.classList.remove("borderLeft");
         levels.classList.remove("width3Elements");
         levels.classList.add("width2Elements");
-        resultsLeft.classList.remove("width3Elements");
-        resultsLeft.classList.remove("borderRight");
+        // resultsLeft.classList.remove("width3Elements");
+        // resultsLeft.classList.remove("borderRight");
     } else {
-        resultsRight.classList.remove("width3Elements");
-        resultsRight.classList.remove("borderLeft");
-        resultsLeft.classList.remove("width3Elements");
-        resultsLeft.classList.remove("borderRight");
+        // resultsRight.classList.remove("width3Elements");
+        // resultsRight.classList.remove("borderLeft");
+        // resultsLeft.classList.remove("width3Elements");
+        // resultsLeft.classList.remove("borderRight");
         for (let i = 0; i < listResultsLeft.length; i++) {
             if (localStorage.level === "12")
             listResultsLeft[i].innerHTML = results12[i];
