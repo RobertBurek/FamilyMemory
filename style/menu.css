@@ -9,7 +9,8 @@
     background-color: white;
     border-radius: 2em;
     border: 2vh solid #566dee;
-    padding: 1em;
+    /* padding: 1em; */
+    padding: 0.5em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,6 +52,7 @@
 /* } */
 .widht1Element {
     width: 100%;
+    padding: 0.5em;
 }
 /* .levelsPicturesResults { */
     /* width: 38%; */
@@ -58,23 +60,28 @@
 /* } */
 .widthCenter2Elements {
     width: 60%;
+    padding: 0.5em;
 }
 .width2Elements {
     width: 50%;
+    padding: 0.5em;
 }
 .widthCenter3Elements {
     width: 50%;
+    padding: 0.5em;
 }
 .width3Elements {
     width: 38%;
+    padding: 0.5em;
 }
+/* ??? */
 .borderLeft {
     border-left: 1.5vh solid white;
 }
 .borderRight {
     border-right: 1.5vh solid white;
 }
-
+/* ??? */
 #pictures, #levels, #resultsLeft {
     float: left;
     display: flex;
