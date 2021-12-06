@@ -1,19 +1,26 @@
 <?php
+    if (isset($_POST["choice"])) {
+        switch ($_POST["choice"]) {
+            case "index":
+                // header("Location: http://robertburek.pl/GryJS/MemoryPHP/index.php");
+                header('Location: index.php');
+                break;
+            case "memoryPlay":
+                // header("Location: http://robertburek.pl/GryJS/MemoryPHP/memoryPlay.php");
+                header('Location: memoryPlay.php');
+                break;
+        }
+    }
+
     $result = sprintf("%01.3f", $_POST["result"]);
     $level = $_POST["level"];
     $name = stripslashes(trim($_POST["name"]));
-
-    // header("Location: http://localhost/MemoryPHP/index.php");
-    header("Location: http://localhost/MemoryPHP/memoryPlay.php");
-    // $level = $_POST["lista"];
 
     $name_file = 'results.txt';
     $default_file = 'defaultResults.php';
     $results = [];
     $thisLevel = false;
-    $thisLevel = false;
     $changePlayer = false;
-    $afterChange = false;
     $nextResult = 0;
     if (file_exists($name_file)) {
         $fp = fopen($name_file, "rb");
@@ -25,7 +32,7 @@
            };
            if ($thisLevel) {
                if (($nextResult > 2) && ($nextResult % 2 == 1) && ($nextResult <= 22)) {
-                    if ($result <= $line && !$changePlayer) {
+                    if (($result <= $line || $line == " ")&& !$changePlayer) {
                         array_push($results, $result);
                         array_push($results, $name);
                         $changePlayer = true;

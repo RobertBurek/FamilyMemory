@@ -12,12 +12,15 @@ for (let i = 0; i < results.length; i++) {
 
 function htmlResults (results) {
     var arrayHTML = '';
+    var timeUnit = '';
     for (let i = 0; i < results.length; i++) {
+        if (results[i] == " " || results[i].includes('el.')) timeUnit = ''
+            else timeUnit = ' s';
         if (i%2 === 0) {
             arrayHTML = arrayHTML +
 '        <div class="linia">' +
 '             <div class="name">' + results[i + 1] + '</div>' +
-'             <div class="result">' + results[i] + ' s</div>' +
+'             <div class="result">' + results[i] + timeUnit +'</div>' +
 '        </div>';
         }
     }

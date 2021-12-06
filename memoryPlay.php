@@ -15,7 +15,7 @@
         <!-- Zawartość wypełniona przez app.js -->
         <!-- w zależności od dokonanego wyboru w menu. -->
     </div>
-    <a class="button" href="#infoWynik">Info</a>
+    <!-- <a class="button" href="#infoWynik">Info</a> -->
     <div id="infoWynik" class="overlay">
         <div class="popUp">
             <br>
@@ -55,8 +55,12 @@
                         </p> -->
 
                 <div class="menu">
-                <br/><input class="button" type="submit" value="Jeszcze raz?"/>
-                <a class="button" href="saveResults.php" type="submit">Nowa gra?</a>
+                <br/>
+                <!-- <input class="button" type="submit" name="wybor" value="Jeszcze raz?"/> -->
+                <!-- <input class="button" type="submit" name="wybor" value="Nowa gra?"/> -->
+                <button class="button" type="submit" name="choice" value="memoryPlay">Jeszcze raz?</button>
+                <button class="button" type="submit" name="choice" value="index">Nowa gra?</button>
+                <!-- <a class="button" href="saveResults.php" type="submit" name="index">Nowa gra?</a> -->
                 </div>
             </form>
         </div>
