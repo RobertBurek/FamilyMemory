@@ -35,19 +35,6 @@
     <script type="text/javascript">
     let results = eval('<?php echo json_encode($results);?>');
     </script>
-    <?php
-        // $tresc = '';
-        // if ($results<>"") {
-        //     foreach ($results as $result) {
-        //         if ($result == 'Robert') $tresc = $tresc."Robercik!!!\n";
-        //         else $tresc = $tresc.$result."\n";
-        //     }
-        // $f=fopen('dane.txt', "a");
-        // ftruncate($f, 0);
-        // fputs($f, $tresc);
-        // fclose($f);
-        // };
-    ?>
 </head>
 <body>
     <div id="center" class="center">
