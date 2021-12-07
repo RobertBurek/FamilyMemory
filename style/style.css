@@ -204,4 +204,7 @@ p {
     .boxstyle{
         width: 70%;
     }
+    button {
+        margin: 1% 2% 0 1%;
+    }
 }
