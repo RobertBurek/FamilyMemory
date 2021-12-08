@@ -87,6 +87,16 @@ function reduceFrame() {
     };
 }
 
+function showStartButton() {
+    if (localStorage.animal && localStorage.level) {
+        StartGame.classList.remove("overlayHidden");
+        StartGame.classList.add("overlayVisibility");
+    } else {
+        StartGame.classList.add("overlayHidden");
+        StartGame.classList.remove("overlayVisibility");
+    }
+}
+
 function animalChosenPlayer(chosen){
     pictures.classList.remove("widht1Element");
     listLevels.forEach(level => {
@@ -139,13 +149,7 @@ function animalChosenPlayer(chosen){
     animal2.classList.add("blackFrame");
     animal1.removeEventListener("click", clickAnimal1);
     animal3.removeEventListener("click",clickAnimal3);
-    if (localStorage.animal && localStorage.level) {
-        StartGame.classList.remove("overlayHidden");
-        StartGame.classList.add("overlayVisibility")
-    } else {
-        StartGame.classList.add("overlayHidden");
-        StartGame.classList.remove("overlayVisibility");
-    }
+    showStartButton();
 };
 
 
@@ -171,7 +175,7 @@ function clearAnimalChosenPlayer(chosen){
         picture.classList.add('viewHover');
     });
     animal1.addEventListener('click', clickAnimal1);
-    animal3.addEventListener('click', clickAnimal3);
+    animal3.addEventListener('click', clickAnimal3);[]
     resultsRight.classList.remove("width3Elements");
     resultsLeft.classList.remove("width3Elements");
     if (!localStorage.level) {
@@ -182,26 +186,20 @@ function clearAnimalChosenPlayer(chosen){
         levels.classList.remove("width3Elements");
         levels.classList.add("width2Elements");
     } else {
-        for (let i = 0; i < listResultsLeft.length; i++) {
-            if (localStorage.level === "12")
-            listResultsLeft[i].innerHTML = results12[i];
-            if (localStorage.level === "18")
-            listResultsLeft[i].innerHTML = results18[i];
-            if (localStorage.level === "24")
-            listResultsLeft[i].innerHTML = results24[i];
-        };
-        listResultsLeft.forEach((result)=>{
-            result.classList.remove("display");
-        });
+        for (let i = 0; i < listResultsLeft.length; i++) {    //do funkcji
+            if (localStorage.level === "12")    //do funkcji
+            listResultsLeft[i].innerHTML = results12[i];    //do funkcji
+            if (localStorage.level === "18")    //do funkcji
+            listResultsLeft[i].innerHTML = results18[i];    //do funkcji
+            if (localStorage.level === "24")    //do funkcji
+            listResultsLeft[i].innerHTML = results24[i];    //do funkcji
+        };    //do funkcji
+        listResultsLeft.forEach((result)=>{    //do funkcji
+            result.classList.remove("display");    //do funkcji
+        });    //do funkcji
         resultsLeft.classList.add("width3Elements");
     };
-    if (localStorage.animal && localStorage.level) {
-        StartGame.classList.remove("overlayHidden");
-        StartGame.classList.add("overlayVisibility")
-    } else {
-        StartGame.classList.add("overlayHidden");
-        StartGame.classList.remove("overlayVisibility");
-    }
+    showStartButton();
 };
 
 let clickAnimal1 = function(){
@@ -265,29 +263,23 @@ function levelChosenPlayer(chosen){
         pictures.classList.remove("width2Elements");
         levels.classList.add("width3Elements");
         levels.classList.remove("width2Elements");
-        for (let i = 0; i < listResultsLeft.length; i++) {
-            if (localStorage.level === "12")
-            listResultsLeft[i].innerHTML = results12[i];
-            if (localStorage.level === "18")
-            listResultsLeft[i].innerHTML = results18[i];
-            if (localStorage.level === "24")
-            listResultsLeft[i].innerHTML = results24[i];
-        };
-        listResultsLeft.forEach((result)=>{
-            result.classList.remove("display");
-        });
+        for (let i = 0; i < listResultsLeft.length; i++) {     //do funkcji
+            if (localStorage.level === "12")     //do funkcji
+            listResultsLeft[i].innerHTML = results12[i];     //do funkcji
+            if (localStorage.level === "18")     //do funkcji
+            listResultsLeft[i].innerHTML = results18[i];     //do funkcji
+            if (localStorage.level === "24")     //do funkcji
+            listResultsLeft[i].innerHTML = results24[i];     //do funkcji
+        };     //do funkcji
+        listResultsLeft.forEach((result)=>{    //do funkcji
+            result.classList.remove("display");    //do funkcji
+        });    //do funkcji
     };
     level2.classList.add(classChosen);
     level2.classList.add("blackFrame");
     level1.removeEventListener("click", clickLevel1);
     level3.removeEventListener("click",clickLevel3);
-    if (localStorage.animal && localStorage.level) {
-        StartGame.classList.remove("overlayHidden");
-        StartGame.classList.add("overlayVisibility")
-    } else {
-        StartGame.classList.add("overlayHidden");
-        StartGame.classList.remove("overlayVisibility");
-    }
+    showStartButton();
 };
 
 
@@ -339,13 +331,7 @@ function clearLevelChosenPlayer(chosen){
         });
         resultsRight.classList.add("width3Elements");
     };
-    if (localStorage.animal && localStorage.level) {
-        StartGame.classList.remove("overlayHidden");
-        StartGame.classList.add("overlayVisibility")
-    } else {
-        StartGame.classList.add("overlayHidden");
-        StartGame.classList.remove("overlayVisibility");
-    }
+    showStartButton();
 };
 
 

@@ -112,7 +112,8 @@ div.name {
     text-align: start;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 1.4em;
+    /* font-size: 1.4em; */
+    font-size: min(2vh , calc(20vw / 20));
 }
 
 div.result {
@@ -120,7 +121,8 @@ div.result {
     width: 33%;
     text-align: end;
     overflow: hidden;
-    font-size: 1.4em;
+    /* font-size: 1.4em; */
+    font-size: min(2vh , calc(20vw / 20));
 }
 
 .titleResult>div:first-child>div:first-child{

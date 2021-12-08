@@ -2,11 +2,10 @@ const cardsDogAll = ["puppy1", "puppy2", "puppy3", "puppy4", "puppy5", "puppy6",
 const cardsCatAll = ["kitty1", "kitty2", "kitty3", "kitty4", "kitty5", "kitty6", "kitty7", "kitty8","kitty9", "kitty10", "kitty11", "kitty12", "kitty13", "kitty14"];
 const cardsButterflyAll = ["butterfly1", "butterfly2", "butterfly3", "butterfly4", "butterfly5","butterfly6", "butterfly7", "butterfly8", "butterfly9", "butterfly10", 
                     "butterfly11", "butterfly12", "butterfly13", "butterfly14"];
-let picturesCollection = [cardsDogAll, cardsCatAll, cardsButterflyAll, cardsCatAll, cardsDogAll, cardsCatAll, cardsButterflyAll, cardsDogAll, cardsCatAll];
 const cardBackAll = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8", "hidden9", "hidden10"];
 const hiddenCardBack = cardBackAll[Math.floor(Math.random() * cardBackAll.length)];
 const container = document.getElementById("container");
-let levelsPlayer = 18;
+let levelsPlayer = 12;
 let cardsGame = [];
 const startTimeGame = new Date().getTime();
 let activeCard = "";
@@ -99,7 +98,6 @@ const clickCard = function(){
             })
         }, 400);
     }
-
 };
 
 function reset(){
