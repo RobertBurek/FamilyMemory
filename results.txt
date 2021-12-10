@@ -139,12 +139,12 @@ Robert
 cardsButterflyAll12
 12 el.
 BUTTERFLY  
+9.458
+Wiktoria
 24.439
 Robert
 26.930
 Robert
- 
- 
  
  
  
@@ -187,8 +187,8 @@ cardsButterflyAll24
 BUTTERFLY  
 80.244
 Robert
- 
- 
+101.506
+Robert
  
  
  
