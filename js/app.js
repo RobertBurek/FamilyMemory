@@ -112,6 +112,11 @@ const init = function() {
         card.classList.add(cardsGame[position]);
         cardsGame.splice(position,1);
     });
+    window.scrollBy(0, 100);
+    // alert(window.pageXOffset + window.pageYOffset);
+    // location.hash = "end";
+    // console.log(window.scrollY);
+    // document.querySelector('#container').style.transform = 'translateY(-' + 50 + 'px)';
     setTimeout(function(){
         cards.forEach(card => {
             card.classList.add(hiddenCardBack);
@@ -122,3 +127,5 @@ const init = function() {
 
 
 init();
+// window.scrollTo(0, 2500);
+// location.hash = "end";

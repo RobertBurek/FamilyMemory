@@ -152,7 +152,7 @@ div.linia {
 
 div.name {
     display: inline-block;
-    width: 63%;
+    width: 60%;
     text-align: start;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -163,7 +163,7 @@ div.name {
 
 div.result {
     display: inline-block;
-    width: 31%;
+    width: 38%;
     text-align: end;
     overflow: hidden;
     /* font-size: 1.4em; */
