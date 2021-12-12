@@ -27,10 +27,10 @@
             </div>
             <form action="saveResults.php" method="POST">
                 <p id="dataPlayer">
-                    <!-- Podaj swoje imię:  -->
-                    <!-- <input id=name type="text" class="boxstyle" name="name" value="Pawełek" autofocus="autofocus"> -->
-                    <!-- <input id="result" type="text" name="result" value="9.888" hidden/> -->
-                    <!-- <input id="level" type="text" name="level" value="cardsCatAll12" hidden/> -->
+                    Podaj swoje imię: 
+                    <input id="name" type="text" class="boxstyle" name="name" value="" autofocus="autofocus"/>
+                    <input id="result" type="text" name="result" value="" hidden/>
+                    <input id="level" type="text" name="level" value="" hidden/>
                 </p>
                 <a class="close" href="#">&times;</a>
 

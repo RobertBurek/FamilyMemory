@@ -3,6 +3,8 @@ cardsCatAll12
 CAT  
 12.362
 Wiktoria
+12.571
+Wiktoria
 13.067
 Robert
 14.193
@@ -19,17 +21,15 @@ Wiktoria
  
  
  
- 
- 
 cardsCatAll18
 18 el.
 CAT  
+24.855
+Robert
+30.043
+Robert
 48.453
 Robert
- 
- 
- 
- 
  
  
  
@@ -47,10 +47,10 @@ Robert
 cardsCatAll24
 24 el.
 CAT  
- 
- 
- 
- 
+61.467
+Robert
+66.171
+Robert
  
  
  
@@ -72,8 +72,8 @@ cardsDogAll12
 DOG  
 12.444
 Robert
-19.925
-
+16.978
+Robert
  
  
  
@@ -95,10 +95,10 @@ cardsDogAll18
 DOG  
 27.694
 Robert
- 
- 
- 
- 
+29.315
+Wiktoria
+30.242
+Iza
  
  
  
@@ -139,14 +139,14 @@ Robert
 cardsButterflyAll12
 12 el.
 BUTTERFLY  
-9.458
-Wiktoria
+14.026
+Robert
 24.439
 Robert
 26.930
 Robert
- 
- 
+55.039
+Robert
  
  
  
@@ -162,12 +162,12 @@ Robert
 cardsButterflyAll18
 18 el.
 BUTTERFLY  
+47.350
+Robert
 59.977
 Robert
- 
- 
- 
- 
+347.756
+Robert
  
  
  
@@ -185,16 +185,16 @@ Robert
 cardsButterflyAll24
 24 el.
 BUTTERFLY  
+54.142
+Robert
+74.881
+Robert
 80.244
 Robert
 101.506
 Robert
- 
- 
- 
- 
- 
- 
+152.948
+Robert
  
  
  
