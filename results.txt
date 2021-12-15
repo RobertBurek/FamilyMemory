@@ -49,10 +49,10 @@ cardsCatAll24
 CAT  
 61.467
 Robert
+65.051
+Wiktoria
 66.171
 Robert
- 
- 
  
  
  
@@ -139,20 +139,20 @@ Robert
 cardsButterflyAll12
 12 el.
 BUTTERFLY  
+11.541
+Robert
 14.026
 Robert
+16.763
+Wiktoria
+18.354
+Wiktoria
 24.439
 Robert
 26.930
 Robert
 55.039
 Robert
- 
- 
- 
- 
- 
- 
  
  
  
