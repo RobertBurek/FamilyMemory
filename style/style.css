@@ -152,18 +152,20 @@ input, select {
 /* button {
     margin: 2% 3% 0 3%;
 } */
-h3 {
+/* h3 {
     text-align: center;
-}
-p {
+} */
+/* p {
     text-align: center;
     font-size: 1.3em;
-}
+} */
 .menu { 
     text-align: center;
 }
 #dataPlayer {
     padding: 0.3em;
+    text-align: center;
+    font-size: 1.3em;
 }
 /* .box {
     width: 40%;
@@ -221,12 +223,12 @@ p {
     width: 40%;
     position: relative;
 }
-.popUp h3 {
+/* .popUp h3 {
     margin-top: -2px;
     margin-right: 4px;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-}
+} */
 .popUp .close {
     position: absolute;
     top: 5px;
@@ -240,10 +242,10 @@ p {
 .popUp .close:hover {
     color: #9fa0f9;
 }
-.popUp .content {
+/* .popUp .content {
     max-height: 30%;
     overflow: auto;
-}
+} */
 /*---------------------PopUp------------------------*/
 
 /* ----------------Rewersy kart-------------------- */
