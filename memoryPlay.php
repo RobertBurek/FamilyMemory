@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style/cats.css">
     <link rel="stylesheet" href="style/dogs.css">
     <link rel="stylesheet" href="style/butterflies.css">
-    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
 </head>
 <body>
     <div id="container">
@@ -68,7 +69,8 @@
     <!-- <div id="end">ghg</div> -->
 
 
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script>document.write('<script src="js/app.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
 
 </body>
 </html>

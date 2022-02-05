@@ -149,42 +149,39 @@ input, select {
 }
 
 /*---------------------PopUp------------------------*/
-/* button {
+button {
     margin: 2% 3% 0 3%;
-} */
-/* h3 {
+}
+h3 {
     text-align: center;
-} */
-/* p {
+}
+p {
     text-align: center;
     font-size: 1.3em;
-} */
+}
 .menu { 
     text-align: center;
 }
 #dataPlayer {
     padding: 0.3em;
-    text-align: center;
-    font-size: 1.3em;
 }
-/* .box {
+.box {
     width: 40%;
     padding: 35px;
     border: 2px solid #fff;
-} */
+}
 .boxstyle{
     margin: 0 auto;
-    background: rgba(23, 26, 228, 0.2);
+    background: rgba(255,255,255,0.2);
     border-radius: 20px/50px;
     background-clip: padding-box;
     text-align: center;
     font-size: 0.9em;
-    /* width: 50%; */
+    width: 50%;
 }
 .button {
     font-size: 1em;
     padding: 6px;
-    margin: 2% 3% 0 3%;
     color: #fff;
     border: 2px solid #566dee;
     box-shadow: 0px 0px 25px 0px #0306a6 inset;
@@ -196,7 +193,7 @@ input, select {
 .button:hover {
     background: #9fa0f9;
 }
-/* .overlay {
+.overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -214,7 +211,7 @@ input, select {
     bottom: 0;
     left: 0;
     right: 0;
-} */
+}
 .popUp {
     margin: 70px auto;
     padding: 20px;
@@ -223,12 +220,12 @@ input, select {
     width: 40%;
     position: relative;
 }
-/* .popUp h3 {
+.popUp h3 {
     margin-top: -2px;
     margin-right: 4px;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-} */
+}
 .popUp .close {
     position: absolute;
     top: 5px;
@@ -242,10 +239,10 @@ input, select {
 .popUp .close:hover {
     color: #9fa0f9;
 }
-/* .popUp .content {
+.popUp .content {
     max-height: 30%;
     overflow: auto;
-} */
+}
 /*---------------------PopUp------------------------*/
 
 /* ----------------Rewersy kart-------------------- */
