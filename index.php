@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $name_file = 'results.txt';
     $default_file = 'defaultResults.php';
     $results = [];
@@ -16,6 +18,10 @@
     //   echo 'Nie znaleziono pliku!';
       require_once $default_file;
     };
+
+    $yourPlace = $_SESSION['yourPlace'];
+    $yourLevel = $_SESSION['yourLevel'];
+
 ?>
 
 
@@ -29,11 +35,18 @@
     <link rel="stylesheet" href="style/cats.css">
     <link rel="stylesheet" href="style/dogs.css">
     <link rel="stylesheet" href="style/butterflies.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/menu.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
+    <!-- <link rel="stylesheet" href="style/menu.css"> -->
+    <script>document.write('<link rel="stylesheet" href="style/menu.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
+
 
     <script type="text/javascript">
     let results = eval('<?php echo json_encode($results);?>');
+    let yourPlace = eval('<?php echo json_encode($yourPlace);?>');
+    let yourLevel = eval('<?php echo json_encode($yourLevel);?>');
+    console.log(yourPlace);
+    console.log(yourLevel);
     </script>
 </head>
 <body>
@@ -75,7 +88,8 @@
         <a class="buttonStart" href="memoryPlay.php"> S T A R T</a>
     </div>
 
-    <script src="js/menu.js"></script>
+    <!-- <script src="js/menu.js"></script> -->
+    <script>document.write('<script src="js/menu.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
 
 </body>
 </html>

@@ -233,6 +233,9 @@ div.result {
     /* font-size: min(2vh , calc(2vw / 20)); */
     font-size: calc(calc(1.2vh + 1.2vw) / 2);
 }
+/* .titleResult {
+    --placeWon : <?php echo $placeWon; ?>;
+} */
 
 .titleResult>div:first-child>div:first-child{
     font-size: 1.5em;
@@ -248,6 +251,21 @@ div.result {
     font-style: italic;
     text-align: start;
  }
+
+ /* #result_1_right>div:nth-child(var(--placeWon)) { */
+/* #result_1_right>div:nth-child(3) { */
+     /* font-weight: bold; */
+ /* } */
+
+#result_1_right>div ~ .place-won,
+#result_2_right>div ~ .place-won,
+#result_4_right>div ~ .place-won,
+#result_1_left>div ~ .place-won,
+#result_2_left>div ~ .place-won,
+#result_3_leftt>div ~ .place-won {
+         font-weight: bold;
+     }
+
 
 .display {
     display: none;

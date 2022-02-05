@@ -11,10 +11,10 @@ Robert
 Robert
 25.196
 Wiktoria
- 
- 
- 
- 
+28.177
+Robert
+32.637
+Robert
  
  
  
@@ -28,8 +28,8 @@ CAT
 Robert
 30.043
 Robert
-33.368
-Wiktoria
+43.154
+Wiki
 48.453
 Robert
  
@@ -47,26 +47,26 @@ Robert
 cardsCatAll24
 24 el.
 CAT  
-61.467
+39.546
+Marek
+42.524
+Marek
+43.122
 Robert
-65.051
-Wiktoria
-66.171
-Robert
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+44.707
+Marek
+49.527
+Marek
+49.527
+Marek
+49.675
+Iza
+50.847
+Wiki
+55.370
+
+56.328
+Kasia
 cardsDogAll12
 12 el.
 DOG  
@@ -95,10 +95,10 @@ cardsDogAll18
 DOG  
 27.694
 Robert
-29.315
-Wiktoria
-30.242
-Iza
+32.334
+Wiki
+ 
+ 
  
  
  
@@ -116,12 +116,12 @@ Iza
 cardsDogAll24
 24 el.
 DOG  
+40.793
+Wiki
+40.793
+Wiki
 58.752
 Robert
- 
- 
- 
- 
  
  
  
@@ -139,14 +139,14 @@ Robert
 cardsButterflyAll12
 12 el.
 BUTTERFLY  
-11.541
-Robert
+12.173
+Wiki
 14.026
 Robert
-16.763
-Wiktoria
-18.354
-Wiktoria
+16.234
+Robert
+17.899
+Iza
 24.439
 Robert
 26.930
@@ -162,7 +162,9 @@ Robert
 cardsButterflyAll18
 18 el.
 BUTTERFLY  
-38.223
+46.617
+Robert
+47.052
 Wiktoria
 47.350
 Robert
@@ -180,28 +182,26 @@ Robert
  
  
  
- 
- 
 cardsButterflyAll24
 24 el.
 BUTTERFLY  
+38.854
+Robert
+42.447
+Marek
+43.623
+Robert
+50.722
+Marek
+53.389
+
 54.142
 Robert
+69.802
+Wiki
 74.881
 Robert
+74.944
+Wiki
 80.244
 Robert
-101.506
-Robert
-152.948
-Robert
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
