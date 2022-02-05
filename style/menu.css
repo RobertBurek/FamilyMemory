@@ -249,6 +249,16 @@ div.result {
     text-align: start;
  }
 
+#result_1_right>div + .linia.place-won,
+#result_2_right>div + .linia.place-won,
+#result_4_right>div + .linia.place-won,
+#result_1_left>div + .linia.place-won,
+#result_2_left>div + .linia.place-won,
+#result_3_leftt>div + .linia.place-won {
+         font-weight: bold;
+         color: #0306a6;
+     }
+
 .display {
     display: none;
 }

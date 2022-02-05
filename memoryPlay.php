@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/dogs.css">
     <link rel="stylesheet" href="style/butterflies.css">
     <!-- <link rel="stylesheet" href="style/style.css"> -->
-    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
+    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
 </head>
 <body>
     <div id="container">
@@ -70,7 +70,7 @@
 
 
     <!-- <script src="js/app.js"></script> -->
-    <script>document.write('<script src="js/app.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
+    <script>document.write('<script src="js/app.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
 
 </body>
 </html>

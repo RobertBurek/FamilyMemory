@@ -19,8 +19,12 @@
       require_once $default_file;
     };
 
-    $yourPlace = $_SESSION['yourPlace'];
-    $yourLevel = $_SESSION['yourLevel'];
+    // $yourPlace = $_SESSION['$yourPlace'];
+    // $yourLevel = $_SESSION['$yourLevel'];
+    // $yourResult = $_SESSION['$yourResult'];
+    // echo $yourPlace." - ".$yourLevel." - ".$yourResult."\n";
+
+    $yourPlacesWon = $_SESSION['$yourPlacesWon'];
 
 ?>
 
@@ -36,17 +40,19 @@
     <link rel="stylesheet" href="style/dogs.css">
     <link rel="stylesheet" href="style/butterflies.css">
     <!-- <link rel="stylesheet" href="style/style.css"> -->
-    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
+    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
     <!-- <link rel="stylesheet" href="style/menu.css"> -->
-    <script>document.write('<link rel="stylesheet" href="style/menu.css?dev=' + Math.floor(Math.random() * 100) + '"\>');</script>
+    <script>document.write('<link rel="stylesheet" href="style/menu.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
 
 
     <script type="text/javascript">
     let results = eval('<?php echo json_encode($results);?>');
-    let yourPlace = eval('<?php echo json_encode($yourPlace);?>');
-    let yourLevel = eval('<?php echo json_encode($yourLevel);?>');
-    console.log(yourPlace);
-    console.log(yourLevel);
+    // let yourPlace = eval('<?php //echo json_encode($yourPlace);?>');
+    // let yourLevel = eval('<?php //echo json_encode($yourLevel);?>');
+    let yourPlacesWon = eval('<?php echo json_encode($yourPlacesWon);?>');
+    // console.log(yourPlace);
+    // console.log(yourLevel);
+    console.log(yourPlacesWon);
     </script>
 </head>
 <body>
@@ -89,7 +95,7 @@
     </div>
 
     <!-- <script src="js/menu.js"></script> -->
-    <script>document.write('<script src="js/menu.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
+    <script>document.write('<script src="js/menu.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
 
 </body>
 </html>

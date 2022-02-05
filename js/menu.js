@@ -10,15 +10,37 @@ for (let i = 0; i < results.length; i++) {
     };
 };
 
-function htmlResults (results) {
+var exception = {};
+
+
+// console.log(allResults);
+
+function htmlResults (results, indexLevel) {
+    // let arr2 =  [].concat(arr1);
+    var listPlaces = [].concat(yourPlacesWon);
+    var lineHtmlClass = '        <div class="linia">';
     var arrayHTML = '';
     var timeUnit = '';
     for (let i = 0; i < results.length; i++) {
+        // if (results[i] == yourLevel) 
         if (results[i] == " " || results[i].includes('el.')) timeUnit = ''
             else timeUnit = ' s';
         if (i%2 === 0) {
+            try {
+                listPlaces.forEach(el=>{
+                    if((el[0]==indexLevel)&&(Math.floor(i/2)==el[1])) {
+                        lineHtmlClass = '        <div class="linia place-won">';
+                        listPlaces.splice(listPlaces.indexOf(el), 1);
+                        throw exception;
+                    }
+                    else lineHtmlClass = '        <div class="linia">';
+                });
+            } catch (x) {
+                if (x !== exception) throw x;
+            };
+            // console.log(listPlaces);
             arrayHTML = arrayHTML +
-'        <div class="linia">' +
+            lineHtmlClass +
 '             <div class="name">' + results[i + 1] + '</div>' +
 '             <div class="result">' + results[i] + timeUnit +'</div>' +
 '        </div>';
@@ -27,15 +49,15 @@ function htmlResults (results) {
     return arrayHTML;
 }
 
-let resultsCat12 = htmlResults(allResults[0]);
-let resultsCat18 = htmlResults(allResults[1]);
-let resultsCat24 = htmlResults(allResults[2]);
-let resultsDog12 = htmlResults(allResults[3]);
-let resultsDog18 = htmlResults(allResults[4]);
-let resultsDog24 = htmlResults(allResults[5]);
-let resultsButterfly12 = htmlResults(allResults[6]);
-let resultsButterfly18 = htmlResults(allResults[7]);
-let resultsButterfly24 = htmlResults(allResults[8]);
+let resultsCat12 = htmlResults(allResults[0], 0);
+let resultsCat18 = htmlResults(allResults[1], 1);
+let resultsCat24 = htmlResults(allResults[2], 2);
+let resultsDog12 = htmlResults(allResults[3], 3);
+let resultsDog18 = htmlResults(allResults[4], 4);
+let resultsDog24 = htmlResults(allResults[5], 5);
+let resultsButterfly12 = htmlResults(allResults[6], 6);
+let resultsButterfly18 = htmlResults(allResults[7], 7);
+let resultsButterfly24 = htmlResults(allResults[8], 8);
 let resultsClear = '';
 let resultsPlarey = '';
 
