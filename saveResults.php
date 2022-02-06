@@ -30,6 +30,30 @@
     //     return array_push($list, $yourPlace);
     // };
 
+    function sendInfoMail($nameInfo, $levelInfo, $resultInfo) {
+            header("content-type: application/json; charset=utf-8");
+            // if($name && $email && $phone && $message){
+            $headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit";
+            $message_body="Ktoś zagrał w Twoją gierkę: MEMORY\n";
+            $message_body.="Był/a to: ".$nameInfo."\n";
+            $message_body.="Level: ".$levelInfo."\n";
+            $message_body.="Jej/jego wynik: ".$resultInfo." s \n\n";
+            $message_body.="Pozdrowionka ze stronki GryJS.";
+            mail("robertburek@wp.pl","Memory Family - $name",$message_body,$headers);
+            //  $json=array("status"=>1,"msg"=>"<p style='color: #060;font-size: 20px;font-weight: 700;'>Formularz został pomyślnie wysłany.</p>");
+            //  }
+            //  else{
+            //  $json=array("status"=>0,"msg"=>"<p style='color: #F00;font-size: 20px;font-weight: 700;''>Wystąpił problem z wysłaniem formularza.</p>"); 
+            //  }
+            // }
+            // else{
+            //  $json=array("status"=>0,"msg"=>"<p style='color: #F00;font-size: 20px;font-weight: 700;'>Proszę wypełnić wszystkie pola przed wysłaniem.</p>"); 
+            // }
+            // echo json_encode($json);
+            // exit;
+    }
+
+
     if (($_SESSION['currentResult'] != $result)||($_SESSION['currentLevel'] != $level)) {
         // echo $_SESSION['$currentResult']." - ".$_SESSION['$currentLevel']."\n";
         $_SESSION['currentResult'] = $result;
@@ -82,6 +106,7 @@
                             };
 
                             array_push($temp, $placeWon);
+                            sendInfoMail($name, $level, $result);
                             echo "</br>";
                             echo "</br>";
                             print_r($placeWon);
