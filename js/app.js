@@ -82,6 +82,7 @@ const clickCard = function(){
                         `<h3>Brawo !!! Jesteś w TOP10.</h3>
                         <h3>Twój wynik to ${timeGame}s.</h3>`;
                     }else{
+                        document.getElementById("dataPlayer").style.display="none";
                         document.getElementById("contentInfo").innerHTML = 
                         `<h3>Twój wynik to ${timeGame}s.</h3>
                         <h3>Trochę zabrakło do TOP10.</h3>`;

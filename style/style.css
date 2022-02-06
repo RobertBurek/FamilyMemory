@@ -314,3 +314,21 @@ p {
         margin: 1% 2% 0 1%;
     }
 }
+
+@media (max-width: 520px){
+    .popUp h3 {
+        font-size: 15px;
+    }
+    .button {
+        font-size: 14px;
+        height: 27px;
+        padding: 0px 5px;
+        margin: 0 7px;
+    }
+    p {
+        font-size: 19px;
+    }
+    #dataPlayer {
+        padding: 4px;
+      }
+}
