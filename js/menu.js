@@ -1,3 +1,5 @@
+localStorage.clear();
+
 let allResults=[];
 
 var j = -1;
@@ -22,6 +24,7 @@ function htmlResults (results, indexLevel) {
     var arrayHTML = '';
     var timeUnit = '';
     for (let i = 0; i < results.length; i++) {
+        // if (i == (results.length -1)) localStorage.setItem("MAX"+indexLevel, results[i]);
         // if (results[i] == yourLevel) 
         if (results[i] == " " || results[i].includes('el.')) timeUnit = ''
             else timeUnit = ' s';
@@ -52,11 +55,15 @@ function htmlResults (results, indexLevel) {
 
             // console.log(listPlaces);
             arrayHTML = arrayHTML +
-            lineHtmlClass +
-'             <div class="name">' + results[i + 1] + '</div>' +
-'             <div class="result">' + results[i] + timeUnit +'</div>' +
-'        </div>';
+                lineHtmlClass +
+                '             <div class="name">' + results[i + 1] + '</div>' +
+                '             <div class="result">' + results[i] + timeUnit +'</div>' +
+                '        </div>';
         }
+        // if (i == (results.length -1)) {
+        //     if (results[i-1] == " ") localStorage.setItem("MAX"+indexLevel, 0);
+        //     else localStorage.setItem("MAX"+indexLevel, results[i-1]);
+        // }
     }
     return arrayHTML;
 }
@@ -108,7 +115,9 @@ for (let i = 0; i < listResultsLeft.length; i++) {
     listResultsLeft[i].classList.add("display");
 }
 
-localStorage.clear();
+// localStorage.clear();
+// localStorage.setItem("level",);
+// localStorage.setItem("animal",);
 
 function reduceFrame() {
     for (let i = 0; i < listLevels.length; i++) {
@@ -125,6 +134,36 @@ function showStartButton() {
     if (localStorage.animal && localStorage.level) {
         StartGame.classList.remove("overlayHidden");
         StartGame.classList.add("overlayVisibility");
+        switch (localStorage.animal+localStorage.level) {
+            case "cardsCatAll12":
+                localStorage.setItem("scoredTime", allResults[0][20]);
+              break;
+            case "cardsCatAll18":
+                localStorage.setItem("scoredTime", allResults[1][20]);
+              break;
+            case "cardsCatAll24":
+                localStorage.setItem("scoredTime", allResults[2][20]);
+            break;
+            case "cardsDogAll12":
+                localStorage.setItem("scoredTime", allResults[3][20]);
+              break;
+            case "cardsDogAll18":
+                localStorage.setItem("scoredTime", allResults[4][20]);
+              break;
+            case "cardsDogAll24":
+                localStorage.setItem("scoredTime", allResults[5][20]);
+            break;
+            case "cardsButterflyAll12":
+                localStorage.setItem("scoredTime", allResults[6][20]);
+              break;
+            case "cardsButterflyAll18":
+                localStorage.setItem("scoredTime", allResults[7][20]);
+              break;
+            case "cardsButterflyAll24":
+                localStorage.setItem("scoredTime", allResults[8][20]);
+          }
+          if (localStorage.scoredTime == " ") localStorage.setItem("scoredTime", 0);
+          console.log(localStorage.scoredTime);
     } else {
         StartGame.classList.add("overlayHidden");
         StartGame.classList.remove("overlayVisibility");
