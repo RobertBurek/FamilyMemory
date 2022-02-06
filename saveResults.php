@@ -13,14 +13,27 @@
     $thisLevel = false;
     $changePlayer = false;
     $nextResult = 0;
-    $yourPlacesWon = $_SESSION['$yourPlacesWon'];
+    // $yourPlacesWon = array_merge([], $_SESSION['yourPlacesWon']);
+    $yourPlacesWon = $_SESSION['yourPlacesWon'];
     // $yourPlacesWon = [];
+    // $yourPlacesWon = $_SESSION['$yourPlacesWon'];
     $placeWon = [];
 
-    if (($_SESSION['$currentResult'] != $result)||($_SESSION['$currentLevel'] != $level)) {
+    // function addYourPlaceWon ($list, $yourPlace) {
+    //     foreach($list as $el) {
+    //         if ($yourPlace[0] == $el[0]) {
+    //             if ($el[1] >= $yourPlace[1]) {
+    //                 // $placeWon[1] +=1;
+    //                 echo $el[1];
+    //             };
+    //     };
+    //     return array_push($list, $yourPlace);
+    // };
+
+    if (($_SESSION['currentResult'] != $result)||($_SESSION['currentLevel'] != $level)) {
         // echo $_SESSION['$currentResult']." - ".$_SESSION['$currentLevel']."\n";
-        $_SESSION['$currentResult'] = $result;
-        $_SESSION['$currentLevel'] = $level;
+        $_SESSION['currentResult'] = $result;
+        $_SESSION['currentLevel'] = $level;
         // $_SESSION['$currentName'] = $name;
         // echo "tak";
         $numberLevel += -1;
@@ -44,9 +57,39 @@
                             // $_SESSION['$yourLevel'] = $numberLevel;
                             // echo $_SESSION['$yourResult']." - ".$_SESSION['$yourPlace']." - ".$_SESSION['$yourLevel']."\n";
                             $placeWon = [$numberLevel, floor($nextResult / 2)];
-                            array_push($yourPlacesWon, $placeWon);
-                            $_SESSION['$yourPlacesWon'] = $yourPlacesWon;
-                            // print_r($yourPlacesWon);
+                            // array_push($yourPlacesWon, $placeWon);
+                            // addYourPlaceWon($placeWon);
+                            // $_SESSION['$yourPlacesWon'] = $yourPlacesWon;
+                            $temp = [];
+                            print_r($temp);
+                            echo "</br>";
+                            echo "</br>";
+                            foreach($yourPlacesWon as $el) {
+                                if ($el[0] == $placeWon[0]) {
+                                    // print_r($el);
+                                    // echo "</br>";
+                                    if ($el[1] >= $placeWon[1]) {
+                                        // $el[1] = $el[1] + 1;
+                                        // echo $el[1];
+                                        array_push($temp, [$el[0], $el[1] + 1]);
+                                    } else array_push($temp, $el);
+                                    // print_r($el);
+                                    // echo "</br>";
+                                } else array_push($temp, $el);
+                                // print_r($temp);
+                                    print_r($el);
+                                    echo "</br>";
+                            };
+
+                            array_push($temp, $placeWon);
+                            echo "</br>";
+                            echo "</br>";
+                            print_r($placeWon);
+                            echo "</br>";
+                            echo "</br>";
+                            print_r($temp);
+                            // $yourPlacesWon = addYourPlaceWon($yourPlacesWo, $placeWon);
+                            $_SESSION['yourPlacesWon'] = $temp;
                         }
                    }
                    array_push($results, $line);

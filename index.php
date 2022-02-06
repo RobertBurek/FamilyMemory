@@ -19,12 +19,19 @@
       require_once $default_file;
     };
 
-    // $yourPlace = $_SESSION['$yourPlace'];
-    // $yourLevel = $_SESSION['$yourLevel'];
-    // $yourResult = $_SESSION['$yourResult'];
+    // $yourPlace = $_SESSION['yourPlace'];
+    // $yourLevel = $_SESSION['yourLevel'];
+    // $yourResult = $_SESSION['yourResult'];
     // echo $yourPlace." - ".$yourLevel." - ".$yourResult."\n";
-
-    $yourPlacesWon = $_SESSION['$yourPlacesWon'];
+    // $yourPlacesWon = [[0,3]];
+    if (count($_SESSION['yourPlacesWon']) > 0) $yourPlacesWon = $_SESSION['yourPlacesWon'];
+    else {
+        $yourPlacesWon = [[0,11]];
+        $_SESSION['yourPlacesWon'] = $yourPlacesWon;
+    }
+    // print_r($yourPlacesWon);
+    // $yourPlacesWon = $yourPlacesWon.concat($_SESSION['yourPlacesWon']);
+    // $yourPlacesWon = [[0,3]];
 
 ?>
 
@@ -49,10 +56,10 @@
     let results = eval('<?php echo json_encode($results);?>');
     // let yourPlace = eval('<?php //echo json_encode($yourPlace);?>');
     // let yourLevel = eval('<?php //echo json_encode($yourLevel);?>');
-    let yourPlacesWon = eval('<?php echo json_encode($yourPlacesWon);?>');
+    let placesWon = eval('<?php echo json_encode($yourPlacesWon);?>');
     // console.log(yourPlace);
     // console.log(yourLevel);
-    console.log(yourPlacesWon);
+    console.log(placesWon);
     </script>
 </head>
 <body>
