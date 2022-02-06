@@ -75,9 +75,17 @@ const clickCard = function(){
                 if (resultGame == pairsGame) {
                     const endTimeGame = new Date().getTime();
                     const timeGame = (endTimeGame - startTimeGame) / 1000;
-                    document.getElementById("contentInfo").innerHTML = 
-                    `<h3>Brawo !!! Jesteś w TOP10.</h3>
-                    <h3>Twój wynik to ${timeGame}s.</h3>`;
+                    if ((timeGame <= localStorage.scoredTime) || (localStorage.scoredTime == 0)) {
+                        console.log(timeGame);
+                        console.log(localStorage.scoredTime);
+                        document.getElementById("contentInfo").innerHTML = 
+                        `<h3>Brawo !!! Jesteś w TOP10.</h3>
+                        <h3>Twój wynik to ${timeGame}s.</h3>`;
+                    }else{
+                        document.getElementById("contentInfo").innerHTML = 
+                        `<h3>Twój wynik to ${timeGame}s.</h3>
+                        <h3>Trochę zabrakło do TOP10.</h3>`;
+                    }
                     // document.getElementById("dataPlayer").innerHTML =
                     // `Podaj swoje imię: 
                     // <input id="name" type="text" class="boxstyle" name="name" value="" autofocus="autofocus"/>

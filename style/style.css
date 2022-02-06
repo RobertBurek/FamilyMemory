@@ -221,10 +221,12 @@ p {
     position: relative;
 }
 .popUp h3 {
-    margin-top: -2px;
-    margin-right: 4px;
+    margin-top: -4px;
+    /* margin-right: 4px; */
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
+    padding: 5px 0;
+    font-size: 20px;
 }
 .popUp .close {
     position: absolute;
