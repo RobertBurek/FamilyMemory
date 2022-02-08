@@ -12,61 +12,32 @@ for (let i = 0; i < results.length; i++) {
     };
 };
 
-var exception = {};
-
-
-// console.log(allResults);
 
 function htmlResults (results, indexLevel) {
-    // let arr2 =  [].concat(arr1);
     let listPlaces = [].concat(placesWon);
     var lineHtmlClass = '';
     var arrayHTML = '';
     var timeUnit = '';
     for (let i = 0; i < results.length; i++) {
-        // if (i == (results.length -1)) localStorage.setItem("MAX"+indexLevel, results[i]);
-        // if (results[i] == yourLevel) 
         if (results[i] == " " || results[i].includes('el.')) timeUnit = ''
             else timeUnit = ' s';
         if (i%2 === 0) {
-            // try {
-            //     listPlaces.forEach(el=>{
-            //         if((el[0]==indexLevel)&&(Math.floor(i/2)==el[1])) {
-            //             lineHtmlClass = '        <div class="linia place-won">';
-            //             listPlaces.splice(listPlaces.indexOf(el), 1);
-            //             throw exception;
-            //         }
-            //         else lineHtmlClass = '        <div class="linia">';
-            //     });
-            // } catch (x) {
-            //     if (x !== exception) throw x;
-            // };
-
             lineHtmlClass = '        <div class="linia">';
             for(var z = 0; z < listPlaces.length; z++){
-                // if (listPlaces[z][0] == indexLevel) console.log(listPlaces[z]);
                 if ((listPlaces[z][0] == indexLevel) && ( i == listPlaces[z][1] *2)) {
                     lineHtmlClass = '        <div class="linia place-won">';
-                    // listPlaces.splice(listPlaces[z], 1);
-                    // console.log()
                     break;
                 };
-            }
-
-            // console.log(listPlaces);
+            };
             arrayHTML = arrayHTML +
                 lineHtmlClass +
                 '             <div class="name">' + results[i + 1] + '</div>' +
                 '             <div class="result">' + results[i] + timeUnit +'</div>' +
                 '        </div>';
-        }
-        // if (i == (results.length -1)) {
-        //     if (results[i-1] == " ") localStorage.setItem("MAX"+indexLevel, 0);
-        //     else localStorage.setItem("MAX"+indexLevel, results[i-1]);
-        // }
-    }
+        };
+    };
     return arrayHTML;
-}
+};
 
 let resultsCat12 = htmlResults(allResults[0], 0);
 let resultsCat18 = htmlResults(allResults[1], 1);
@@ -114,10 +85,6 @@ for (let i = 0; i < listResultsLeft.length; i++) {
     listResultsLeft[i].classList.add(resultLeftClasses[i]);
     listResultsLeft[i].classList.add("display");
 }
-
-// localStorage.clear();
-// localStorage.setItem("level",);
-// localStorage.setItem("animal",);
 
 function reduceFrame() {
     for (let i = 0; i < listLevels.length; i++) {
