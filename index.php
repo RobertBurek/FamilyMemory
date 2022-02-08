@@ -15,23 +15,15 @@
         unset($results[count($results)-1]);
     }
     else {
-    //   echo 'Nie znaleziono pliku!';
+      echo 'Nie znaleziono pliku!';
       require_once $default_file;
     };
 
-    // $yourPlace = $_SESSION['yourPlace'];
-    // $yourLevel = $_SESSION['yourLevel'];
-    // $yourResult = $_SESSION['yourResult'];
-    // echo $yourPlace." - ".$yourLevel." - ".$yourResult."\n";
-    // $yourPlacesWon = [[0,3]];
     if (count($_SESSION['yourPlacesWon']) > 0) $yourPlacesWon = $_SESSION['yourPlacesWon'];
     else {
         $yourPlacesWon = [[0,11]];
         $_SESSION['yourPlacesWon'] = $yourPlacesWon;
     }
-    // print_r($yourPlacesWon);
-    // $yourPlacesWon = $yourPlacesWon.concat($_SESSION['yourPlacesWon']);
-    // $yourPlacesWon = [[0,3]];
 
 ?>
 
@@ -46,20 +38,14 @@
     <link rel="stylesheet" href="style/cats.css">
     <link rel="stylesheet" href="style/dogs.css">
     <link rel="stylesheet" href="style/butterflies.css">
-    <!-- <link rel="stylesheet" href="style/style.css"> -->
-    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
-    <!-- <link rel="stylesheet" href="style/menu.css"> -->
-    <script>document.write('<link rel="stylesheet" href="style/menu.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
-
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script> -->
+    <link rel="stylesheet" href="style/menu.css">
+    <!-- <script>document.write('<link rel="stylesheet" href="style/menu.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script> -->
 
     <script type="text/javascript">
     let results = eval('<?php echo json_encode($results);?>');
-    // let yourPlace = eval('<?php //echo json_encode($yourPlace);?>');
-    // let yourLevel = eval('<?php //echo json_encode($yourLevel);?>');
     let placesWon = eval('<?php echo json_encode($yourPlacesWon);?>');
-    // console.log(yourPlace);
-    // console.log(yourLevel);
-    console.log(placesWon);
     </script>
 </head>
 <body>
@@ -101,8 +87,8 @@
         <a class="buttonStart" href="memoryPlay.php"> S T A R T</a>
     </div>
 
-    <!-- <script src="js/menu.js"></script> -->
-    <script>document.write('<script src="js/menu.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
+    <script src="js/menu.js"></script>
+    <!-- <script>document.write('<script src="js/menu.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script> -->
 
 </body>
 </html>
