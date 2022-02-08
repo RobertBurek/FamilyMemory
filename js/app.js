@@ -87,19 +87,10 @@ const clickCard = function(){
                         `<h3>Twój wynik to ${timeGame}s.</h3>
                         <h3>Trochę zabrakło do TOP10.</h3>`;
                     }
-                    // document.getElementById("dataPlayer").innerHTML =
-                    // `Podaj swoje imię: 
-                    // <input id="name" type="text" class="boxstyle" name="name" value="" autofocus="autofocus"/>
-                    // `<input id="result" type="text" name="result" value=${timeGame} hidden/>
-                    // <input id="level" type="text" name="level" value=${localStorage.animal}${localStorage.level} hidden/>`;
-                    
                     const infoResult = document.getElementById("result");
                     infoResult.value = `${timeGame}`;
-                    // console.log(infoResult);
                     const infoLevel = document.getElementById("level");
                     infoLevel.value = `${localStorage.animal}${localStorage.level}`;
-                    // console.log(infoLevel);
-
                     location.href = "#infoWynik";
                 }
             } else {
@@ -129,11 +120,6 @@ const init = function() {
         card.classList.add(cardsGame[position]);
         cardsGame.splice(position,1);
     });
-    // window.scrollBy(0, 100);
-    // alert(window.pageXOffset + window.pageYOffset);
-    // location.hash = "end";
-    // console.log(window.scrollY);
-    // document.querySelector('#container').style.transform = 'translateY(-' + 50 + 'px)';
     setTimeout(function(){
         cards.forEach(card => {
             card.classList.add(hiddenCardBack);
@@ -142,7 +128,4 @@ const init = function() {
     }, 2000);
 };
 
-
 init();
-// window.scrollTo(0, 2500);
-// location.hash = "end";
