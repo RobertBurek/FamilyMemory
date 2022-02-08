@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style/cats.css">
     <link rel="stylesheet" href="style/dogs.css">
     <link rel="stylesheet" href="style/butterflies.css">
-    <!-- <link rel="stylesheet" href="style/style.css"> -->
-    <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <script>document.write('<link rel="stylesheet" href="style/style.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script> -->
 </head>
 <body>
     <div id="container">
@@ -57,20 +57,15 @@
 
                 <div class="menu">
                 <br/>
-                <!-- <input class="button" type="submit" name="wybor" value="Jeszcze raz?"/> -->
-                <!-- <input class="button" type="submit" name="wybor" value="Nowa gra?"/> -->
                 <button class="button" type="submit" name="choice" value="memoryPlay">Jeszcze raz?</button>
                 <button class="button" type="submit" name="choice" value="index">Nowa gra?</button>
-                <!-- <a class="button" href="saveResults.php" type="submit" name="index">Nowa gra?</a> -->
                 </div>
             </form>
         </div>
     </div>
-    <!-- <div id="end">ghg</div> -->
 
-
-    <!-- <script src="js/app.js"></script> -->
-    <script>document.write('<script src="js/app.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
+    <script src="js/app.js"></script>
+    <!-- <script>document.write('<script src="js/app.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script> -->
 
 </body>
 </html>
