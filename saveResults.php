@@ -23,7 +23,7 @@
             $message_body.="Level: ".$levelInfo."\n";
             $message_body.="Jej/jego wynik: ".$resultInfo." s \n\n";
             $message_body.="Pozdrowionka ze stronki GryJS.";
-            mail("robertburek@wp.pl","Memory Family - ".$name ,$message_body ,$headers );
+            mail("robertburek@wp.pl","Memory Family - ".$nameInfo ,$message_body ,$headers );
     }
 
 

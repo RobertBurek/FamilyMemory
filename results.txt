@@ -1,6 +1,8 @@
 cardsCatAll12
 12 el.
 CAT  
+8.603
+Iza
 12.362
 Wiktoria
 12.571
@@ -9,33 +11,31 @@ Wiktoria
 Robert
 14.193
 Robert
+24.008
+Paweł
 25.196
 Wiktoria
 28.177
 Robert
-32.637
-Robert
- 
- 
- 
- 
- 
- 
+29.155
+Kasia
+31.032
+Kasia
 cardsCatAll18
 18 el.
 CAT  
 24.855
 Robert
+29.606
+Robert
 30.043
+Robert
+35.378
 Robert
 43.154
 Wiki
 48.453
 Robert
- 
- 
- 
- 
  
  
  
@@ -63,13 +63,15 @@ Marek
 Iza
 50.847
 Wiki
+55.271
+wiki
 55.370
 
-56.328
-Kasia
 cardsDogAll12
 12 el.
 DOG  
+9.878
+Iza
 10.050
 Robert
 10.161
@@ -82,10 +84,8 @@ Kasia
 Robert
 17.174
 Kasia
- 
- 
- 
- 
+19.730
+Iza
  
  
  
@@ -139,29 +139,33 @@ Robert
 cardsButterflyAll12
 12 el.
 BUTTERFLY  
+9.868
+Robert
+10.261
+Iza
+10.620
+Robert
+11.014
+Robert
+11.905
+Iza
 12.173
 Wiki
+12.491
+Paweł
 14.026
 Robert
+15.864
+Iza
 16.234
 Robert
-17.899
-Iza
-24.439
-Robert
-26.930
-Robert
-55.039
-Robert
- 
- 
- 
- 
- 
- 
 cardsButterflyAll18
 18 el.
 BUTTERFLY  
+24.931
+Robert
+26.861
+Wiki
 46.617
 Robert
 47.052
@@ -172,10 +176,6 @@ Robert
 Robert
 347.756
 Robert
- 
- 
- 
- 
  
  
  
